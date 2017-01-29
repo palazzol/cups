@@ -1,0 +1,251 @@
+GeneralHelpScreen
+                                                  01
+               GENERAL HELP SCREEN                02
+                                                  03
+  This simulation allows you to investigate       04
+  various aspects of electron scattering from     05
+  nuclei.  YOU MAY SELECT ANY MENU ITEM IN ANY    06
+  ORDER.  Some menu items present the results of  07
+  calculations.  Others allow you to set or alter 08
+  parameters that will be used in the calcula-    09
+  tions.  If you have not already set these para- 10
+  meters, default values will be used.  When you  11
+  do set or alter parameters, the modified values 12
+  will be used until you change them.             13
+                                                  14
+  Brief information about each of the main menu   15
+  items can be found in the "About..." option     16
+  that appears when you select that item.         17
+  General information about this simulation and   18
+  about the CUPS program as a whole can be found  19
+  in the "About..." options that appear under the 20
+  main menu item "File".  For more detailed in-   21
+  formation, please see the accompanying text.    22
+                                                  23
+  Select "FILE - EXIT PROGRAM" when you are ready 24
+  to leave this simulation.                       25
+
+
+KinematicsInfoScreen
+                                                  01
+             KINEMATICS HELP SCREEN               02
+                                                  03
+  The purpose of the KINEMATICS section of        04
+  ELSCATT is to clarify the connection between    05
+  the observable kinematic variables, initial     06
+  momentum, target mass, scattered electron       07
+  momentum and deflection angle, and the kine-    08
+  matic variables of interest for nuclear or      09
+  nucleon structure studies.                      10
+                                                  11
+  Two displays are available.  One shows the      12
+  connection between the electron's final momen-  13
+  tum and deflection angle and the momentum and   14
+  energy transferred to the nucleus.  The other   15
+  shows the similar connection to the Lorentz     16
+  invariants, neqative squared four-momentum      17
+  transfer and the electron's laboratory frame    18
+  energy loss.   Use the mouse cursor to explore  19
+  these connections by dragging the scattered     20
+  electron's momentum vector anywhere within the  21
+  physically allowed region.   Use the "Choose    22
+  Parameters" selection to change the projectile, 23
+  the target mass or the initial momentum.  All   24
+  calculations are fully relativistic.            25
+
+
+DragVectorInfoScreen
+                                                  01
+                                                  02
+     Use the mouse to capture and drag the        03
+     vector that represents the momentum of       04
+     the scattered particle (electron, muon       05
+     or tauon).                                   06
+                                                  07
+                                                  08
+     Notice that the scattered particle's         09
+     momentum vector and the tabulated data       10
+     start to flash whenever you press the        11
+     mouse button.  If the mouse cursor is        12
+     inside the circle or ellipse that de-        13
+     scribes elastic scattering, the vector       14
+     will jump to the position of the cursor      15
+     and follow it around.  Try it.               16
+                                                  17
+                                                  18
+     Click or press the F10 key to return         19
+     to the main menu.                            20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+ElasticInfoScreen
+                                                  01
+         ELASTIC SCATTERING HELP SCREEN           02
+                                                  03
+  This section of ELSCATT enables one to choose   04
+  from a number of (somewhat idealized) nuclear   05
+  densities and see both the densities and the    06
+  corresponding charge form factors.  Up to four  07
+  densities and form factors can be calculated    08
+  and displayed together for easy comparison.     09
+                                                  10
+  In this section, it is assumed that the target  11
+  nucleus has spin zero so that only the nuclear  12
+  charge density and corresponding Coulomb form   13
+  factor are relevant to electron scattering.     14
+  Consequently, it is expected that the target    15
+  nucleus has an EVEN number of nucleons.  (Odd-  16
+  odd nuclei are permitted, but assumed to have   17
+  zero spin.)  In addition, oscillator shell      18
+  model densities are not available for target    19
+  nuclei having A < 4 or A > 40.  The plots show  20
+  the nuclear mass density and the charge form    21
+  factor, where the latter is normalized to       22
+  unity at zero momentum transfer.                23
+                                                  24
+                                                  25
+
+
+InelasticInfoScreen
+                                                  01
+        INELASTIC SCATTERING HELP SCREEN          02
+                                                  03
+  This section of ELSCATT enables one to cal-     04
+  culate and display inelastic charge and cur-    05
+  rent transition densities and corresponding     06
+  Coulomb and transverse from factors for simple  07
+  uncoupled particle-hole excitations from six    08
+  closed shell nuclei from 4He through 40Ca.      09
+  The single particle wavefunctions are repre-    10
+  sented by simple harmonic oscillator eigen-     11
+  states.  The user may choose the type of        12
+  excitation (T = 0, T = 1, proton, neutron,      13
+  etc.), the target nucleus and its hole state,   14
+  the particle state and the angular momentum to  15
+  which the particle and hole are coupled.  As    16
+  an added convenience, the hot keys can be used  17
+  to cycle the angular momentum among its allowed 18
+  values in any of these displays.  Easy access   19
+  is provided to any of the many possible one-    20
+  particle one-hole excited states, subject only  21
+  to a limitation on the maximum number of oscil- 22
+  lator quanta for the particle state.            23
+                                                  24
+                                                  25
+
+
+CycleJspinInfoScreen
+                                                  01
+                                                  02
+                                                  03
+     Use the hot keys as follows:                 04
+                                                  05
+                                                  06
+   F1  -  Shows this help screen                  07
+                                                  08
+   F3  -  Decrease J by 1 if possible.            09
+          Otherwise, cycle back to largest        10
+          allowed value of J.                     11
+                                                  12
+   F4  -  Increase J by 1 if possible.            13
+          Otherwise, cycle back to smallest       14
+          allowed value of J.                     15
+                                                  16
+   F10 -  Return to the master menu.              17
+                                                  18
+                                                  19
+    In addition, any other key or mouse click     20
+    causes a return to the main manu.             21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+NumericalResultsInfoScreen
+                                                  01
+                                                  02
+                                                  03
+     Use the hot keys as follows:                 04
+                                                  05
+                                                  06
+   F1  -  Shows this help screen                  07
+                                                  08
+   F3  -  Decrease J by 1 if possible.            09
+          Otherwise, cycle back to largest        10
+          allowed value of J.                     11
+                                                  12
+   F4  -  Increase J by 1 if possible.            13
+          Otherwise, cycle back to smallest       14
+          allowed value of J.                     15
+                                                  16
+   F5  -  Enter another q value                   17
+                                                  18
+   F10 -  Return to the master menu.              19
+                                                  20
+                                                  21
+    In addition, any other key or mouse click     22
+    causes a return to the main manu.             23
+                                                  24
+                                                  25
+
+
+ResponseInfoScreen
+                                                  01
+          COULOMB RESPONSE HELP SCREEN            02
+                                                  03
+  A somewhat idealized representation of the      04
+  Coulomb response is calculated and displayed    05
+  for a given choice of target nucleus and        06
+  momentum transfer.   Target nuclei are res-     07
+  tricted to the six closed shell nuclei from     08
+  4He through 40Ca.  The response is displayed    09
+  separately for each possible angular momentum   10
+  transfer and is compared to the kinetic energy  11
+  that a single target nucleon would have if it   12
+  were given the same momentum boost.  The cal-   13
+  culation requires summing the transition        14
+  strengths to a large but finite number of       15
+  particle-hole states and smoothing the result.  16
+  The validity of the calculation is checked by   17
+  comparison with the known result obtained from  18
+  the Coulomb sum rule.  The full strength of     19
+  the response is adequately captured among the   20
+  states retwined in the calculation only for     21
+  relatively small values of the momentum trans-  22
+  fer.   For this reason the maximum momentum     23
+  transfer that is allowed is 4/fm.               24
+                                                  25
+
+
+BlankInfoScreen
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+

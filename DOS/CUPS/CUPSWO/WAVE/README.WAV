@@ -1,0 +1,21 @@
+{The follosing files are needed for WAVE.
+  Wave.pas     //The main program.
+  Wav_gbl.pas    //Global variables
+  Wav_base.pas   // Atoms, buttons, and other display objects
+  Wav_Plot.pas   // A generic plot objects that has scale, knows how to go full screen etc.
+  Wav_Anly.pas   // The analysis routines that take data from the chain and plot it.
+  Wav_Graf.pas   // The drawing rountines for the chain.
+  Wav_Lst.pas    // A linked list object.
+  Wav_Prop.pas   // The propagation code.  Performs calculations for timestep dt.
+  Wav_SS.pas     // Source, Segment and Reflector methods}
+
+
+{Wave runs best if it and the CUPS utilites are compiled for PROTECTED memory. If the program
+is compiled for REAL mode you may have trouble with some types of analysis if you machine  has less
+than  600K of free memory.}
+
+{The following compiler switches will otpimize wave.}
+{$UNDEF DEBUG}
+{$IFDEF DEBUG} {$R+,S+,L+,D+} {$ELSE} {$R-,S-,L-,D-} {$ENDIF}
+{$IFDEF CPU87} {$N+,E-} {$ELSE} {$N-} {$ENDIF}
+{$G+}

@@ -1,0 +1,23 @@
+                    CUPS Programs
+             (c) 1994, John Wiley & Sons
+
+This disk contains CUPS DOS (PC Compatible) programs for the Astrophysics 
+course.  To install the programs, simply go to the floppy 
+drive, and type install followed by the name of the drive and directory 
+where you want the programs to be installed.  For example, typing 
+install c:\cups will place the programs in the CUPS directory on your c: 
+drive.  You could also just type install without specifying a directory 
+or drive, and c:\cups is the assumed choice.
+
+The driver program (cupsas.exe) for running all programs can be found in 
+the CUPSAS subdirectory.  You may run any of the programs using this 
+driver.  Alternatively, if you switch to the directory containing a 
+particular program, you can run it individually by simply typing its 
+name. To run the programs you should have a color monitor, mouse, and 
+preferably a 386 with math coprocessor.  More information on running 
+CUPS programs can be found in the introduction to all CUPS books.
+
+Appendix A to each CUPS book is a collection of "Walk Throughs" -- quick 
+guided tours for running the programs.  More information about all 
+programs in the CUPS Project can be found in the introduction to the 
+book.

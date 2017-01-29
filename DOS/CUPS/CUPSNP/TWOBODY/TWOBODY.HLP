@@ -1,0 +1,270 @@
+GeneralHelpScreen
+                                                  01
+               GENERAL HELP SCREEN                02
+                                                  03
+  This simulation allows you to investigate many  04
+  aspects of the two-nucleon problem.  YOU MAY    05
+  SELECT ANY MENU ITEM IN ANY ORDER.  Some menu   06
+  items present the results of calculations.      07
+  Others allow you to set or alter parameters     08
+  that will be used in the calculations.  If you  09
+  have not already set these parameters, default  10
+  values will be used.  When you do set or alter  11
+  parameters, the modified values will be used    12
+  until you change them.                          13
+                                                  14
+  Brief information about each of the main menu   15
+  items can be found in the "About..." option     16
+  that appears when you select that item.         17
+  General information about this simulation and   18
+  about the CUPS program as a whole can be found  19
+  in the "About..." options that appear under the 20
+  main menu item "File".  For more detailed in-   21
+  formation, please see the accompanying text.    22
+                                                  23
+  Select "FILE - EXIT PROGRAM" when you are ready 24
+  to leave this simulation.                       25
+
+AboutEgySearch
+                                                  01
+                   HELP SCREEN                    02
+                                                  03
+      HOW TO PERFORM A MANUAL ENERGY SEARCH       04
+                                                  05
+  You will be asked to guess a binding energy.    06
+  Enter a POSITIVE number.  The computer will     07
+  display wavefunctions calculated inwards and    08
+  outwards.  In general, there will be a dis-     09
+  continuity of slope at the point where the      10
+  wavefunctions cross.  The computer caclulates   11
+  a new estimate for the bound state energy as    12
+  well as the number of nodes.  If the calcula-   13
+  tion is converging towards the solution you     14
+  want, use the return key or the F2 key to       15
+  continue the search.  If the calculation is     16
+  NOT CONVERGING, or is converging to the wrong   17
+  bound state, use the F3 key to enter a new      18
+  guess for the binding energy.                   19
+                                                  20
+  NOTE:  If the computed node number is greater   21
+  than the node number of the desired solution,   22
+  then the previously guessed binding energy was  23
+  too small.  Otherwise it was too large.         24
+                                                  25
+
+AboutSWave
+                                                  01
+                   ABOUT S-Wave                   02
+                                                  03
+   This section of the program allows you to in-  04
+   vestigate the bound and scattering states of   05
+   various S-wave potentials.  Use "Choose the    06
+   potential" to select from a variety of poten-  07
+   tial forms, with or without hard cores.  Use   08
+   "Adjust the potential" if you would like to    09
+   view or change the parameters of the chosen    10
+   potential.  After each such choice, the prog-  11
+   ram displays the potential and the zero-energy 12
+   wavefunction, from which the scattering length 13
+   and effective range are determined.  If the    14
+   potential supports one and only one bound      15
+   state, you may use "Automatic search..." to    16
+   determine the bound state energy.  Otherwise,  17
+   use "Manual search...".   Use "Compare phase   18
+   shifts..." to compare calculated against ob-   19
+   served triplet or singlet s-wave phase shifts. 20
+                                                  21
+   The available pre-set potential parameters     22
+   approximately reproduce TRIPLET s-wave observ- 23
+   ables.   Use the "Adjust..." option to enter   24
+   SINGLET potential parameters.                  25
+
+AboutDeuteron
+                                                  01
+                  ABOUT Deuteron                  02
+                                                  03
+  This section of the program allows you to in-   04
+  vestigate the effect of tensor forces and con-  05
+  sequent coupling between S-wave and D-wave      06
+  channels.  Use "Choose the interaction" to sel- 07
+  ect from among several parametrizations of the  08
+  triplet-even part of the nucleon-nucleon inter- 09
+  action.  Use "Adjust the interaction" to view   10
+  or alter the parameters.  (There is no pro-     11
+  vision to view or alter the parameters of the   12
+  Hamada-Johnston interaction.)  After each such  13
+  choice, the program displays the potentials and 14
+  the zero-energy wavefunction, from which the    15
+  scattering length and effective range are de-   16
+  termined.  If the chosen interaction has one    17
+  and only one bound state, you may use the       18
+  "Automatic search..." option to determine the   19
+  bound state energy and various deuteron proper- 20
+  ties.  Otherwise, use the "Manual search..."    21
+  option to find bound state energies.            22
+                                                  23
+                                                  24
+                                                  25
+
+AboutPhases
+                                                  01
+                   ABOUT Phases                   02
+                                                  03
+  This section of the program allows you to       04
+  compare phase shifts calculated from a selected 05
+  nucleon-nucleon interaction against the corres- 06
+  ponding observed phase shifts.  Use "Choose the 07
+  interaction" to select from a variety of simple 08
+  parameterizations of the nucleon-nucleon inter- 09
+  action.  Use "Adjust the interaction" to view   10
+  or alter these parameters.  (There is no pro-   11
+  vision to view or alter the parameters of the   12
+  Hamada-Johnson interaction.)  Use "Choose the   13
+  energy range" to view or alter the energy range 14
+  and the number of points at which phase shifts  15
+  will be calculated.  Use "Choose and display    16
+  phases" to select the channel and to view the   17
+  corresponding phase shifts.                     18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+AboutCrossSect
+                                                  01
+                 ABOUT CrossSect                  02
+                                                  03
+  This section of the program allows you to cal-  04
+  culate phase shifts and cross sections at some  05
+  given lab energy.  Use "Choose the system" and  06
+  Choose the lab energy" to select the projectile 07
+  and target nucleons and the lab energy of the   08
+  projectile, respectively.  Use "Empirical phase 09
+  shifts" to see a tabulation of the observed     10
+  phase shifts at the chosen energy.  Use "Choose 11
+  the interaction" to select from a variety of    12
+  simple parameterizations of the nucleon-nucleon 13
+  interaction.  Use "Adjust the interaction" to   14
+  view or alter these parameters.  Use "Calculate 15
+  phase shifts" to compute phase shifts from the  16
+  chosen interaction.  Use "Choose the angular    17
+  range" to view or change the angles at which    18
+  scattering observables will be calculated.  Use 19
+  "Display cross sections" to view cross sections 20
+  computed from the tabulated phase shifts.  If   21
+  you do not calculate phase shifts from a model  22
+  interaction, or if you change the system or the 23
+  lab energy after doing so, you get only the     24
+  empirical cross sections.                       25
+
+AboutSpinLab
+                                                  01
+                  ABOUT Spin-Lab                  02
+                                                  03
+  This section of the program allows you to set   04
+  up two parallel computer "experiments" using    05
+  polarized or unpolarized nucleon beams and      06
+  targets together with a detector that either is 07
+  or is not sensitive to the polarization of the  08
+  detected nucleon.  Insight can be gained about  09
+  the usefulness of polarization-sensitive data   10
+  by comparing "theory" versus "experiment" for a 11
+  variety of nuclear models.  Use "Choose Setup   12
+  #1" and "Choose Setup #2" to set the desired    13
+  beam, target and detector polarization proper-  14
+  ties.  Use "Display Responses" to see the cor-  15
+  responding cross sections.  (The unpolarized    16
+  cross section is also plotted for comparison    17
+  purposes.)                                      18
+                                                  19
+  NOTE: Use the options under the "CrossSect"     20
+  main menu item to fix the system, the lab en-   21
+  ergy, the angular range and especially to com-  22
+  pute the model phase shifts from which "theory" 23
+  cross sections will be computed.                24
+                                                  25
+
+SWavePotlParams
+                                                  01
+           Hints concerning Acceptable            02
+              Potential Parameters                03
+                                                  04
+   Number limits are as follows:-                 05
+                                                  06
+      Core radius between  0.0 and  2.0 fm        07
+      Ranges between       0.1 and  5.0 fm        08
+      Depths between       0.0 and 5000 MeV       09
+                                                  10
+                                                  11
+   The TWOBODY simulation has been designed to    12
+   give accurate results for any "reasonable"     13
+   nucleon-nucleon potential.  However,           14
+   determining whether a given set of poten-      15
+   tial parameters does or does not describe      16
+   a "reasonable" interaction is a delicate       17
+   matter.  This simulation only does a very      18
+   cursory check.  "Unreasonable" parameter       19
+   choices may yield inaccurate results or may    20
+   even cause the simulation to bomb.  Do not     21
+   make the potential too strong or too short     22
+   ranged.  User discretion advised!              23
+                                                  24
+                                                  25
+
+InteractionParams
+                                                  01
+           Hints concerning Acceptable            02
+             Interaction Parameters               03
+                                                  04
+   Number limits are as follows:-                 05
+                                                  06
+      Core radius between  0.1 and 2.0 fm         07
+      Ranges between       0.1 and 3.5 fm         08
+      Depths between      -1e7 and 1e7 MeV        09
+       (Range may be 0 if the depth is 0)         10
+                                                  11
+   The TWOBODY simulation has been designed to    12
+   give accurate results for any "reasonable"     13
+   nucleon-nucleon interaction.  However,         14
+   determining whether a given set of inter-      15
+   action parameters does or does not describe    16
+   a "reasonable" interaction is a delicate       17
+   matter.  This simulation only does a very      18
+   cursory check.  "Unreasonable" parameter       19
+   choices may yield inaccurate results or may    20
+   even cause the simulation to bomb.  Do not     21
+   make the overall interaction too strong or     22
+   too short ranged.  User discretion advised!    23
+                                                  24
+                                                  25
+
+BlankInfoScreen
+                       xxx                        01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+

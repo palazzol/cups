@@ -1,0 +1,795 @@
+First Help
+  SHOWHELP - Displays Help files stored on disk   01
+                                                  02
+SHOWHELP allows the programmer to store all help  03
+text in a separate file.  This avoids using up    04
+valuable computer memory in the program, and      05
+simplifies editing of help screens.               06
+                                                  07
+The syntax for calling SHOWHELP is:               08
+                                                  09
+ShowHelp(HelpFileName,HelpScreenName);            10
+                                                  11
+Where HelpFileName is the name of the help file.  12
+      HelpScreenName is the name of the screen.   13
+                                                  14
+                                                  15
+                                                  16
+The menu choices in this sample demonstrate the   17
+following features:                               18
+                                                  19
+LastHelp - This menu choice selects the last help 20
+           screen stored in the help file.        21
+NoHelp   - Demonstrates what happens if helpscreen22
+           specified by programmer isn't in file. 23
+NoFile   - Shows case when help file isn't found. 24
+InputHelp- Shows help from inside Input Screen.   25
+
+
+InputScreen Help
+Coordinates 0 0
+      About Help in new InputScreens              01
+                                                  02
+The new input screens are able to work with both  03
+old and new Help system. The one here uses the    04
+new one (where all help screens are in the file). 05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Visual1 Hello
+                                                   1
+          THE MOTION OF A VISUAL BINARY            2
+                                                   3
+                     by                            4
+                                                   5
+              J.M.Anthony Danby                    6
+       North Carolina State University             7
+                July 1, 1994                       8
+   Copyright (c) 1994, John Wiley & Sons, Inc.     9
+                                                  10
+           The program shows the animated         11
+        motion of a visual binary system,         12
+        and the motion of the center of           13
+        mass.                                     14
+                                                  15
+           You will be asked to select            16
+        orbital elements, and the "proper         17
+        motion" of the system across the          18
+        screen.                                   19
+                                                  20 
+           You will also have the option of       21
+        viewing the orbital motion of one         22
+        star relative to the other.               23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Visual1 General
+                                                   1
+           THE MOTION OF A VISUAL BINARY           2
+                                                   3
+        The program shows the animated motion      4
+     of a visual binary system, together with      5
+     the linear motion of the center of mass.      6
+                                                   7
+        You will be prompted to enter the mass     8
+     ratio of the stars, the  geometrical elem-    9
+     ents that define the orbit in space and the  10
+     "proper motion" of the center of mass of     11
+     the system; i.e., the rate at which the      12
+     center of mass travels across the screen.    13
+                                                  14
+        During the animation, you can temp-       15
+     orarily stop the motion, and see a line      16
+     joining the two stars. The center of mass    17    
+     divides this line in proportion to the       18
+     ratio of the masses of the stars.            19
+                                                  20
+        You will also have the option of          21
+     viewing the orbital motion of one star       22
+     relative to the other.                       23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Visual1 Params1
+                                                   1
+           THE MOTION OF A VISUAL BINARY           2
+                                                   3
+                Orbital parameters                 4
+                                                   5
+      The MASS RATIO is the ratio of the mass      6
+   of either star divided by the sum of the two    7
+   masses. It should lie between zero and one.     8
+   Values of zero or one are not acceptable.       9
+                                                  10
+      The ECCENTRICITY of the orbits should lie   11
+   between zero and one, since the orbits are     12
+   elliptic. A value of zero is acceptable,       13
+   since it will yield a circular orbit. A        14
+   value of one would correspond to a parabolic   15
+   orbit and is not acceptable.                   16
+                                                  17
+      The LONGITUDE OF THE NODE is measured,      18
+   in this program, counter-clockwise from the    19
+   horizontal axis on the screen.  No             20
+   distinction is made between ascending and      21
+   descending nodes, so this angle should lie     22
+   between 0 and 180 degrees.                     23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+
+Visual1 Params2
+           THE MOTION OF A VISUAL BINARY           1
+                                                   2
+                Orbital parameters                 3
+                                                   4
+      The ARGUMENT OF PERIASTRON is measured       5
+   from the node in the direction of the           6
+   orbital motion.                                 7
+                                                   8
+      The INCLINATION is the angle between the     9
+   orbital plane and the plane of the sky. (I.e., 10
+   the plane perpendicular to the line of sight.) 11
+   Choose an angle between 0 and 90 degrees.      12
+                                                  13
+   See ''Three-D demonstration'' in the Help Menu.14
+                                                  15
+      In the program the sum of the masses is one 16
+   unit of mass and the semimajor axis of the     17
+   relative orbit is one unit of distance. Then   18
+   the orbital period is 2 pi units of time, and  19
+   orbital speeds are of the order of one unit of 20
+   speed. Bear this in mind when entering a speed 21
+   for the motion of the center of mass accross   22
+   the screen. It is legitimate to enter zero.    23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Visual1 Input help
+                                                  01
+          THE MOTION OF A VISUAL BINARY           02
+                                                  03
+                 Input parameters                 04
+                                                  05
+        The MASS RATIO must lie between 0 and     06
+     1. A value of 0.5 denotes equal masses.      07
+     Input values equal to 0 or 1 are not         08
+     acceptable.                                  09
+        The ECCENTRICITY is zero for a circular   10
+     orbit. It must be strictly less than one     11
+     since parabolic or hyperbolic orbits are     12
+     not permissible.                             13
+        The LONGITUDE OF THE NODE should lie      14
+     between 0 ane 180 degrees.                   15
+        The ARGUMENT OF PERIASTRON can lie        16
+     0 and 360 degrees.                           17
+        The INCLINATION should lie between        18
+     0 and 90 degrees.                            19
+        The SPEED ACCROSS THE SCREEN must be      20
+     positive. A value of one unit is recom-      21
+     mended. Note: this speeed can be varied      22
+     during the animation.                        23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Visual2 Hello
+         THE TRUE ORBIT OF A VISUAL BINARY         1
+                                                   2
+                        by                         3
+                                                   4
+                 J.M.Anthony Danby                 5
+          North Carolina State University          6
+                   July 1, 1994.                   7
+    Copyright (c) 1994, John Wiley & Sons, Inc.    8
+                                                   9
+      The apparent orbit of a visual binary is    10
+   the observed path of the secondary star, B,    11
+   about the primary, A. It is an ellipse; but    12
+   A will not be at a focus.                      13
+                                                  14
+      You will be prompted to enter the eccen-    15
+   tricity of this ellipse, and to select the     16
+   location of star A.                            17
+                                                  18
+      The true orbit will then be plotted and     19
+   its elements shown. You will be able to view   20
+   a three-dimensional animation of its motion.   21
+   You will also be able to generate a set of     22
+   "observations" of the apparent orbit.          23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Visual2 General
+         THE TRUE ORBIT OF A VISUAL BINARY         1
+                                                   2
+     The members of a visual binary system are     3
+  the Primary (star A) and the Secondary (star     4  
+  B). The apparent orbit of star B about A is the  5
+  true orbit projected onto the plane of the sky.  6
+                                                   7
+     You can choose the eccentricity of the        8
+  apparent orbit, and then, using the mouse,       9
+  pick the position of star A within this orbit.  10
+                                                  11 
+     The semimajor axis of the apparent orbit     12
+  is two units of length.  A scale is shown at    13  
+  the base of the screen to permit possible       14
+  interpretation in terms of seconds of arc.      15
+                                                  16 
+     The true orbit will be plotted and its       17
+  elements displayed. You may then view the       18
+  animated motion in three dimensions in the      19
+  true and apparent orbits.                       20
+                                                  21
+     You also have the option to make "Obser-     22
+  vations" of separation and position angle.      23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Visual2 Observations
+                                                   1
+         THE TRUE ORBIT OF A VISUAL BINARY         2
+                                                   3
+      Three quantities are recorded as observ-     4
+   ations. The "time" is measured from the time    5
+   of periastron, in units of the orbital period.  6
+   The position angle is measured clockwise from   7
+   the North. The distance from the primary is     8
+   measured in units of the scale at the bottom    9
+   of the screen.                                 10
+                                                  11
+      An observation is made by moving the mouse  12
+   to a point on the apparent orbit, and clicking.13
+   If more than three observations are made, then 14
+   you will have the option of recording them     15
+   in a file. They then might be used in a        16
+   conventional orbit determination procedure.    17
+                                                  18
+      At the end of the Pascal listing of this    19
+   program, you will find a Pascal program that   20
+   might be used for reading this file.           21
+                                                  22
+                                                  23
+  Click the mouse, or press <ENTER> to continue.  24
+                                                  25
+
+Visual2 Elements1
+        THE TRUE ORBIT OF A VISUAL BINARY          1
+                                                   2
+                 Orbital elements                  3
+                                                   4
+      The TRUE ORBIT is an ellipse, with the       5
+   secondary star, B, at a focus.                  6
+                                                   7
+      The INCLINATION is the angle between this    8
+   orbit and the plane of the sky. It lies bet-    9
+   0 and 90 degrees, since no distinction is      10
+   made between ascending and descending nodes.   11
+                                                  12
+      The LONGITUDE OF THE NODE is the position   13
+   angle of the line of intersection of the true  14
+   orbit with the plane of the sky. It lies bet-  15
+   0 and 180 degrees.                             16
+                                                  17
+       The ARGUMENT OF PERIASTRON is the angle    18
+   measured from the nodal line to the direction  19
+   of periastron. It lies between 0 and 360       20
+   degrees.                                       21
+                                                  22
+                                                  23
+  Click the mouse, or press <ENTER> to continue.  24
+                                                  25
+
+
+Visual2 Elements2
+                                                   1
+        THE TRUE ORBIT OF A VISUAL BINARY          2
+                                                   3
+                 Orbital elements                  4
+                                                   5
+      The ECCENTRICITY is a parameter that desc-   6
+   ribes the shape of the orbit. It is zero for    7
+   a circle, and approaches one for a parabola.    8
+   When you use the slider to change the eccen-    9
+   tricity, you will be able to see at once the   10
+   effect it has on the shape of the ellipse.     11
+                                                  12
+      The SEMIMAJOR AXIS is given, in the prog-   13
+   ram, in units measured by the scale at the     14
+   bottom of the screen. The semimajor axis of    15
+   the apparent orbit is two units in length.     16
+   In practice, the semimajor axis would be       17
+   expressed in terms of seconds of arc.          18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+  Click the mouse, or press <ENTER> to continue.  23
+                                                  24
+                                                  25
+
+Roche Hello
+          ROCHE CURVES OF A CLOSE BINARY           1
+                      by                           2
+      J.M.Anthony Danby, N.C.State University      3
+                 July 1, 1994.                     4
+    Copyright (c) 1994, John Wiley & Sons, Inc.    5
+                                                   6
+        The program is concerned with curves       7
+     zero velocity and possible orbital motion     8
+     in the planar restricted problem of three     9
+     bodies. It also generates Poincare maps.     10
+                                                  11 
+        This material is introduced here in       12
+     preparation for the demonstration on the     13
+     formation of an accretion disk in a close    14
+     binary. In this context, the curves of       15
+     zero velocity are known as "Roche curves."   16
+                                                  17
+        Two stars move in circular orbits about   18
+     one another. Small bodies move in the        19
+     orbital plane, subject to the gravitational  20
+     attraction of the stars, and, optionally,    21
+     radiation pressure.                          22
+                                                  23
+  Click the mouse, or press <ENTER> to continue.  24
+                                                  25
+
+Roche Info1
+                                                   1
+          ROCHE CURVES OF A CLOSE BINARY           2
+                                                   3
+     The stars are approximated, gravitationally,  4
+  by spheres, and they move in circular orbits.    5
+  In a reference system rotating with the stars,   6
+  the JACOBI INTEGRAL can be expressed as:         7
+                                                   8
+  Potential function = square of the velocity + C. 9
+                                                  10 
+  So, for given C, space may be separated into    11
+  regions where motion is possible or impossible. 12
+  The surfaces for which the velocity is zero are 13
+  called Roche surfaces. Their intersections with 14
+  the place of the motion are Roche curves. These 15
+  will be plotted for values of C that the user   16
+  can select. C should be greater than 3. Note    17
+  that C is a parameter that DECREASES when the   18
+  total energy INCREASES.                         19
+                                                  20 
+     The MASS RATIO is the mass of star B divided 21
+  by the combined masses.  It must lie between    22
+  zero and one.                                   23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Roche Info2
+          ROCHE CURVES OF A CLOSE BINARY           1                                               
+                                                   2
+     The potential function is sampled for a       3
+  grid of points in the orbital plane. The         4
+  quality of detail can be adjusted by changing    5
+  the number of grid points along the axes,        6
+  Default values are 50 for each.  The numbers     7
+  should not exceed 70.                            8
+                                                   9
+     After a value of C has been selected and     10
+  the Roche curve drawn, you will have the option 11
+  of seeing orbits. Click on a starting position  12
+  and then in the direction of the initial        13
+  velocity. The speed appropriate to that energy  14
+  will be automatically calculated.               15
+                                                  16 
+     The five LAGRANGIAN points are equilibria    17
+  in the rotating reference system. These are     18
+  marked by crosses. If you select a value of C   19
+  of 3 or less, there will be no Roche curve, but 20
+  you can still plot orbits. This might be used   21
+  for orbits close to the triangular points which 22
+  are stable for sufficiently low mass ratio.     23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Roche Info3
+          ROCHE CURVES OF A CLOSE BINARY           1                                               
+          THE PHOTO-GRAVITATIONAL MODEL            2
+                                                   3
+      In this model the stars can exert radiation  4
+   pressure on the small body. This has the ef-    5
+   fect of diluting the gravitaional attraction.   6
+                                                   7
+      Let the stars have masses (1 - mu) and mu.   8
+   Let the small body be distant r1 and r2 from    9
+   the stars. Then the gravitational potential    10
+   (in our units) is                              11
+            (1-mu)/r1 + mu/r2.                    12
+   With radiation pressure included, this is      13
+   modified to                                    14
+        (1-p1)(1 - mu)/r1 + (1-p2)mu/r2.          15
+                                                  16
+      In the program it is required that          17
+               0 <= p1, p2 < 1.                   18
+                                                  19
+      If radiation is sufficiently strong, then   20
+   the structure of the Roche surfaces changes.   21
+   In particular, the figure eight configuration  22
+   can disappear, and the formation of an         23
+   accretion disk may not be possible.            24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Roche Poincare
+                POINCARE MAPS                      1
+                                                   2
+     We are dealing with a conservative dynamical  3
+  system with two degrees of freedom. With coord-  4
+  inates and velocity components written as        5
+                x, y, vx, vy,                      6
+  there is an energy integral of the form          7
+             F(x, y, vx, vy) = C.                  8
+     If a value of C is prescribed, then one       9
+  variable, vy, say, can be found if the other    10
+  three are known. This means that while C keeps  11
+  this value, the motion can be regarded as three-12
+  dimensional. In this (x, y, vx) space a surface 13
+  is defined; say y = 0. When an orbit crosses    14
+  this plane, x and vx are calculated, and the    15
+  point with coordinates (x, vx) is plotted in the16
+  x-vx plane.                                     17
+     Non-chaotic motion usually lies on a torus in18
+  the (x, y, vx) space, so successive maps in the 19
+  x-vx plane lie on closed curves. For given C,   20
+  chaotic and non-chaotic orbits can occur. Be    21
+  aware that, in a close encounter, accuracy is   22
+  lost and further mappings may be unreliable.    23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Roche PoincDem
+                 POINCARE MAPS                     2
+                                                   3
+        In the demonstrations you are seeing       4
+     motion in the three-dimensional space         5
+     x-xdot-y. When the orbit crosses to x-xdot    6
+     plane, a dot appears.  The Poincare map of    7
+     a dot is the next dot but one.                8
+                                                   9
+        In the first demonstration you see motion 10
+     on a torus. The dots lie on invariant        11
+     curves.  The second demonstration is         12
+     similar to the first, but now the invariant  13
+     curves are less regular.                     14
+                                                  15 
+        In the third demonstration the invariant  16
+     curves form a system of "islands." This is   17
+     a common occurrence close to the onset of    18
+     chaos.                                       19
+                                                  20 
+        The final demonstration shows chaotic     21
+     motion.                                      22
+                                                  23
+  Click the mouse, or press <ENTER> to continue.  24
+                                                  25
+
+
+
+Accretion disk
+                                                   1
+         THE FORMATION OF AN ACCRETION DISK        2
+                       BY                          3
+               J.M.Anthony Danby                   4
+        North Carolina State University            5
+                 July 1st, 1994                    6
+     Copyright (c) 1994, John Wiley & Sons, Inc.   7
+                                                   8
+       The program follows the formation of an     9
+    accretion disk in a close binary. The stars   10
+    are approximated, gravitationally, by         11
+    spheres and they move in circular orbits.     12
+       You are assumed to be familiar with        13
+    the Roche surfaces and some of the orbits     14
+    in the restricted problem of three bodies.    15
+       You will be prompted to enter the mass     16
+    ratio: this is the ratio of the mass of       17
+    the primary star, A, to the combined mass.    18
+    For this demonstration, the mass ratio        19
+    should lie between 0.1 and 0.9.               20
+       Up to the formation of the hot spot, the   21
+    physics is genuine. What follows is meant     22
+    only to be descriptive.                       23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Tidal GeneralA
+                                                   1
+          THE TIDAL HISTORY OF A BINARY            2
+                                                   3
+       A secondary star, B, revolves around a      4
+    primary, A. The primary is distorted due to    5
+    the tidal action of the secondary, which is    6
+    spherical. The axis of rotation of the         7
+    primary is fixed, parallel to the z-axis.      8
+                                                   9
+       There is a tidal lag proportional to the   10
+    difference between the angular orbital rate   11
+    of B and the rate of rotation of A. The       12
+    constant of proportionality is an input       13
+    parameter. The lag angle should not exceed    14
+    30 degrees, to make physical sense.           15
+                                                  16 
+       There are two modes of output. In one      17
+    the equations of motion are integrated in     18
+    cartes ian coordinates, and osculating        19
+    elements computed. These can then be viewed.  20
+    You will be prompted to enter a time span     21
+    for the computation. This can then be         22
+    extended, if desired.                         23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Tidal GeneralB
+                                                   1
+          THE TIDAL HISTORY OF A BINARY            2
+                                                   3
+       In the second mode, equations for the       4
+    variation of the elements are integrated       5
+    directly. These are averaged equations for     6
+    the semimajor axis, eccentricity and           7
+    inclination of the orbit, and the rate of      8
+    rotation of A. The averaging removes           9
+    variations over a single revolution, and      10
+    makes possible the viewing of must longer     11
+    time spans.                                   12
+                                                  13 
+       The averaged equations are taken from      14
+    a paper by                                    15
+                     P.Hut                        16
+     Tidal Evolution in Close Binary Systems      17
+           Astronomy and Astrophysics             18
+              99, 126-140, (1981)                 19
+                                                  20 
+                                                  21
+  Click the mouse, or press <ENTER> to continue.  22
+                                                  23
+                                                  24   
+                                                  25   
+
+Tidal Hello
+                                                   1
+          THE TIDAL HISTORY OF A BINARY            2
+                      by                           3
+               J.M.Anthony Danby                   4
+        North Carolina State University            5
+                 July 1, 1994                      6
+    Copyright (c) 1994, John Wiley & Sons, Inc.    7
+                                                   8
+        In a binary system one star remains        9
+     spherical while the companion is tidally     10
+     distorted. If there is a difference between  11
+     the rate of rotation of the companion and    12
+     the mean orbital motion, there will be a     13
+     tidal lag.                                   14
+                                                  15 
+        In the program you can follow the         16
+     orbital evolution caused by such tides.      17
+                                                  18 
+        You will have the option of seeing        19
+     changes in the osculating elements, with     20
+     short period effects, or of seeing the       21
+     long period changes, with the perturbing     22
+     terms averaged over each revolution.         23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Spectro GeneralA
+                                                   1
+        THE ANIMATION OF A SPECTROSCOPIC BINARY    2
+                                                   3
+           The program shows the velocity          4
+        curve of one member of a spectroscopic     5
+        binary together with the animated          6
+        orbital motion and a moving spectral       7
+        line.                                      8
+                                                   9
+           You will be prompted to enter the      10
+        masses of the stars, and the geometrical  11
+        elements that define the orbit in space.  12
+                                                  13 
+           All the elements cannot be found       14
+        from the velocity curve; in particular,   15
+        the semimajor axis, and the inclination   16
+        cannot be found separately. But the mass  17
+        function, which is a combination of       18
+        these, will be shown.                     19
+                                                  20 
+           During the animation, you can          21
+        temporarily stop the motion, or change    22
+        its speed.                                23
+                                                  24
+  Click the mouse, or press <ENTER> to continue.  25
+
+Spectro GeneralB
+                                                   1
+     THE ANIMATION OF A SPECTROSCOPIC BINARY       2
+                                                   3
+      The masses of the stars are in units of      4
+   the mass of the Sun.                            5
+                                                   6
+      The semimajor axis of the relative orbit     7
+   is in astronomical units.                       8
+                                                   9
+      The ecentricity of the orbits should lie    10
+   between zero and one, since the orbits are     11
+   elliptic. A value of zero is acceptable,       12
+   since it would yield a circuar orbit. A        13
+   value of one would correspond to a parabolic   14
+   orbit and is not acceptable.                   15
+                                                  16
+      The line of nodes is not relevant for a     17
+   spectroscopic binary. The argument of          18
+   periastron is measured here from the           19
+   horizontal axis on the screen in the           20
+   direction of the orbital motion.               21
+                                                  22
+  Click the mouse, or press <ENTER> to continue.  23
+                                                  24
+                                                  25 
+
+Spectro Hello
+                                                   1
+     THE ANIMATION OF A SPECTROSCOPIC BINARY       2
+                                                   3
+                      by                           4
+                                                   5
+               J.M.Anthony Danby                   6
+        North Carolina State University            7
+                                                   8
+                  July 1, 1994                     9
+    Copyright (c) 1994, John Wiley & Sons, Inc.   10
+                                                  11 
+            In this program you will be           12
+         promptedto enter orbital elements        13
+         of a spectroscopic binary.               14
+                                                  15 
+                                                  16 
+            Then you can see the velocity         17
+         curve, the animated orbital              18
+         motion, and a shifting spectral          19
+         line.                                    20
+                                                  21 
+                                                  22
+  Click the mouse, or press <ENTER> to continue.  23
+                                                  24
+                                                  25
+
+Eclipse Hello
+                                                   1
+         ANIMATION OF AN ECLIPSING BINARY          2
+                                                   3
+                       by                          4
+                                                   5
+                 J.M.Anthony Danby                 6
+          North Carolina State University          7
+                                                   8
+                   July 1, 1994                    9
+     Copyright (c) 1994, John Wiley & Sons, Inc.  10
+                                                  11 
+        The program shows the light curve of      12
+     an eclipsing binary. You will have the       13
+     choice of seeing the orbital motion, or      14
+     the animated eclipses, while the light       15
+     curve is generated.                          16
+                                                  17
+  Click the mouse, or press <ENTER> to continue.  18
+                                                  19
+                                                  20 
+                                                  21 
+                                                  22 
+                                                  23 
+                                                  24 
+                                                  25 
+Eclipse General
+                                                   1
+          ANIMATION OF AN ECLIPSING BINARY         2
+                                                   3
+      The ECCENTRICITY of the orbits should lie    4
+   between zero and one, since the orbits are      5
+   elliptic. A value of zero is acceptable,        6
+   since it would yield a circular orbit. A        7
+   value of one would correspond to a parabolic    8
+   orbit and is not acceptable.                    9
+                                                  10 
+      The INCLINATION should be close to 90       11
+   degrees for eclipses to be visible.            12
+                                                  13
+      In the program the unit of length is the    14
+   semimajor axis of the relative orbit. Bear     15 
+   this in mind when choosing the dimensions      16
+   of the stars.  The stars should be prolate,    17
+   with the larger axes pointing, on average,     18
+   towards the center of mass.  The rotation      19
+   rate is constant. No allowance is made for     20
+   tidal effects, or for any non-Keplerian        21
+   motion.                                        22
+                                                  23
+  Click the mouse, or press <ENTER> to continue.  24
+                                                  25
+
+
+
+HelpHelp
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+Last Help in the file
+Coordinates 0.2 0.3
+For test purposes, I have created a help file with01
+25 help screens.  This is the last of those       02
+screens.  The delay in searching through 25       03
+screens to find the appropriate help seems not    04
+to be important.                                  05
+                                                  06
+If you look at the help file itself (HELPTEST.HLP)07
+you will note that I have included line numbers   08
+for each help screen on the right hand side.  This09
+is not needed but it helps keep the line numbers  10
+and lengths correct.  As currently written        11
+SHOWHELP will bomb if the wrong number of lines   12
+shows up in any help screen.                      13
+                                                  14
+The Help file can contain any number of help      15
+screens.  Each of them has to have title line     16
+where you have the name of your Help screen.      17
+Help screen don't has to be in the middle,if for  18
+some reasons, you want it somewhere else just     19
+insert line with word "Coordinates" followed by   20
+two real screen independed coordinates. This line 21
+should be inserted between title and screen.      22
+Help screen can be devided by empty lines.        23
+                                                  24
+                                                  25
+
+
+
+
+

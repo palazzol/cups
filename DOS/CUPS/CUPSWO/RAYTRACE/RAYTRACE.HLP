@@ -1,0 +1,195 @@
+Help 1
+                                                  01
+       RAY TRACING IN GEOMETRICAL OPTICS          02
+                                                  03
+                        by                        04
+                                                  05
+                 Brian W James                    06
+    University of Salford Salford M5 4WT UK       07
+                                                  08
+                  Version 1.0                     09
+               Copyright (c) 1995                 10
+                                                  11
+   FERMAT - Plots the notional path of a ray in   12
+            two materials between fixed points.   13
+   MIRAGE - Shows the variation of path of a ray  14
+            through a region of varying index.    15
+   FIBER  - Shows the variation of pulse delay    16
+            as a function of fiber parameters.    17
+   RAINBOW - Shows the formation of a rainbow     18
+             due to dispersion in refraction.     19
+   LENSES - An investigation into images formed   20
+            by lenses and their aberrations.      21
+                                                  22
+    Press <enter> or click the mouse to continue. 23
+     F10  will select the menu.                   24
+                                                  25
+
+
+Help 2
+                                                  01
+       RAY TRACING - Fermat's Principle           02
+                                                  03
+ The notional path of a ray, between diagonally   04
+ opposite corners of a 1 metre square is shown in 05
+ cyan and then in magenta after it crosses from   06
+ material of refractive index n to another of n'  07
+ A slider controls the path of the ray. There are 09
+ two sliders to set n and n' and a slider to set  09
+ the position of the boundary. The REAL refracted 10
+ or reflected ray is shown in green.              11
+                                                  12
+ Snell's law is tested by calculating n*sin(i)    13
+ above and n'*sin(i') below the boundary.         14
+                                                  15
+ The optical path, calculated from the product    16
+ of geometrical distance and refractive index is  17
+ displayed in the graphs. The current values are  18
+ indicated by a vertical line. The current total  19
+ optical path is below the values of n*sin(i).    20
+                                                  21
+ Fermat's principle is that the optical path of   22
+ a ray between two points is a stationary value,  23
+ usually a minimum, & for it Snell's law applies. 24
+                                                  25
+
+
+Help 3
+                                                  01
+       RAY TRACING - Formation of Mirages         02
+                                                  03
+ The slider sets the angle below the horizontal   04
+ of the rays coming from the right as they enter  05
+ the observer's eye.  Where the refractive index  06
+ varies optical mirages occur because of curved   07
+ ray paths. Light from the sky entering the eye   08
+ from below looks like water. F6 To clear screen. 09
+                                                  10
+ The variation of refractive index with height is 11
+ initially equal to 1.0003 - exp(-y)*0.0001. Use  12
+ F5-Index Var to try the inverse and inverse      13
+ square law dependence of index n on height y.    14
+                                                  15
+ You can modify the constants in the expressions  16
+ or enter your own expression. Care is needed     17
+ in the choice of function to ensure the index n  18
+ increases with increasing height y.              19
+                                                  20
+ The small graph below the Ray Path graph shows   21
+ the refractive index n variation with height y.  22
+                                                  23
+    Press <enter> or click the mouse to continue. 24
+                                                  25
+
+
+Help 4
+                                                  01
+       RAY TRACING - Pulse delays in Fibers       02
+                                                  03
+ The propagation of pulses of light along glass   04
+ and other fibers depends upon the choice of      05
+ fiber diameter, core index, cladding index and   06
+ fiber attenuation.                               07
+                                                  08
+ There are two main types of fiber, step index    09
+ and graded index. In a step index fiber there is 10
+ a sudden change in refractive index at a radius. 11
+ In a graded index fiber there is a gradual       12
+ change in refractive index with radius.          13
+                                                  14
+ A fiber may be multi-mode and support many modes 15
+ of propagation or it may be single mode and have 16
+ only one mode of propagation.  In this program a 17
+ step index fiber is simulated. The variation in  18
+ pulse delay is shown for the current slider      19
+ values.                                          20
+                                                  21
+                                                  22
+    Press <enter> or click the mouse to continue. 23
+                                                  24
+                                                  25
+
+Help 5
+                                                  01
+         RAY TRACING - Rainbow Formation          02
+                                                  03
+ The passage of a ray of light through spherical  04
+ raindrops is illustrated. The slider can be used 05
+ to alter the distance of rays from the center-   06
+ line of the drops, called the impact parameter.  07
+ The reflected and refracted rays are shown for   08
+ the chosen value of the impact parameter.        09
+ The ray diagram shows the effects of dispersion. 10
+ The variation of refractive index is exagerated  11
+ and the colors of the spectrum are not accurate. 12
+                                                  13
+ The graph at the right shows impact parameter    14
+ against the elevation of the emerging ray. The   15
+ current impact parameter is shown by a line.     16
+                                                  17
+ The small graph at the lower right shows the     18
+ percentage of rays at each elevation from 0 to   19
+ 90 degree.  Note the maxima for the primary and  20
+ secondary rainbows and the region in between     21
+ where no rays emerge.                            22
+                                                  23
+    Press <enter> or click the mouse to continue. 24
+                                                  25
+
+
+Help 6
+                                                  01
+         RAY TRACING - Lens Spot Diagrams         02
+                                                  03
+ The rays from a point object are traced to show  04
+ the aberrations that occur.   The consequences   05
+ of dispersion are not shown.  Color is used for  06
+ rays incident at different radii on the lens.    07
+                                                  08
+ The spot diagram shows where rays through the    09
+ lens would be incident on a plane screen.        10
+ The screen position can be moved by the slider.  11
+                                                  12
+ The F5-Zoom-in gives an enlarged view. It also   13
+ changes the slider scale and centers the slider. 14
+ The F5-Zoom-out returns to the initial scales.   15
+                                                  16
+ To see the spot diagram for off-axis objects     17
+ use F4-Center as necessary. The slider can be    18
+ re-centered by using F4-Center.                  19
+                                                  20
+ Use Load lens (under File) to get other stored   21
+ lens designs. New or edited lenses can be saved. 22
+                                                  23
+    Press <enter> or click the mouse to continue. 24
+                                                  25
+
+
+Help 7
+Coordinates 0 0
+                                                  01
+         RAY TRACING IN GEOMETRICAL OPTICS        02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+    Press <enter> or click the mouse to continue. 23
+     F10  will select the menu.                   24
+                                                  25
+

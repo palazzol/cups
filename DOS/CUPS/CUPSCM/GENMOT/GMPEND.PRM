@@ -1,0 +1,65 @@
+Configuration file for Force defined by:
+Motion of a damped, driven pendulum
+UserHelpScreen:
+        Program File:   Pendulum.PAS
+        Parameter File: Pendulum.PRM
+           Author: Randy Jones
+           Date:   May 24, 1994
+
+This simulation describes the motion of a pendulum
+subject to a periodic driving force.
+Try setting the driving frequency at the small
+amplitude resonant frequency (3.1 rad/s)
+
+Try decreasing the frequency to 2.5 rad/s.
+It might be instructive to set up
+a window to display a phase plot of omega versus
+theta.
+
+
+
+
+
+
+
+
+
+Numerical Info
+3  5.00000000000000E-0002  2.00000000000000E-0002
+User defined parameters:
+m          1.00000000000000E+0000 kg
+g          9.80000000000000E+0000 N/kg
+c          1.00000000000000E-0001 N/(rad/s)
+L          1.00000000000000E+0000 m
+T_d        2.00000000000000E+0000 N-m
+w_d        3.10000000000000E+0000 rad/s
+Parm7      0.00000000000000E+0000 None
+Parm8      0.00000000000000E+0000 None
+Parm9      0.00000000000000E+0000 None
+Parm1      0.00000000000000E+0000 None
+Initial Values:
+t0         0.00000000000000E+0000 s
+é0         3.00000000000000E-0002 rad
+w0         0.00000000000000E+0000 rad/s
+y0         0.00000000000000E+0000 m
+vy0        0.00000000000000E+0000 m/s
+z0         0.00000000000000E+0000 m
+vz0        0.00000000000000E+0000 m/s
+1 2 12  Variables to display numerically
+         4 Number of Windows
+
+0.07      0.15      0.39      0.5       14        13        
+-2        2         -2        2         
+0 1 0
+
+0.58      0.14      0.4       0.34      2         1         
+0         50        -5        15        
+1 1 0
+
+0.58      0.56      0.4       0.34      3         1         
+0         50        -10       10        
+1 1 0
+
+0.07      0.77      0.39      0.05      0         12        
+-10       20        -10       10        
+0 1 0

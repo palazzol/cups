@@ -1,0 +1,91 @@
+*  Reaction channels - input file of DetSim.pas program
+electron  positron  .
+1
+electron  positron  .
+
+electron  proton    .
+1
+electron  proton    .
+
+gamma     electron  .
+1
+gamma     electron  .
+
+neutrino  electron  .
+1
+neutrino  electron  .
+
+neutrino  neutron   .
+3
+neutrino  neutron   .
+muon      proton    .
+electron  proton    .
+
+neutrino  proton    .
+1
+neutrino  proton    .
+
+neutron   proton    .
+1
+neutron   proton    .
+
+pion      proton    .
+2
+pion      proton    .
+kzero     lambda    .
+
+proton    proton    .
+1
+proton    proton    .
+
+eta                 .
+3
+gamma     gamma     .
+muon      muon      .
+pizero    gamma     .
+
+kaon                .
+2
+pion      pizero    .
+muon      neutrino  .
+
+kzero               .
+3
+pion      pion      .
+pizero    pizero    .
+muon      muon      .
+
+muon                .
+1
+electron  gamma     .
+
+pion                .
+2
+muon      neutrino  .
+electron  neutrino  .
+
+pizero              .
+1
+gamma     gamma     .
+
+proton              .
+1
+positron  pizero    .
+
+rho                 .
+1
+pion      pion      .
+
+tau                 .
+1
+pion      neutrino  .
+
+W                   .
+1
+muon      neutrino  .
+
+Z0                  .
+3
+electron  positron  .
+muon      muon      .
+tau       tau       .

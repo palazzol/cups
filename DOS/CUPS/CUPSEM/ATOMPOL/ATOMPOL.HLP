@@ -1,0 +1,243 @@
+DisplayHelp
+                  The DISPLAY Menu 
+              
+     The display menu provides three choices for
+  displaying the electric field: External Field,
+  Single Dipole Field, and Combined Field; and
+  two choices for the depiction of the atoms.
+  Field display options:
+   External - This selection displays field lines
+     for the constant external field.
+   Dipole - This selection displays field lines
+     for the induced field from one of the atoms.
+     If there is more than one atom, you will be
+     asked to select one by clicking on it, or
+     typing that (lower-case) letter on the
+     keyboard.
+   Combined: This selection displays field lines
+     for the total electric field including the
+     contributions of all the induced dipoles.
+  Typical atom display options:
+    Label Atoms w/ Dipole Arrows - Draw each atom
+      with an arrow representing its dipole moment.
+    Label Atoms w/ Letters - Draw each atom
+      labeled with a unique alphabetic character.
+
+             Hit any key or click to continue.
+ViewHelp
+   
+                  VIEW OPTIONS
+                   
+     This simulation provides two views of the    
+   polarized atom, both displayed in the small    
+   window in the upper right corner of the screen.
+   The default view shows the entire atom, with   
+   the polarization shift greatly magnified.      
+   However, a second view is also possible,       
+   which shows the polarization shift occurring   
+   on a more realistic scale.
+                     
+      In this second view, it should be kept in   
+   mind that the electron clouds extend far out   
+   of the field of view.  The yellow dots are
+   meant to suggest the approximate place that
+   the electron cloud is centered, not the full   
+   extent of the cloud.  This view is effectively 
+   a 10,000x magnification of the nucleus.
+
+
+
+
+        
+          Hit any key or click to continue.       
+
+KeyPlacementHelp
+   
+            ATOM PLACEMENT - Keyboard
+           
+     This option allows the user to modify the      
+  positions and number of dipoles using the      
+  keyboard to modify fields of an input screen.  
+  The fields control the X and Y positions of    
+  the dipoles, and whether they are currently    
+  "on" or "off".  To change the fields, use the  
+  mouse or the Tab and arrow keys to move between
+  fields, and the keyboard to input new values   
+  (the space bar toggles the radio buttons).     
+  Hit Enter to accept the new values, or Esc     
+  to cancel and go back to the previous settings.
+
+     The screen ranges from -25 to +25 Angstroms 
+  in the X and Y directions, and each dipole has a 
+  diameter of 5 Angstroms.  Be sure that the     
+  dipoles are placed completely on the screen.   
+  Also, the dipole circles may not overlap, so   
+  make sure that the centers of the dipoles      
+  at least 5 Angstroms away from each other.
+     
+         Hit any key or click to continue.
+       
+
+MousePlacementHelp
+   
+              ATOM PLACEMENT - Mouse
+            
+      This option allows the user to modify the
+   positions and number of atoms using the mouse.
+                                         
+      To add an atom, simply double-click
+   with the mouse at the desired location inside
+   the window, taking care not to click too
+   close to any existing atoms.  Atoms added
+   are 'selected' and their polarizability can
+   thus be altered with the slider.
+
+      Atoms may be added with the mouse at any
+   time except when the field probe is active.  The
+   maximum number of allowed atoms is 25.
+
+      To remove an atom, double-click the mouse on
+   the dipole to be eliminated.
+
+
+        Hit any key or click to continue.
+
+       
+
+AtomSelectionandHotKeyHelp
+
+         ATOM SELECTION and the HOT KEYS
+
+      To allow for convenient alteration of the
+   polarizability or deletion from the screen of
+   of selected groups of atoms, the program
+   allows the user to 'select' and 'de-select'
+   individual atoms.
+
+      'Selected' atoms are displayed in magenta
+   and those not selected in cyan.  When the
+   polarizability slider is changed, the polar-
+   izabilities of only the selected atoms are
+   altered.  (No change in polarizability occurs
+   until the slider is altered.)
+
+      The 'Hot Keys' (mostly function or 'F' keys
+   on the keyboard) allow for further convenience
+   in manipulation.  'F3' selects all displayed
+   atoms; 'F4' clears all selections; and the
+   delete key, 'Del' deletes all selected atoms
+   from the screen.
+
+       Hit any key or click to continue.
+
+FieldProbeHelp
+
+                  FIELD PROBE
+                   
+    The Field Probe is a tool for finding inform-
+  ation about the total electric field at any
+  point in space.  Clicking anywhere in the main
+  window will return the X/Y position, the X and
+  Y components of the total electric field for
+  that position, as well as the magnitude and
+  direction of the field at that point.  These
+  values appear in the small upper right window.
+  If the click occurs inside an atom as displayed
+  on the screen, the contribution of that atom to
+  the field is not included in the computation.
+
+     In addition, a blue arrow in the direction  
+  of the field at that point will appear, with   
+  length proportional to the total electric      
+  field strength.
+                                
+     The field probe will remain activated until 
+  the mouse is clicked outside the main window,  
+  or until any key is pressed.
+
+        Hit any key or click to continue.       
+ProbeAtomHelp
+
+                   PROBE ATOM
+
+    The 'Probe Atom' utility allows the examina-
+  tion in detail of a given atom.  Selection of
+  this option results in the display, in the
+  upper right box, information concerning the
+  last selected atom.
+
+    The information given includes the alphabetic
+  label of the selected atom, its polarizability,
+  its position on the screen, the x- and y-comp-
+  onents of its dipole moment and the magnitude
+  and direction of the latter.
+
+    If no atom is currently selected, the user
+  is prompted for which atom to probe.  If the
+  probe is not displaying the atom in which you
+  are interested, make it the last selected by
+  clicking on it (twice if it is already
+  selected) and then choose 'Probe Atom' again.
+
+
+        Hit any key or click to continue.
+
+DipoleSlidersHelp
+   
+                    SLIDERS
+
+     There are two sliders in this simulation.   
+  The lower one is labeled "Polarizability" and
+  it controls the polarizability of the selected
+  atom or atoms.  The upper slider is labeled
+  "Field"; it controls the strength of the
+  externally applied electric field.
+                   
+      The Field slider has an arbitrary scale    
+  of zero to 10.0 (strong external field)  The   
+  polarizability slider has a range from 0.2     
+  (the value for Helium, one of the least polar- 
+  izable atoms) to a maximum of 34.0, the value
+  for atomic Potassium, which is also the default.
+      
+
+
+
+
+
+
+         Hit any key or click to continue.       
+
+DipoleSlidersHelpContinued
+
+       SLIDERS --- General use instructions
+
+     To change the sliders, use the mouse to drag
+  the box to the desired setting, or click on the
+  arrows at the ends for gradual changes, or
+  click on the numerical field and enter the
+  desired value.  For keyboard control of sliders,
+  use the Tab key to select a slider and the arrow
+  keys to change the value.
+
+
+
+
+
+          Hit any key or click to continue.
+
+
+
+
+
+
+
+
+
+Next screen starts here
+1
+2
+3
+4
+5
+6

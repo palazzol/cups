@@ -1,0 +1,460 @@
+Credits
+
+
+            The Image Charge Method
+                     and
+              Multipole Expansions
+
+               
+       Concept and design by Lyle Roelofs
+    Programming by Nat Johnson and Lyle Roelofs
+
+             Department of Physics
+               Haverford College
+              Haverford, PA  
+                      USA
+
+
+           For use with companion text:
+                 CUPS E & M
+                      by
+     Bob Ehrlich, Lyle Roelofs and Ron Stoner
+
+(Include file Imag&Mul.HLP in same directory/folder
+             to enable Help screens.)
+
+         Press any key or click to continue.
+
+FileHelp
+                                                  
+                 The FILE Menu                    
+                                                  
+         The file menu has  options:             
+                                                  
+                                                  
+About Program - Displays credit screen.           
+                                                  
+About CUPS - Displays information concerning the  
+   Consortium for Upper-level Physics Software    
+   under whose auspices this simulation was       
+   developed.
+
+Configuration - Allows changes to your system
+   including color substitutions, mouse "double
+   click" speed and setting the path for temp-
+   orary files.  Memory availability is also
+   given.  (See text for details.)
+                                                  
+Exit Program - Exits the simulation.              
+
+
+
+
+      Press any key or click mouse to continue      
+
+PartsHelp
+                                                  
+                 The PARTS Menu                    
+                                                  
+         The parts menu has options:             
+                                                  
+Image Charges - Chooses the simulation mode
+   showing the use of image charges to solve for  
+   the potentials and fields in the vicinity of   
+   point charges near conductors.  (default)
+                                                  
+Multipole Expansion - Chooses the simulation mode
+   showing multipole potentials and fields and    
+   their use in determining the potential outside 
+   given equipotential surfaces.                  
+
+
+    
+
+
+
+
+
+
+
+      Press any key or click mouse to continue      
+
+ImageChargeHelp
+                                                  
+     General Help for the Image Charge Mode       
+                                                  
+The image charge mode of this simulation presents 
+you with several problems involving point charges 
+in the vicinity of conducting surfaces.  They are 
+candidates for solution via the method of images. 
+You are expected to solve them by placing 'image' 
+charges of appropriate value at correctly selected 
+positions WITHIN the conducting regions.          
+                                                  
+Strategy:
+- Your aim is to create a charge distribution
+  adding (hypothetical) image charges only within 
+  the conducting regions regions, such that the   
+  resulting electric field is everywhere perpen-  
+  dicular to the given conducting surfaces.       
+- The program does not disguish between real and  
+  'image' charges.  All can be manipulated simi-  
+  larly so that you can create and try to solve   
+  situations of your own devising.                
+                                                  
+                                                  
+
+     Press any key or click mouse to continue       
+                                                  
+ImageChargeHelpContinued1
+                                                  
+    Help for the Image Charge Mode (continued)    
+                                                  
+Screen:                                           
+
+- The main viewport shows the charge(s) (red for  
+  positive and blue for negative), conducting     
+  surface and (optionally) the electric field.    
+
+- The viewport on the upper right part of the     
+  screen displays a closeup of the region within  
+  the aqua colored outline in the main window.
+  (The closeup window can be moved to any desired
+  location in the main viewport.)  The upper
+  right viewport also displays the output of the
+  field probe when that tool is in use.    
+
+- The ports on the lower right allow manipulation 
+  of the charge values of the (up to 6) charges
+  in the main window.
+
+
+
+
+     Press any key or click mouse to continue       
+
+                                                  
+ImageChargeHelpContinued2
+                                                  
+    Help for the Image Charge Mode (continued)    
+                                                  
+Basic controls:                                   
+- Charges are added or deleted via mouse "double
+  clicking" in the main view point, or via the
+  input screen provided under menu choice OPTIONS.
+  The input screen can also be used to change the
+  charge values.
+
+- Select a charge by a mouse click or using the
+  radio buttons in the lower right viewport or
+  by typing its number.  (The selected charge is
+  circled in white.
+
+- Change value of selected charge using slider.
+
+- Locations of charges can be altered by "clicking
+  and dragging" using the mouse or via the input
+  screen. 
+                                                  
+Other HELP is available on the main menu bar;
+for context-sensitive help press F1.     
+
+     Press any key or click mouse to continue       
+
+DisplayHelp
+               The DISPLAY Menu                   
+                                                  
+      The DISPLAY menu selects among the          
+      options for calculating and displaying      
+      the electric field.                         
+                                                  
+Show Charges only - results in display only of    
+   the conductor and all real and image charges.  
+                                                  
+Field Lines (in vacuo only) - results in display  
+   of the electric field only in the region       
+   outside conducting surfaces.  Lines are        
+   from conducting surfaces and with a density    
+   reflecting the field intensity.                
+                                                  
+Field Lines (all space) - results in display of   
+   the electric field due to all charges (image   
+   and real) in all space as if the conductor     
+   were not present.                              
+                                                  
+In either case only those lines which intersect   
+   the conducting surface are drawn.  (See OPTIONS
+   Help for drawing other field lines.)           
+
+     Press any key or click mouse to continue
+
+ToolsHelp
+
+               The TOOLS Menu                   
+                                                  
+      The TOOLS menu selects among useful
+      utilities provided in the program:                         
+                                                  
+Automatic Field Display - If this option is
+  checked the E-field will be redrawn whenever the
+  situation changes.  If not the field is redrawn
+  only when F2 is pressed.
+                                                  
+Place Charges (Keyboard) - opens an input port for 
+  convenient control of placement and charge value
+  of the charges.                                                  
+                                                  
+Move Close-up Window - allows the user to click on
+  and drag the close-up window to any point on the
+  screen.  The close-up window provides a magni-
+  fied view and displays the angle between a field
+  line and the conductor, if any part of the sur-
+  face is within the window.  The aqua parallelo-
+  gram indicates the side of the field line for
+  which the angle to the surface is given.
+
+     Press any key or click mouse to continue
+
+ToolsHelpContinued1
+                                                  
+          The TOOLS menu continued...
+
+Field Probe - activates the field probe which 
+  determines the E-field and potential at the
+  mouse position and displays those values in the
+  port in the upper right portion of the screen.
+  If the mouse is clicked a field arrow is drawn
+  at that point.
+
+Field Lines from arb. line - user is prompted for 
+  a point within the main viewport. Field lines
+  intersecting the ray connecting the selected
+  point to the origin (center of the main view-
+  port) are drawn.  This tool is useful for 
+  visualizing the electric field in regions in
+  which it would not otherwise be displayed.
+
+Refresh screen - clears and redraws screen.
+                                                  
+                                                 
+
+
+
+     Press any key or click mouse to continue       
+
+SurfacesHelp
+                                                  
+               The SURFACES Menu
+
+  The SURFACES menu selects from the available
+  configurations of point charge and conducting
+                   surfaces.     
+
+Vertical Plane - a single plane located at x=0.   
+  (Conducting material in all x<0.)  Default
+          
+90 degree angle - planes at x=0 and y=0.
+  (Conducting material except in 1st quadrant.)   
+
+60 degree angle - planes at x=0 and at 60 degree 
+   angle clockwise from that.  (Conducting
+   material fills 5/6 of space.)
+             
+Sphere - spherical conducting surface.           
+   (Conducting material inside sphere.)   
+
+120 degree angle - planes at x=0 and at 120 deg. 
+   angle clockwise from that.  (Conducting
+   material fills 2/3 of space.)          
+
+    Press any key or click mouse to continue
+
+FieldProbeHelp
+                                                  
+               The FIELD PROBE                    
+                                                  
+The field probe provides a quantitative evalu-    
+ation of the electric field at the current  
+mouse location.
+                                                  
+The pointer location and the electric field
+value at that point are displayed in the view-
+port located in the upper right portion of the
+screen.            
+                                                  
+The field is specified both in Cartesian form     
+and in terms of magnitude and direction.          
+                                                  
+The program also draws an arrow representing the  
+field in the main viewport at any point clicked
+with the mouse.   
+                                                  
+To return to the main menu either click with the  
+mouse outside the main viewport, press F10 or     
+any other alphanumeric key.                      
+
+
+     Press any key or click mouse to continue       
+
+MultipoleExpansionHelp
+                                                  
+  General Help for the Multipole Expansion Mode   
+                                                  
+The multipole expansion mode of this simulation   
+explores the summation of multipole potentials to 
+obtain the electric potential and field in all    
+space exterior to a particular equipotential sur- 
+face.  The program is restriced to the case of
+azimuthal symmetry.           
+                                                  
+Strategy: 
+- As an alternative to obtaining the expansion
+  coefficients using powerful (but difficult)
+  mathematical techniques, this simulation allows
+  the user to adjust the strength of the first 6
+  multipole moments by hand.
+- The object is to obtain the closest possible
+  agreement between the summed potentials and
+  specific equipotential surfaces.  (The fits can-
+  not be perfect using just the 1st 6 moments; the
+  important thing is to see how the different
+  moments contribute.)
+
+     Press any key or click mouse to continue
+
+MultipoleExpansionHelpContinued1
+                                                  
+ Help for the Multipole Expansion Mode (continued)
+
+- Six different target equipotential surfaces are
+  programmed into the simulation.  Since the pro-
+  gram makes contour plots of any combination of 
+  1st 6 moments, it can be used for fitting any
+  azimuthally-symmetric (exterior) equipotential.
+
+Screen:                                           
+- The main viewport shows the target equipotential
+  surface in gray, a colored contour plot of the 
+  potential function arising from the moments 
+  specified and (optionally) the E-field.    
+- The viewport on the upper right gives field
+  probe output.    
+- The lower right port allows control of the multi-
+  pole coefficients via radio buttons and slider.
+                                                  
+Other HELP is available on the main menu bar;     
+for context-sensitive help press F1.     
+(You can also draw many amusing contour plots with
+this program.)                                    
+                                                  
+     Press any key or click mouse to continue       
+
+MEDisplayHelp
+               The DISPLAY Menu                   
+                                                 
+  The DISPLAY menu selects among the options
+ for displaying the potential and electric field
+
+Potential - display only of potential in the form
+  of a colored contour plot.  Red hues are used
+  for more positive potentials; blue for more
+  negative potentials.  
+                                                  
+Electric field - display only of the electric
+  field associated with the specified moments.
+  Field is displayed in the form of lines ema-
+  nating from or returning to the equipoten-
+  tial surface.
+                                                  
+Both superimposed - simultaneous display of field
+  and potential.
+
+Chosen equipotential surface is also displayed in
+each case, in gray if uniformly positive or in
+red or blue alternating with gray for surfaces
+partly positive and negative respectively.
+                                                  
+     Press any key or click mouse to continue       
+
+METoolsHelp
+
+               The TOOLS Menu                   
+                                                  
+      The TOOLS menu selects among useful
+      utilities provided in the program:                         
+                                                  
+Automatic Field Display - If this option is
+  checked the potential and/or E-field will be
+  redrawn whenever the situation changes.  If not
+  the field is redrawn only when F2 is pressed.
+                                                  
+Change moments (Keyboard) - opens an input port
+  for convenient alteration of moment values.                                                  
+                                                  
+Field Probe - activates the field probe which 
+  determines the E-field and potential at the
+  mouse position and displays the values in the
+  upper right port.  If the mouse is clicked a
+  field arrow is drawn at that point.
+
+Refresh screen - clears and redraws screen.
+                                                  
+
+
+     Press any key or click mouse to continue
+
+MESurfacesHelp
+
+               The SURFACES Menu
+
+     The SURFACES menu selects from the
+   available target equipotential surfaces: 
+
+N.B. All surfaces except for the two split spheres
+should be assumed to be at positive potential.
+Each surface is displayed in the form of a gray
+outline of its intersection with the x-z plane in
+the main view port.  For the 2 split spheres those 
+portions intended to be at positive potential are
+drawn with alternating gray and red; negative por-
+tions have alternating gray and blue.
+
+Cylinder - a cylinder of length 10 units and
+  radius 5 units, oriented along the z-axis.
+          
+Split sphere I - a sphere of radius 5 units whose
+  upper hemisphere is at positive pot. and whose
+  lower hemisphere is at equal and opposite
+  (negative) potential   
+
+
+    Press any key or click mouse to continue
+
+MESurfacesHelpContinued1
+
+          The SURFACES Menu continued...
+
+Sphere off center - a sphere of radius 10 units
+  centered at (x,y) = (0,5).  Assume the surface
+  is all at the same positive potential.
+
+Split sphere II - a sphere of radius 5 units split
+  into 3 regions, positive top and bottom caps and
+  a negative equatorial belt.
+             
+Cone - a cone of opening angle 40 degrees oriented
+  along the z-axis.   
+
+Spool - spool-shaped surface with axis oriented in
+  the z-direction.
+
+
+
+
+
+
+
+
+    Press any key or click mouse to continue
+
+

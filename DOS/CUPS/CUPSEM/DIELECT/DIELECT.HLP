@@ -1,0 +1,216 @@
+DielectricHelp
+
+                THE DIELECTRIC MODE
+
+    The DIELECT program simulates the behavior of
+ dielectric materials using a cell-based approach.
+
+    The main display area can be considered to be
+ divided into a (25x25) array of cells, each of
+ which may represent either empty space or a
+ small bit of dielectric material.  The HELP menu
+ item CELL DISPLAY discusses the cell definition
+ and display conventions.
+
+    As described in the accompanying text the sim-
+ ulation runs in two modes:
+   - fixed polarization; or
+   - fixed susceptibility.
+ In the former option the (2-d) polarization of
+ each cell is fixed and under the user's control;
+ in the latter the susceptibility of each cell is
+ fixed and controlled.  See HELP menu item CELL
+ SELECTION for instructions on setting cell
+ polarizations and susceptibilities.
+
+       Hit any key or click to continue.
+DielectricHelpContinued
+
+    The simulation is limited to situations with
+ uniformity in the z-direction.  The screen plane
+ is the x-y plane and each cell shown in the
+ screen plane actually represents an infinite
+ column of identical cells extending into and out
+ of the screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Hit any key or click to continue
+
+CellDisplayHelp
+
+                  CELL DISPLAY
+
+    A cell is said to be 'active' if it contains
+ dielectric material.  Active cells are outlined
+ in the main viewport using a color code.  Inac-
+ tive cells, which represent empty space, are not
+ visibly displayed in the main viewport.
+
+    The color code for cell display (which is
+ also used in the closeup window) is as follows:
+      Fixed polarization mode
+       - all active cells are outlined in blue.
+      Fixed susceptibility mode
+        Susc. Range         Color
+          0 < X < 2         Gray
+          2 <= X < 4        Cyan
+          4 <= X < 6        Brown
+          6 <= X < 8        Light red
+          X >= 8            Light magenta
+    Exact polarization or susceptibility values
+ of any cell can be obtained from the CloseUp
+ window.  See the pertinent HELP menu item.
+
+        Hit any key or click to continue
+
+CloseUpWindowHelp
+
+            The Close-Up Window
+
+     The Close-Up window in the upper right
+  portion of the screen gives detailed informa-
+  tion for any single cell and is therefore use-
+  ful for extracting quantitative information
+  from the simulation.  The cell displayed
+  in close-up is that one indicated in the main
+  viewport by the white fill between its colored
+  outline and the smaller white box that indi-
+  cates a cell is selected.  Display a different
+  cell by clicking on it in the main viewport.
+
+     The window shows an enlarged sketch of the
+  cell with the three fields drawn as arrows and
+  gives the values of the x- and y-components of
+  the position of the cell and the P, E and D
+  fields at its location.  In the fixed suscept-
+  ibility mode, the susceptibility of the cell
+  is also given.
+
+
+        Hit any key or click to continue
+
+DielectricDisplayHelp
+
+             DISPLAY OPTIONS
+
+     There are three options for field dis-
+  play in the dielectric media simulation.
+  The fields are color-coded.
+
+   Polarization - Display polarization
+    (P-field) of each cell. (White)
+
+   Electric Field - Display electric field
+    (E-field) arrows in each cell. (Yellow)
+
+   Displacement - Display displacement
+    (D-field) in each cell. (Green)
+
+  Besides the selected field the active
+  cells are also shown in the main window,
+  all in blue in the fixed polarization
+  mode and in a varying color scheme in the
+  fixed susceptibility mode.  (See also
+  Closeup Help.)
+                       
+       Hit any key or click to continue.       
+
+DielecSlidersHelp
+   
+            SLIDERS and BUTTONS
+
+     There are three sliders in this simulation.
+  The topmost one is labeled "External field"
+  and it controls the strength of the externally
+  applied electric field.  The bottommost slider
+  is labeled "Plot Scale".  Use it to increase or
+  decrease the length of the field arrows plotted.
+
+     The middle slider sets the polarization or
+  susceptibility of all selected cells, in the
+  respective program modes in which those are the
+  controlled parameters.
+
+     The POLx and POLy radio buttons (displayed
+  in the fixed polarization mode only) determine
+  whether that slider is controlling the polari-
+  zation x- or y-comp.
+
+
+
+           Hit any key or click to continue.
+
+
+DielecSlidersHelpContinued
+
+       SLIDERS --- General use instructions
+
+     To change the sliders, use the mouse to drag
+  the box to the desired setting, or click on the
+  arrows at the ends for gradual changes, or click
+  on the numerical field and enter the desired
+  value.  For keyboard control of sliders, use the
+  Tab key to select a slider and the arrow keys to
+  change the value.
+
+          Hit any key or click to continue.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CellSelectHelp
+   
+                   CELL SELECTION                   
+
+    To alter the polarization or the susceptibil-
+ ity of individual or groups of cells can be con-
+ veniently done using the slider after the cells
+ of interest have been selected.  Selected cells
+ are shown with a small white inscribed square.
+
+    Select or de-select individual cells via a
+ mouse 'double-click'.  Hotkey F4 selects all
+ displayed cells in the viewport; F5 deselects
+ all selected cells.
+
+    The polarization or susceptibility values of
+ newly selected cells are given the current values
+ as indicated by the sliders.
+
+    The menu item CLEAR under CONFIGS. on the main
+ menu bar clears the screen entirely so that no
+ cells are active or selected.
+
+
+        Hit any key or click to continue.
+
+Next screen starts here       
+
+

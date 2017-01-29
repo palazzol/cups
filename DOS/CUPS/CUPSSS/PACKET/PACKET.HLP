@@ -1,0 +1,58 @@
+
+Params Menu Help
+              PARAMS MENU HELP                    01
+                                                  02
+  External Force:                                 03
+     E_a:      A uniform Electric field applied   04
+               to the wave packet (in units of    05
+               volts/lattice constant).           06
+  Initial Packet:                                 07
+     X_0:      the lattice-site index of the      08
+               center of the wave packet.         09
+     Delta n:  the approximate number of lattice  10
+               cites covered by the packet.       11
+     k_0:      the central k-vector for the states12
+               that make-up the packet (in units  13
+               of pi/a)                           14
+                                                  15
+  Tight binding model parameters:                 16
+     A:        the "hopping" energy in the tight  17
+               binding approximation is propor-   18
+               tional to an overlap integral of   19
+               the atomic orbitals of neighboring 20
+               sites and the crystal potential.   21
+   Numerics:                                      22
+     dt: The time step for numerical integration. 23
+     ud: The approximate number of redrawing      24
+         updates per Bloch oscillation.           25
+
+
+V_embParmScreen Help
+       EMBEDDED POTENTIAL PARAMETERS HELP         01
+                                                  02
+  Note:  The height (or depth) of any potential   03
+  function should be compared with the width of   04
+  the tight binding band = 4 A when contemplating 05
+  the effect it will have on the electron.        06
+                                                  07
+     Square Barrier (or Well):                    08
+          -20 <= Height (eV) <= 20                09
+            0 <  Width  < 200 (lattice constants) 10
+         -400 < position of left edge < 400       11
+                                                  12
+     Super Lattice: (square wave emb. in lattice) 13
+         Amplitude <= 20 eV                       14
+         Half period <  100   (lattice constants) 15
+                                                  16
+     Random Barriers (or Wells):                  17
+     0 < Probability of barrier at each site < 1  18
+         -20 <= Height (eV) <= 20                 19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+

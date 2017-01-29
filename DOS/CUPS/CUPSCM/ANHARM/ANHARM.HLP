@@ -1,0 +1,1004 @@
+IntroHelp;
+
+      ************ The Help Menus ************
+
+ Choose a menu topic to get help information on 
+ that topic.
+
+ To leave the help system, press any key 
+ or click the mouse outside the menus.
+
+ Help on running the program is on the Files menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RunHelp;
+
+            Setting a system in Motion
+
+ You set any system in motion by clicking the 
+ mouse in the  "Potential vs. x" diagram in 
+ the lower right corner or in the "v vs. x"
+ diagram when it is present.
+
+ Where you click determines the energy, 
+ through determining x0 and v0.
+
+ The potential diagram rescales automatically if
+ you choose an energy in the top or bottom tenth
+ of the diagram. The other graphs will not 
+ rescale until you pick "Clear & Rescale" from 
+ "Choices".
+
+ The VanDePol system has no potential, so click 
+ in the system diagram in the upper right corner 
+ of the screen.
+
+
+
+
+
+
+ConfigureHelp
+               System Configuration
+
+Path to temporary files directory: (ALT-d)
+  Specify where files read and written are placed
+
+Change colors: (ALT-c)
+  You can change all red objects (for example)
+  into blue, etc., including all black or white.
+
+Change double click time: (ALT-t)
+  Determines how close together two mouse clicks
+  have to be to be considered a double click
+
+Delay time: (ALT-y)
+  Allows you to slow down all calculations if they
+  display too rapidly
+
+Print Screen Setup: (ALT-p)
+  Provides instruction for you to set up to print
+  a screen to your printer
+
+Check Memory: (ALT-m)
+  Tells you the amount of free memory available.
+
+Hotkeys (in Parentheses) do the same thing quicker
+
+Asymmetric;
+
+                 Asymmetric Force
+
+F=-k x-3 A2 x^2-4 A2 x^3-D v+F0 sin(omega t)
+
+ This is meant to illustrate a common situation 
+ in atomic and molecular physics where the two 
+ sides of the potential well have different 
+ shapes.
+
+ You will find that this affects not only the 
+ period, but the frequency analysis as well, 
+ giving rise to a zero frequency term which 
+ reflects the fact that the bottom of the well 
+ (x = 0) is not the average position of the 
+ oscillating particle.
+
+ Non zero D represents the presence of friction.
+
+ F0 is the strength of the driving force if one
+ is present.
+
+
+
+
+
+
+
+Cubic;
+
+         Cubic Force: Duffing's Equation
+         
+     F = -k x - C3 x^3 - D v + F0 sin(omega t)
+     
+ This equation has been extensively studied by 
+ Ueda and others.
+
+ k and C3 can have either sign, or be zero.
+
+ Positive C3 represents a spring that gets 
+ stiffer as it is stretched; negative C3 
+ represents a spring that gets weaker 
+ as it is stretched.
+
+ Negative k and positive C3 result in a double 
+ potential well like the spring stretched between
+ two walls.
+
+ Non zero D represents the presence of friction.
+
+ F0 is the strength of the driving force if one 
+ is present.
+
+
+
+Pendulum;
+
+                   The Pendulum
+
+     F = -g/L sin é - D v + F0 sin(omega t)
+     
+ This familiar system is capable of bizarre 
+ behavior when it is driven hard enough to swing 
+ over the top. 
+
+ g is the acceleration of gravity, and L the 
+ length of the pendulum.
+
+ This force can be approximated by a linear force
+ law:
+
+        F = -g/L x - D v + F0 sin(omega t)
+
+ Non zero D represents the presence of friction.
+
+ F0 is the strength of the driving force if one 
+ is present.
+
+
+
+
+
+
+SHO;
+
+            Simple Harmonic Oscillator
+
+         F = -k x - D v + F0 sin(omega t)
+
+ This linear system is included for the sake of 
+ comparison, as well as to include something 
+ familiar.
+
+ Non zero D represents the presence of friction.
+
+ F0 is the strength of the driving force if one 
+ is present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Walls;
+        Spring Stretched Between Two Walls
+
+      F = -2 k(L-L0)x/L - D v + F0 sin(omega t)
+                                         where:
+  L^2 = x^2 + (W/2)^2
+
+  k is the spring constant of the spring 
+    connecting the body to one wall,  
+
+  L0 is the unstretched length of that spring, 
+
+  L is its stretched length, 
+
+  W is the distance between the walls. 
+
+It is only approximated by the Duffing equation:
+
+     F = -A1 x - A3 x^3 -D v + F0 sin(omega t)
+
+ k and C3 vary as W changes and even change sign.
+
+ Non zero D represents the presence of friction.
+
+ F0 is the strength of the driving force if one 
+ is present.
+
+
+
+VanDePol;
+
+         The Van Der Pol - Shaw Oscillator
+
+    F = -k x + D (X0^2-x^2) v + F0 sin(omega t)
+
+ Here we have friction when x > X0 and energy GAIN
+ when x < X0. This can actually be achieved in the 
+ design of an electrical circuit, and represents a 
+ simple approximation to the behavior of myriad 
+ electrical oscillators in signal generators, TV 
+ and radio transmitters, and the like. Its 
+ behavior is not simple, and it is a triumph of 
+ electrical engineering to make such circuits 
+ well behaved. It sustains oscillation even 
+ without a driving force F0.
+
+ Non zero D represents the presence of friction.
+
+ F0 is the strength of the driving force if one 
+ is present.
+
+
+
+
+
+
+PoincareHelp;
+
+                   Poincar‚ Map
+
+ This is a snapshot of the phase diagram, taken 
+ at regular time intervals one cycle of the 
+ sinusoidal driving force apart.
+
+ That is, every T = 2 Pi/Omega seconds, a point 
+ is plotted at v,x in the Poincar‚ diagram. 
+ Conceived by Poincar‚ in the late 19th century,
+ this reveals structure in motions that otherwise 
+ appear to have none.
+
+ If the motion is periodic, the Poincar‚ diagram 
+ will either be a point or the points will lie on
+ a closed curve. 
+
+ More complex motions show more complex structure.
+
+Poincar‚ Movies
+ A series of Poincar‚ diagrams taken at different 
+ phases of the driving force cycle  reveal the 
+ evolution of the motion, especially when viewed 
+ in succession.
+                  (Continued on next screen)
+
+MorePoincareHelp;
+
+                 Poincar‚ Map II
+
+ The more movie frames (Display | Display Options)
+ you are able to use, the smoother the movie will
+ be. Thirty-two frames are allowed, but the only
+ way of making enough memory available for that
+ many frames is to recompile with a "Protected
+ mode Application" target (Pascal Compile menu),
+ assuming that your computer system has extended
+ memory.
+
+ For these systems, the interesting maps are 
+ created when the system is driven; the map is
+ unavailable when the system is not driven.
+
+
+
+
+
+
+
+
+
+
+
+
+FlipHelp;
+
+           Poincar‚ [Return] Map Movies
+
+ After you have run a system with a driving force, 
+ a set of Poincar‚ and Return maps has been 
+ stored. This menu  item presents these maps as 
+ a movie.
+
+ The movie can be slowed, paused, or speeded up 
+ with F keys or by clicking on the F- labels at 
+ the bottom of the screen.
+
+ It can also be truncated from the beginning to 
+ remove points that are part of the start-up 
+ transient. Each time you truncate, 10 points 
+ are removed.
+
+ Small dots are always used because large dots
+ slow the movie and lose the effect.
+
+ To make more memory available to create movies
+ with  more frames (Display | Display Options),
+ recompile with a "Protected mode Application"
+ target (Pascal Compile menu), assuming that
+ your computer system has extended memory.
+
+
+
+
+
+PhaseDemoHelp
+
+              Demonstrate Phase Plot
+
+ This is a piece extracted from the tutorial 
+ that displays the phase plot with the v vs. t
+ graph beside it and a t vs. x graph beneath it
+ to show the relation of the phase plot to the
+ more familiar graphs against time.
+
+ Whatever display setup you had previously is 
+ not preserved.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ResKeyHelp;
+
+            Resonance Plotting Choices
+
+ Hysteresis occurs when the resonance curves
+ turns out to be triple valued, which is not 
+ always predictable in advance.
+
+ The choice is to how to plot the repulsive 
+ branch which joins the two overlapping curves:
+ approximate it with a straight line, or take a 
+ long time to find it.
+
+ Smaller steps are taken near the resonance peak,
+ so if it is in a place different from where the
+ program expects it, you can change it.
+
+ A larger step size saves time at the expense of
+ detail. (Range 0.1 to 6)
+
+ Increase sensitivity if the curve has 
+ irregularities, especially with small frictional
+ drag, at the expense of speed. (Range 0.1 to 10)
+
+ Use Extra memory only if you run out
+
+
+
+
+SearchFileHelp;
+
+                 Search Map Files
+
+ These are created from "Search Parameter Space" 
+ on the "Forces" menu. They contain many single 
+ frame Poincar‚ maps for different parameter 
+ values.
+
+ When the file is read, each map is displayed 
+ briefly. You can pause and view a limited number 
+ of preceding maps (instructions are given at the 
+ top of the screen and a more comprehensive help 
+ screen will be available at that time.
+
+ If a particular set of parameter values looks 
+ interesting, you can set the system into motion 
+ with those values. After you halt it, you will 
+ be returned to reading the file.
+
+ You can quit reading a long file at any time 
+ with the F10 key.
+
+
+
+
+
+SearchPauseHelp;
+
+   Search Map Options When Paused While Reading
+
+ : Next or previous parameter set (of those 
+ already read) up to 20, the first is followed by 
+ the last, and vice versa.
+
+ PGUP, PGDOWN, HOME: Displays the first or last 
+ half, or all the points in the current map; 
+ useful for separating out the initial transient.
+
+ F2 returns to reading in more sets of parameter 
+ values and their maps.
+
+ F3 saves the current map to a new file; repeated 
+ use appends the maps to the same file.
+
+ F4 sets the system simulation in motion with the 
+ current parameter values.
+
+ F10 quits reading and displaying from the file 
+ & returns to the main menu.
+
+
+
+
+FileHelp
+
+              File Handling Routines
+
+ These routines create and read the following 
+ kinds of files:
+
+ Parameter files (.par) hold parameter values 
+ like g, k, F0, etc.
+      Reading one sets all system parameters to 
+         new values.
+      When you ask to write one, the current 
+         system parameters are placed in the file.
+
+ Poincar‚ map files (.pmp) hold Poincar‚ movies.
+      Reading one shows the movie and sets the 
+         system parameters.
+      Create one whenever you have a Poincar‚ 
+         movie worth saving.
+
+ "Compare Two P Maps" displays two Poincar‚ maps 
+      simultaneously.
+
+
+
+
+
+
+HistoryHelp;
+
+                   Save History
+
+ The contents of the current history containing 
+ the record of the most recent oscillator 
+ simulation are written to a file.
+
+ You may write Time, Position, and Velocity or 
+ just Position; the latter is suitable input for 
+ the Chaos Dynamic Analyzer from Academic Press.
+
+ The file is an ASCII file that can be read by 
+ any text editor.  It can be loaded into a 
+ spreadsheet in order to print a graph, or it can 
+ be used for time series analysis by other 
+ software.
+
+
+
+
+
+
+
+
+
+
+ClearHelp;
+
+                      Clear
+
+ Clears the graphs (but not the potential diagram)
+
+ The C key does the same thing when the system is 
+ in motion. In that case, the motion continues 
+ after the graphs are cleared. The graphs are not
+ rescaled.
+
+ When the system is not in motion, ESC has the 
+ same effect as "Clear and Rescale" on the menu.
+
+ By default, the color of the graphs changes with 
+ each new graph, and  periodically during the 
+ course of a long run. This allows you to see
+ changes between runs or during a run.
+
+ You can make graphs erase instead of overwriting 
+ by selecting "Display Options" from the "Display" 
+ menu. The Phase Diagram continues to overwrite, 
+ because that seems the most informative choice.
+
+
+
+
+
+
+
+BothSidesHelp;
+
+             Plot in Both [One] Wells
+
+ By default, if you click the mouse at an energy 
+ below the hump in a two well potential, the 
+ motion will take place on whichever side of the 
+ barrier you clicked the mouse on.
+
+ You can change the default using this menu 
+ choice, so that when the motion stops on one 
+ side, it will then repeat on the other side of 
+ the barrier.
+
+ This also applies to the pendulum with enough 
+ energy to swing over the top. In this case, it 
+ is the direction of motion that is restricted 
+ rather than the position, and the choice affects
+ the v vs. t and phase diagrams.
+
+ Plotting in both wells creates a symmetrical 
+ diagram.
+
+
+
+
+
+AnimationHelp;
+
+                  Animate [Off]
+
+ Animation makes the object in the system diagram 
+ move, rolls a ball up and down the hill in the 
+ potential diagram, and marks the current position
+ in the phase diagram with a moving ball.
+
+ There is some flicker, whose removal would be at 
+ the expense of undesirably slowing down the 
+ motions for the more complex systems.
+
+ The simpler systems need a delay to keep them 
+ from running too fast, which may be changed if 
+ necessary by pressing ALT-y.
+
+ Animation slows down the calculation greatly,
+ so the option of turning it off is provided.
+
+
+
+
+
+
+
+SelectEnergyScaleHelp;
+
+              Change Potential Range
+
+ Use this when you want to pick an energy that 
+ is above the top of the potential diagram or an 
+ energy too tiny to pick off the diagram reliably.
+ A screen will appear on which you can type the 
+ value for the new top of the potential diagram.
+ 
+ The potential diagram also rescales automatically
+ if you choose an energy in the top or bottom 
+ tenth of the diagram. The other graphs will not
+ rescale until you press ESC (with the system not
+ in motion) to clear them, or use the 
+ "Clear & Rescale" menu choice.
+
+
+
+
+
+
+
+
+
+
+
+
+PeriodTableHelp;
+
+                   Plot Period
+
+ This plots a graph of oscillation period as a 
+ function of energy (or drag coefficient in the 
+ Van Der Pol case) for several values of wall 
+ separation, g, cubic coefficient C3, or limit 
+ cycle size.
+
+ This takes a couple of minutes, and you can 
+ escape by pressing Q.
+
+ You will be asked for possible changes in the 
+ ranges of the parameters used and the number of
+ graphs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+ResonanceTableHelp;
+
+                  Plot Resonance
+
+ This plots a graph of amplitude against driving 
+ angular frequency for two values of the drag 
+ coefficient. Other parameters remain as you have
+ previously set them.
+
+ This can take a long time, and you can escape 
+ by pressing Q.
+
+ You will be asked for possible changes in the 
+ ranges of the parameters used and the number of
+ graphs.
+
+ Some resonance curves are triple-valued, and the
+ procedure for finding the part of the curve in 
+ the middle (the unstable or repulsive branch) is
+ time consuming. You can choose to approximate it
+ (if it exists) with a straight line.
+
+ When this hysteresis occurs, curves will be
+ plotted from both sides of the graph and will
+ overlap in the middle.
+
+
+FFTHelp;
+
+                Frequency analysis
+
+ To be called after running an oscillator.
+ 
+ During a run, the oscillator time history is 
+ always saved. The frequency analysis command 
+ applies a fast Fourier transform to this saved 
+ history. If at least 512 points have been saved,
+ then a 512 point transform is used, otherwise 
+ the nearest  power of two larger than the number
+ of points is used.
+
+ The transform may be windowed with one of three 
+ windowing functions.
+
+ The tutorial demonstrates the pros and cons of 
+ windowing.
+
+ One of three test functions (sine, square, or 
+ triangle) can also be analyzed. In this case,
+ the test function itself as windowed is also
+ plotted.
+
+
+
+
+GraphHelp;
+
+                  Various graphs
+
+ Graphs of position x and velocity v against 
+ time are presumably familiar to you.
+
+ The graph of velocity (or momentum) against 
+ position, referred to as the "Phase Diagram" is 
+ less familiar. We plot it because it gives us 
+ additional information and insight. It quickly 
+ reveals whether the system gains or loses
+ energy, because constant energy phase 
+ trajectories are closed.
+
+ Sometimes very complex periodic trajectories 
+ appear which are obviously closed only in the
+ phase diagram.
+
+ The phase diagram is a stepping stone to the 
+ Poincar‚ diagram, which is helpful in 
+ understanding even more complex behavior.
+
+
+
+
+ReturnHelp;
+                    Return Map
+
+ A plot of the velocity at time t plotted against 
+ the velocity at time t-T, where T is a constant, 
+ in this case the period of the sinusoidal
+ driving force. This is a nonobvious technique 
+ which can be used to reveal structure in a way 
+ similar to the Poincar‚ map in data sets where 
+ the Poincar‚ map is unavailable because the 
+ appropriate period is not known.
+
+ Return maps take many forms, plotting almost 
+ anything against a value at a previous time, not 
+ necessarily a constant time interval earlier.
+ For example, the (varying) time interval between 
+ water drops falling from a dripping faucet can 
+ be plotted against the previous value of the time
+ interval, and reveals significant structure.
+
+ For these systems, the interesting maps are 
+ created when the system is driven; the map is
+ unavailable when the system is not driven.
+
+ A movie is also created, as described in the 
+ Poincar‚ Map help screen.
+
+
+
+
+Show2_4Help;
+
+            Display Two [Four] Graphs
+
+ Display two or four graphs of the motion on the 
+ same screen.
+
+ Which two or four are then selected by using 
+ the F keys or clicking the mouse with the 
+ cursor on the F- labels at the bottom of the 
+ screen.
+
+ In the four graph case, x vs t, v vs x, and the 
+ Poincar‚ map are always displayed, and you select 
+ the fourth (v vs t or Return Map).
+
+ The Poincar‚ diagram space is unfilled if the 
+ diagram is inappropriate, as happens when the
+ driving force is zero.
+
+
+
+
+
+
+
+PeriodHelp;
+
+
+         Display Period [Resonance] Graph
+
+
+
+
+    These re-display graphs that have been 
+    previously  calculated with the 
+    "Plot Period" and "Plot Resonance" options. 
+
+    The data for the graphs are retained 
+    until the force type is changed or 
+    another graph is calculated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OptionHelp;
+
+                Display Options
+
+ Allows you to type in values for the following:
+
+ Animation Delay Time: controls animation speed.
+
+ Undriven Time Step: is the time interval at which 
+            new positions are calculated.
+
+ Driven Time Step: is the same but in number of 
+            steps per drive period.
+
+ Graph Time Scale, Position Scale, and Velocity 
+ Scale allow you to change the graph scales if the 
+ ones chosen by the program are unsatisfactory.
+    If you choose your own scales, they 
+    will be frozen until you change forces.
+
+ Stop after two periods OR let undriven graphs 
+       extend to the end of the graph.
+
+ Write over time graphs OR erase the old one each 
+       time the graph starts over.
+
+
+
+
+
+
+
+OptionHelp2;
+
+              More Display Options
+
+
+ Mark Poincar‚ in Phase demonstrates the relation 
+ between the two diagrams; you will see it better 
+ if you slow the motion down with ALT-y.
+
+ Pause in Period & Resonance turns off (or on) 
+ the pause for a keypress at the each period or 
+ resonance graph to allow the computer to run 
+ unattended when the graph takes a long time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ExactParHelp;
+
+           Drive, Damping, & Parameters
+
+ Allows you to type in values for all the 
+ parameters of a system, including the initial 
+ energy OR initial position (either but not both).
+
+ The coefficients of the series approximation to
+ the current wall or pendulum potential can be
+ changed, but then it is no longer a good 
+ approximation, as will be evident from the 
+ potential diagram.
+
+ You can select the parameter to be changed with 
+ the mouse or with the tab key or the arrow keys.
+
+ To change only a single digit, just move to it 
+ and type over it.
+
+ Pressing ENTER accepts the changes you have 
+ made; pressing ESC rejects them.
+
+
+
+
+
+InterestingHelp;
+
+              Interesting Parameters
+
+ Gives you a menu from which you can pick the 
+ force you want and sets of interesting 
+ parameters for that force.
+
+ It is impossible to describe "interesting" 
+ briefly; try them and see. The menu items 
+ attempt to be descriptive within the limited 
+ space available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SearchHelp;
+
+              Search Parameter Space
+
+ Provided to allow you to discover interesting 
+ parameter values for yourself.
+
+ Since this can potentially take a long time, 
+ depending upon how wide a search you choose, 
+ it is designed to run unattended, writing 
+ results to a file to be examined later.
+
+ The file will contain a 30 point Poincar‚ map 
+ for each set of parameters investigated.
+
+ Then "Read Search Map" to review the results 
+ and select interesting parameters.
+
+
+
+
+
+
+
+
+
+
+SearchHelpII;
+
+             Search Parameter Space II
+
+ Type in values for the parameters you wish to 
+ start with, how many changes to make in each, and 
+ how much to change each parameter by each time.
+
+ After the first map has been calculated, you are 
+ provided with a time estimate for the search. 
+ You can quit at any time, or truncate the 
+ individual maps if the results are obviously 
+ uninteresting.
+
+ But usually you will want to just let it run 
+ and come back later.
+
+ Consult "Read Search Map" Help to see how to use 
+ the results.
+
+ The systems on the "Interesting Parameters" 
+ suggest some starting points for a search,
+ but these are hardly the only good starting 
+ places.
+
+
+
+
+ApproxHelp;
+
+               Series Approximation
+
+ Replaces the pendulum with the corresponding 
+ simple harmonic oscillator, and the spring 
+ between walls with the corresponding cubic 
+ (Duffing's) equation. The coefficients in the 
+ equations are chosen to match potentials at 
+ the bottom of the potential well.
+
+ Both the exact and approximate potentials are 
+ drawn for comparison purposes, and the graphs 
+ are not  erased, so that the motions may be 
+ compared.
+
+ The values of the wall coefficients may be seen 
+ and changed in the "Drive, Damping, & Parameters" 
+ input screen.
+
+
+
+
+
+
+ 

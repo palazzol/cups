@@ -1,0 +1,65 @@
+Configuration file for Force defined by:
+Generic Motion in 1-D
+UserHelpScreen:
+               Generic 1-D motion
+
+The Generic.Pas system is designed to accomodate
+a wide range of standard 1-D motion examples.
+
+The force can depend on time, position and
+velocity as follows:
+
+F = -m*g            Force of Gravity
+    -c1*v-c2*v|v|   Linear and Quadratic Damping
+    -k1*x-k2*x^3    Linear and Cubic Restoring F
+    +a1*t           Linear time dependence
+    +F0*cos(w*t)    Periodic Driving Force
+
+You can set most of these parameters to zero in
+order to investigate a system subject to a subset
+of these forces.
+
+
+
+
+
+
+Numerical Info
+3  1.00000000000000E-0001  1.00000000000000E-0002
+User defined parameters:
+m          1.00000000000000E+0000 kg
+g          0.00000000000000E+0000 N/kg
+c1         0.00000000000000E+0000 N/(m/s)
+c2         0.00000000000000E+0000 N/(m/s)^2
+k0         1.00000000000000E+0000 N
+k1         0.00000000000000E+0000 N/m
+k2         0.00000000000000E+0000 N/m^3
+a1         0.00000000000000E+0000 N/s
+F0         0.00000000000000E+0000 N
+w          0.00000000000000E+0000 rad/s
+Initial Values:
+t0         0.00000000000000E+0000 s
+x0         3.00000000000000E+0000 m
+vx0        0.00000000000000E+0000 m/s
+y0         0.00000000000000E+0000 m
+vy0        0.00000000000000E+0000 m/s
+z0         0.00000000000000E+0000 m
+vz0        0.00000000000000E+0000 m/s
+1 2 3  Variables to display numerically
+         4 Number of Windows
+Position versus Time
+0.1       0.15      0.35      0.34      2         1         
+0         10        -10       10        
+1 1 0
+Velocity versus Time
+0.1       0.55      0.35      0.34      3         1         
+0         10        -10       10        
+1 1 0
+Acceleration versus Time
+0.6       0.15      0.35      0.34      4         1         
+0         10        -5        5         
+1 1 0
+Potential
+0.6       0.55      0.35      0.34      12        2         
+-4        4         0         5         
+1 1 0

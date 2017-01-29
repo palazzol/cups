@@ -1,0 +1,267 @@
+AboutThisProgramHelp
+
+
+                Stellar Atmospheres
+
+                       by
+               Charles A. Whitney
+   Harvard-Smithsonian Center for Astrophysics
+               Cambridge, MA 02138
+
+               Copyright (c) 1994
+
+     This program builds the atmosphere of a star
+ by assuming that it is in hydrostatic
+ equilibrium.
+     The initial model assumes a temperature
+ consistent with radiative equilibrium and
+ integrates the equation of hydrostatic
+ equilibrium from the surface downward. The
+ program can then evaluate and display the
+ emitted spectrum and the radiation field in
+ the atmosphere.
+
+
+
+
+
+
+
+
+
+
+
+GetStartedHelp
+
+            TO GET STARTED
+
+     To build a model, use Menu Model 1 to open
+ the SPECIFY MODEL window. The default parameters
+ for a star like the sun are already entered.
+ Hit the ACCEPT button and the model will be
+ built automatically.
+     When the model has been built and its
+ radiation has been found, use the PLOT-WHAT
+ menu to open various graphs.
+
+     Help is available for all windows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+SelectStarsHelp
+
+             TO SELECT A STAR
+
+
+    The See Stars/On Sky window displays stars
+ in selected groups as you would see them
+ on the sky. In the map on left, the radius
+ of each dot indicates the apparent brightness
+ of the star. In the diagram on the right,
+ the radius of each dot indicates the absolute
+ brightness of the star. Colors are plotted
+ along the horizontal axis.
+    To see a constellation, use the lower right 
+ which will read from the STARDATA.REC file.
+ Click on a star in the map to see it plotted in
+ the Brightness-color diagram. Or you may click
+ on a star in the Brightness color diagram and
+ see it circled on the map.
+   Data for selected star is displayed in the
+ lower right panel.
+
+
+
+
+
+
+
+
+SpecifyModHelp
+
+             TO SPECIFY A MODEL
+
+    This is the window for entering the
+ parameters of the star whose atmosphere you
+ wish to build. They are Mass, Radius, Luminosity,
+ and an estimate of distance. (The distance is
+ used to compute the apparent brightness. Enter
+ 10 (light years) if you need a guess.
+    You may also prescribe the chemical
+ composition by means of the helium and metals
+ abundances.
+    There are three choices to be made concerning
+ the physics of the models:
+ 1. Select the type of temperature distribution,
+ (constant, radiative equilibrium or include
+ convection).
+ 2. Specify the nature of the opacity. In the
+ current version you may only select gray.
+ 3. Determine whether or not to include radiation
+ pressure in the hydrostatic calculation.
+
+ ACCEPT will read the new data and initiate the
+ calculation. ESCAPE will keep the old data. 
+
+
+PlotsHelp
+	
+                 ABOUT THE PLOTS
+
+     Two sets of graphs may be shown for the
+ models: plots of gas structure and plots of the
+ radiation field. The two models are color-coded.
+     With the PLOT-WHAT/Plot Options menu item,
+ you may make a variety of selections:
+   * optical depth or geometrical depth;
+   * logarithimic or linear vertical scale;
+   * both models on same y-scale or to fill graph;
+   * select which model(s) to plot.
+
+     All plots are in c.g.s units.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+AdjustTHelp
+
+             TO ADJUST THE TEMPERATURE
+
+     Once the model has been built, you may
+ alter its temperature distribution. This new
+ distribution may be used for solving the
+ hydrostatic pressure equation and for finding
+ the radiation from the atmosphere.
+
+    Use the F5 or F6 key to select the desired
+ point in the atmosphere; then use the F7 or F8
+ key to raise or lower the temperature at the
+ selected point. When you click the ACCEPT/
+ REBUILD button with the mouse, the model will
+ will be built with the new temperature
+ distribution, and its radiation will be
+ evaluated.
+
+    To return to a model with the initial
+ temperature profile, use the BUILD button on
+ menu item instead of REBUILD.
+
+
+
+
+
+
+
+
+
+SpectrumHelp
+
+              TO SEE THE SPECTRUM OF A MODEL
+
+
+    This window displays the spectrum of
+ radiation emitted from the atmosphere (per
+ unit wavenumber interval). The wavenumber
+ scale is reciprocal micrometers.
+
+    SHOW BLACKBODY will superpose a Planck curve
+ with the temperature you specify.
+
+    The lower frame shows pass bands that are
+ used to compute the B and V magnitudes. The
+ logarithm of the ratio of fluxes in these two
+ bands gives the B-V color. This is the ordinate
+ of the Brightness-color diagram (or HR diagram).
+
+
+
+
+
+
+
+
+
+
+
+MethodsHelp
+
+         METHODS OF COMPUTING THE MODELS
+
+    The models are built on the following
+ assumptions:
+    1. The gas is stratified in plane layers in
+ hydrostatic equilibrium.
+    2. The ratio of radiative emission and
+ absorption is governed by the Kirchhoff-Planck
+ relation that holds in thermal equilibrium.
+    3. Ionization and excitation obeys the
+ Boltzmann-Saha relations for the local
+ pressure and temperature.
+    4. The angular distribution of radiation
+ is treated as though it were concentrated
+ along a pair of upward-downward streams making
+ a specified angle with the vertical.
+    5. Opacity is either constant, a step
+ function, or computed for hydrogen. (In real
+ stars, helium can play a role as well.)
+    6. If you choose to compute the temperature
+ from radiative equilibrium, the analytical
+ expression for the temperature distribution in
+ a grey atmosphere is used. Convection according
+ to a mixing-length theory may also be included.
+
+
+
+
+
+
+OpacityHelp
+
+              OPACITY COMPUTATION
+
+   There are three alternative methods
+ for computing the continuous radiative
+ opacity of the gas. The selection is made
+ in the Specify Model window. Line opacity
+ is not included in this program.
+
+   1. Gray: The absorption coefficient is
+ independent of frequency. (In this case, the
+ emission coefficient follows the Planck
+ function at the local temperature.)
+   2. Step: This is an artificial case that
+ permits exploring the effect of an absorption
+ edge. The opacity increases to the blue by
+ a factor 2 at a wave length of 1 micron.
+ These default values may be changed in the
+ subroutine that computes Chi.
+   3. Hyd: Opacity is computed for the free-bound
+ and free-free continua of the H atom and of
+ the H-minus ion. Thompson scattering by
+ free electrons is also included.

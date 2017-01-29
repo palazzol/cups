@@ -1,0 +1,57 @@
+Configuration file for Force defined by:
+A day at the races       (Do not use F3, F4, F5 or F6)
+UserHelpScreen:
+           A day at the races
+
+This system is designed to illustrate some of the
+capabilities of the motion generator.
+
+The "game" is to complete a lap around the course
+in as short a time as possible.  After starting
+the clock (press F2) the arrow keys can be used
+to adjust the acceleration given to the car.
+    Do not use F3, F4, F5 or F6 for this game.
+
+Remember:  if the acceleration vector is 
+perpendicular to the direction of motion, the
+path will curve, but the car will not speed up.
+If the acceleration is "tilted forward" the speed
+will increase.  If it is "tilted backward" the
+speed will decrease.
+                           Good Luck!
+
+Refer to the Pascal Program for hints as to how
+to include graphics and direct user control of
+function parameters in your own simulations.
+
+Numerical Info
+3  5.00000000000000E-0002  1.00000000000000E-0002
+User defined parameters:
+m          1.00000000000000E+0000 kg
+Fx        -1.60000000000000E+0000 N
+Fy         1.20000000000000E+0000 N
+c          0.00000000000000E+0000 N/(m/s)
+Parm5      0.00000000000000E+0000 None
+Parm6      0.00000000000000E+0000 None
+Parm7      0.00000000000000E+0000 None
+Parm8      0.00000000000000E+0000 None
+Parm9      0.00000000000000E+0000 None
+Parm1      0.00000000000000E+0000 None
+Initial Values:
+t0         0.00000000000000E+0000 s
+x0         0.00000000000000E+0000 m
+vx0        0.00000000000000E+0000 m/s
+y0        -1.05000000000000E+0002 m
+vy0        0.00000000000000E+0000 m/s
+z0         0.00000000000000E+0000 m
+vz0        0.00000000000000E+0000 m/s
+1 2 3  Variables to display numerically
+         2 Number of Windows
+
+     0.070     0.150     0.640     0.690         5         2         0
+     -200      200       -150      150
+1 1 0
+
+     0.950     0.150     0.050     0.630        11         0         0
+     -10       10        0         500
+1 1 0

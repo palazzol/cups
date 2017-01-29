@@ -1,0 +1,435 @@
+AboutProgram
+            THE MOTION GENERATOR                  01
+                                                  02
+     Randall S. Jones                             03
+     Loyola College in Baltimore                  04
+     Copyright (c) 1994                           05
+                                                  06
+The GENMOT program allows you to investigate the  07
+dynamics of any system with up to three degrees   08
+of freedom.                                       09
+                                                  10
+The differential equations describing the system  11
+must be entered as a Pascal Procedure using the   12
+examples included with the software as a guide.   13
+Once the program has been compiled, the program   14
+allows you to investigate the dynamics            15
+graphically and numerically.                      16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GeneralHelp
+       GENERAL HELP FOR GENMOT PROGRAM            01
+                                                  02
+The GENMOT program allows you to investigate the  03
+dynamics of any system with up to three degrees of04
+freedom.                                          05
+The differential equations describing the system  06
+must be entered as a Pascal Procedure using the   07
+examples included with the software as a guide.   08
+Once the program has been compiled, the program   09
+allows you to investigate the dynamics graphically10
+and numerically.                                  11
+                                                  12
+Important Terms:                                  13
+             Dynamical Variables                  14
+The time-dependent variables representing the     15
+degrees of freedom of the problem (i.e. x(t),     16
+v(t), a(t)).                                      17
+             Force Parameters                     18
+User-modifiable constants that describe the force 19
+(i.e. g=9.8 m/s^2)                                20
+             User-Defined Functions               21
+Functions of the dynamical variables and the      22
+force parameters (i.e. EK=1/2 m v^2)              23
+                                                  24
+Context-sensitive help is obtained by typing F1   25
+
+GraphsHelp
+          GRAPHS                                  01
+                                                  02
+These menu options allow you to reset the         03
+dynamical variables to the initial conditions,    04
+to clear all the graphs, or to change the color   05
+of the line drawn on the graph.  Note that        06
+trajectories are not cleared automatically when   07
+parameters are changed so that you can compare    08
+the motion of objects subject to different values 09
+of the force parameters or different initial      10
+conditions.                                       11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+ParametersHelp
+             PARAMETERS                           01
+                                                  02
+This option allows you to change the initial      03
+conditions, force parameters, and numerical       04
+parameters.  When changing the force parameters   05
+or the numerical parameters you have the option   06
+of resetting the dynamical variables back to the  07
+initial conditions or continuing from the current 08
+values.  Thus, you can change the force in the    09
+middle of the simulation.  RACETRACK.PAS shows    10
+how you can set up the keyboard to provide        11
+direct user control over parameters.              12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+WindowsHelp
+                   WINDOWS                        01
+                                                  02
+The windows used to display graphs can be resized,03
+moved around, added and deleted, and the contents 04
+can be changed.                                   05
+Clicking on a graph with the mouse brings up the  06
+input screen to allow you to change the graph     07
+contents or the graph scales.                     08
+Clicking on the numerical window allows you to    09
+change the variables that are displayed           10
+numerically.                                      11
+The options under WINDOW also allow you to change 12
+the graph contents and the numerical window       13
+contents, but also allow you to move windows      14
+around the screen.  The generic 2-window and      15
+4-window options load commonly used formats.      16
+                                                  17
+When you select 'Modify Window Layout' you are    18
+asked to select the window to modify.  This can   19
+be done with the mouse or moving through the      20
+windows with the arrow keys.  The selected window 21
+can then be moved, resized, deleted or copied.    22
+When you are finished with this window, you are   23
+asked to select another window.  Type Escape when 24
+you are finished modifying windows.               25
+
+SaveParmsHelp
+            SAVE PARAMETERS                       01
+                                                  02
+You are about to save the current parameters      03
+to a file.  The saved parameters include the      04
+window layout, the initial values of the dynamical05
+variables, the current values of the force        06
+parameters and the numerical integration parmeters07
+                                                  08
+You should modify the User-Defined Help screen    09
+before you save this file by selecting 'Modify    10
+User-defined Help' under WINDOW.  The user-defined11
+help screen should be a reminder as to what is    12
+special about this particular set of parameters.  13
+                                                  14
+Note that a parameter file is specific to         15
+a particular force (as defined through the Pascal 16
+programs).  When loading a new parameter file     17
+all such files are displayed.  Thus, you should   18
+choose a name that will help identify this file   19
+with the current force.                           20
+                                                  21
+Note that you can load any parameter file for     22
+any force, but certain graphs, or parameter values23
+may not make sense if the parameter file does     24
+not apply to that force.                          25
+
+LoadParmsHelp
+             LOAD PARAMETERS                      01
+                                                  02
+You are about to load a new parameter file        03
+for this system.  Note that a parameter file      04
+is generated for a particular system (executable  05
+program) so that not all parameter files will make06
+sense for this system.  The names of the files are07
+usually chosen as a mnemonic aid.  The name of the08
+system for which this configuration file was      09
+created is given at the top of the current input  10
+screen.                                           11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GetUserDefinedHelpHelp
+          USER DEFINED HELP                       01
+                                                  02
+Use this screen to include information that is    03
+specific to this particular force and this        04
+particular parameter set.  All other help         05
+available describes the use of the system, not the06
+details of the force.                             07
+                                                  08
+Note:  This input screen is a lousy text editor.  09
+Do not press "enter" until you have completed the 10
+help text.  You cannot cause text to "wrap" to the11
+next line, so you must retype everything if you   12
+want to insert some text.                         13
+                                                  14
+This text is stored in the parameter file as      15
+normal ascii text, so you can modify it there.  Be16
+careful, however, since one line too many or too  17
+few will make the .PRM file unreadable.           18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GetForceParameterHelp
+         MODIFY FORCE PARAMETERS                  01
+                                                  02
+Use this input screen to change the numerical     03
+values of the force parameters.                   04
+                                                  05
+The first line of the input screen describes      06
+how the parameters are related to the force.      07
+                                                  08
+After changing these values, the dynamical        09
+variables are reset back to their initial values  10
+unless you turn off the "reset initial values"    11
+box.  Then you can modify the force while the     12
+simulation is progressing.  See the sample program13
+RaceTrac.Pas for an example of how to give the    14
+user more immediate control over force parameters.15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GetPlotVariableHelp
+          SELECT VARIABLE TO PLOT                 01
+                                                  02
+Select one of these variables by clicking on it   03
+with the mouse or by moving the blinking circle   04
+to the desired selection using the arrow keys or  05
+tab keys and then by pressing any other key.      06
+                                                  07
+Note that both dynamical variables and user-      08
+defined functions are available to plot.  User-   09
+defined functions might be kinetic energy, or     10
+potential energy, or any function of the dynamical11
+variables and the force parameters.  These user-  12
+defined functions are defined in the procedure    13
+DefDynFuns used in setting up this system.        14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GetDisplayVariableHelp
+          SELECT VARIABLES TO DISPLAY             01
+                                                  02
+As the simulation progresses, the numerical value 03
+of up to three variables may be displayed at the  04
+top of the screen.  The variable dtAnim which is  05
+the time step between screen updates is always    06
+displayed.                                        07
+                                                  08
+Select the variables to display by clicking on it 09
+with the mouse or by moving the blinking circle   10
+to the desired selection using the arrow keys or  11
+tab keys and then by pressing any other key.      12
+                                                  13
+Note that both dynamical variables and user-      14
+defined functions are available to display.  User-15
+defined functions might be kinetic energy, or     16
+potential energy, or any function of the dynamical17
+variables and the force parameters.  These user-  18
+defined functions are defined in the procedure    19
+DefDynFuns used in setting up this system.        20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GetInitialConditionsHelp
+          INITIAL CONDITIONS                      01
+                                                  02
+Specify the initial conditions in this input      03
+screen.                                           04
+                                                  05
+Note that dynamical variables are automatically   06
+reset to the initial values specified in this     07
+screen.                                           08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+ChangeGraphContentsHelp
+         CHANGE WINDOW CONTENTS                   01
+                                                  02
+You can change the variables plotted in this      03
+window, change the scales of these variables and  04
+change other features of this window.             05
+                                                  06
+All trajectories will be erased if this window    07
+is modified.                                      08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+GetNumericalParametersHelp
+             NUMERICAL PARAMETERS                 01
+                                                  02
+The value entered here for dtAnim will be the     03
+default time interval between screen updates.     04
+This value can be changed while the simulation is 05
+running by pressing the F5 or F6 key.             06
+                                                  07
+dt is the time step used in the numerical         08
+calculation.  Note that if dtAnim is less than dt 09
+the numerical time step will be dtAnim, since the 10
+dynamical variables must be calculated in order to11
+update the graphs.                                12
+                                                  13
+At present, RK4 is the numerical method to use for14
+most applications.  The Euler and RK2 methods have15
+been provided solely for pedagogical use.         16
+                                                  17
+Additional numerical methods may be added to this 18
+list in a fairly straightforward manner as        19
+described in the text book that accompanies this  20
+software.                                         21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+SaveDataHelp
+         SAVE DATA                                01
+                                                  02
+Numerical values of the dynamical variables and   03
+functions will be written to the file specified.  04
+Only the last 500 time steps are saved due to     05
+memory limitations.                               06
+                                                  07
+Values of parameters are also written to this     08
+file to help in identification.                   09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Last Blank Help Screen
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+

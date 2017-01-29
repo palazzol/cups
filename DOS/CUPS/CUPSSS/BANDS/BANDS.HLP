@@ -1,0 +1,247 @@
+
+UserDefinedPotential Menu Help
+                                                  01
+    User Defined Potential Menu Help Screen       02
+                                                  03
+                                                  04
+   This help screen should be changed if the user 05
+ does modify the source code to enter a special   06
+ potential function.                              07
+                                                  08
+   The simple square well potential is the        09
+ default "user defined potential".                10
+                                                  11
+        V0 is the height of the potential well.   12
+           Values between 0.1 eV and 10000 eV     13
+           will be accepted.                      14
+                                                  15
+                                                  16
+        W is the width of the potential well      17
+          measured in units of a, the lat. const. 18
+          values of W between 0.05 and 0.98       19
+          will be accepted.                       20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+InitSqWellPot Menu Help
+                                                  01
+    Square Well Potential Help Screen             02
+                                                  03
+         Initial values of the height             04
+      and width of the square well potential      05
+      are set from this menu.                     06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+        V0 is the height of the potential well.   12
+           Values between 0.1 eV and 10000 eV     13
+           will be accepted.                      14
+                                                  15
+                                                  16
+        W is the width of the potential well      17
+          measured in units of a, the lat. const. 18
+          values of W between 0.05 and 0.98       19
+          will be accepted.                       20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+InitCosinePot2 Menu Help
+                                                  01
+    Sum of two cosine potentials                  02
+                                                  03
+                                                  04
+   V(x) = V0 B [1 - Cos(2pi x/a)]/2               05
+          + V0 (1-B) [1 - Cos(4pi x/a)]/2.        06
+                                                  07
+   Note that the second cosine function has a     08
+   spatial period half that of the lattice        09
+   while the first term has the lattice period.   10
+                                                  11
+        V0 is the height of the potential well.   12
+           Values between 0.1 eV and 10000 eV     13
+           will be accepted.                      14
+                                                  15
+        B is the relative strength of the two     16
+          terms and must be between 0 and 1.      17
+                                                  18
+   Note that if B = 0, then the only term is the  19
+   second one and we have essentially changed     20
+   the period of the lattice to a/2.  This should 21
+   double the size of the Brillouin zone and      22
+   thus every other energy band gap should be     23
+   zero no matter how large V0 becomes.           24
+                                                  25
+
+InitLinearPot Menu Help
+                                                  01
+                                                  02
+                                                  03
+    Trapezoid shaped potential with               04
+        slanted walls.                            05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+        V0 is the maximum height of the           10
+           potential measured from the flat       11
+           bottom.  Values between 0.1 and        12
+           10000 eV will be accepted.             13
+                                                  14
+                                                  15
+      FBW is the full width of the flat bottom    16
+          measured in units of the lattice const. 17
+          Values from 0.0 to 0.9 will be          18
+          accepted.                               19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+ReadNumBands Menu Help
+                                                  01
+  Set the number of bands to be calculated.       02
+                                                  03
+     "NBands" = the maximum number of band        04
+                edges that are calculated         05
+                (limited to 12 or less).          06
+                                                  07
+  Set the number of bands displayed in the        08
+       E(k) plot.                                 09
+                                                  10
+     "NBMin" is the index of the lowest energy    11
+             band displayed.  The very bottom     12
+             band has index = 1.                  13
+                                                  14
+     "NBMax" is the index of the highest          15
+             energy band displayed.               16
+                                                  17
+       All bands with indices between NBMin       18
+       and NBMax will be displayed.               19
+                                                  20
+                                                  21
+     "History_Level" is the number of             22
+                     previously calculated        23
+                     E(k) data sets displayed.    24
+                                                  25
+
+ChooseState Menu Help
+                                                  01
+   Choose the eigenstate to be calculated         02
+        and displayed.                            03
+                                                  04
+    "kred" is the reduced wave number of the      05
+           desired state in units of pi/a         06
+           0 <= kred <= 1                         07
+                                                  08
+        Note: Because of difficulties in          09
+              calculating the state right at      10
+              the Brillouin zone boundary, if     11
+              kred = 1 or 0 then it is shifted    12
+              slightly away from the boundary.    13
+                                                  14
+     "Band Index"  is the Band index for the      15
+             desired state.  The lowest energy    16
+             band is assigned Band Index = 1.     17
+             Band Index must be between 1 and     18
+             the current value of NBand=Maximum   19
+             Band Index for which E(k) were       20
+             calculated.                          21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+ChangeV0 Menu Help
+                                                  01
+                                                  02
+     Set the strength of the crystal potential.   03
+                                                  04
+                                                  05
+          V0 must be between 0.1 and 10000 eV     06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+Numerics Menu Help
+  The Numerov algorithm is used to integrate      01
+  the Schrodinger equation accross a unit         02
+  cell. The number of points used per unit        03
+  cell may be set.  Generally, higher pre-        04
+  cision is obtained with a larger number of      05
+  points.  The minimum no. of points is 50.       06
+                                                  07
+  The band edges are determined by finding        08
+  the value of the energy where the Generalized   09
+  Kronig-Penney function passes through +1        10
+  or -1.  The tolerance permitted in these        11
+  zero searches may be changed.  The largest      12
+  tolerance allowed is 1.0E-2.                    13
+                                                  14
+  Intermediate results can be displayed during    15
+  the search for band edges.  The program shows   16
+  the energy values where the Gen.Kronig-Penney   17
+  function has extrema.  Then the values of the   18
+  energy at the band edges (where the G K-P fn.   19
+  is equal to +1 or -1) are displayed.  The       20
+  bands of allowed energy are where the G K-P     21
+  function lies between -1 and +1.                22
+                                                  23
+  The Gen. Kronig-Penney function can also be     24
+  displayed.                                      25
+
+
+EnterEgvsV0Param Menu Help
+                                                  01
+  A "production" run is made to calculate         02
+  the dependence of the width of the energy       03
+  gaps as a function of the strength of the       04
+  crystal potential.                              05
+                                                  06
+  The i-th gap is the energy difference between   07
+  top of the i-th band and the bottom of the      08
+  next higher band.                               09
+                                                  10
+  The entire set of energy gaps is calculated     11
+  for a range of V0 from "Minimum V0" to          12
+  "Maximum V0".                                   13
+                                                  14
+  "No. of Points" is the number of values of      15
+  V0 chosen to be included in the plot.  The      16
+  values of V0 are distributed evenly on the      17
+  log V0 axis.                                    18
+                                                  19
+  The band gaps included in the plot have         20
+  indices from "Lowest band index" to             21
+  "Highest band index".                           22
+                                                  23
+  It is interesting to note that the gaps         24
+  do not always vary monotonically with V0.       25

@@ -1,0 +1,176 @@
+PROGRAM ImageChargesandMultipoleExpansions;
+{
+******************Image Charge and Multipole Expansion*******************
+*                            Version 3.4                                *
+*            (Uses CUPSutilities of the same version index.)            *
+*                                                                       *
+*                  Concept and Design by Lyle Roelofs                   *
+*              Programming by Nat Johnson and Lyle Roelofs              *
+*                         Department of Physics                         *
+*                           Haverford College                           *
+*                          Haverford, PA  19041                         *
+*                                                                       *
+*                               June, 1993                              *
+*                                                                       *
+*************************************************************************
+}
+
+USES CUPS, CUPSmupp, crt, graph, CUPSgui, CUPSfunc, CUPSgrph;  {Version 3.0}
+
+TYPE
+   RealPoint = RECORD
+      X : real;
+      Y : real;
+   end;
+   RealPointArray = ARRAY[1..6] OF RealPoint;  {MaxCharges = 6}
+   PointArray = ARRAY[1..7] OF PointType;
+   ChargeValue = ARRAY[1..6] OF real;       {MaxCharges = 6}
+   ChargeBoolean = ARRAY[1..6] OF boolean;  {These two types also used for
+                                             multipole values.}
+CONST
+   MaxCharges = 6;
+   MaxMoments = 6;
+   WindowColor = Cyan;
+   TextColor = Yellow;
+   HiLiteTextColor = LightRed;
+   ConductorColor = LightGray;
+   FieldLineColor = White;
+   CloseUpBoxColor = LightCyan;
+   PosColor = LightRed;
+   NegColor = LightBlue;
+   SelectionColor = White;
+   ButtonColor = White;
+   DarkBlue = 1;
+   DarkGreen = 2;
+
+{Global variables for menus, sliders, and help and input screens}
+VAR
+   MultipoleMenu, ImageChargeMenu : TMenu;
+   sliders : Tsliders;
+   contour : Tcontour;
+   ChargeInputScreen, MomentInputScreen : TInputScreen;
+   HotKeys : THotKeys;
+   Credits: HelpScrType;
+   SimulationMode : integer;  {1 = multipoles, 2 = image charges, 0 = Quit}
+   Conductor : integer;  {1 - 5 depending on chosen conductor configuration}
+   ICDisplayMode : integer;  {1 = charges only, 2 = Field shown only outside
+         the conductor, 3 = Field of all charges shown in all space.}
+   MEDisplayMode : integer;  {1 = potential, 2 = E-field, 3 = superimposed}
+   MEConductor : integer; {1 = cylinder, 2 = split sphere, 3 = split cylinder}
+   AutoDisplay : boolean;  {true = always display, false = wait for hotkey}
+   AutoDisplayOverride : boolean;  {if true, field drawing suppression is overridden}
+   multi, charge : real;{slider values in multipole and image charge modes}
+
+   CloseUp : RealPoint;             {center point of the Close Up Box}
+
+   ChargePts                          : RealPointArray;
+   ChargeStrength, MomentStrength     : ChargeValue;
+   ChargeOn, MomentOn                 : ChargeBoolean;
+   SelectedCharge, SelectedMoment     : integer;
+
+PROCEDURE InitializeGlobals;
+PROCEDURE DefineViewports;
+PROCEDURE DefineColors;
+PROCEDURE DefineMultipoleMenu;   
+PROCEDURE DefineImageChargeMenu;
+PROCEDURE DefineHotKeys;
+PROCEDURE DefineSliders;
+PROCEDURE EraseHelpScreen(VAR HelpScreen : HelpScrType);
+PROCEDURE DefineCredits;
+BEGIN
+   EraseHelpScreen(Credits);
+   Credits[3] := '           The Image Charge Method               ';
+   Credits[4] := '                    and                          ';
+   Credits[5] := '            Multipole Expansions                 ';
+   Credits[7] := '       Concept and design by Lyle Roelofs        ';
+   Credits[8] := '   Programming by Nat Johnson and Lyle Roelofs   ';
+   Credits[9] := '               Department of Physics             ';
+   Credits[10] :='                 Haverford College               ';
+   Credits[11] :='               Haverford, PA  19041              ';
+   Credits[12] :='                     USA                         ';
+   Credits[15] :='           For use with companion text           ';
+   Credits[16] :='                   CUPS E&M                      ';
+   Credits[17] :='                     by                          ';
+   Credits[18] :='     Bob Ehrlich, Lyle Roelofs and Ron Stoner    ';
+   Credits[20] :='       (Include file ICandME.HLP in same         ';
+   Credits[21] :='     directory/folder to enable Help screens.)   ';
+   Credits[24] :='        Hit any key or click to continue.        ';
+END;
+PROCEDURE Initialize;
+PROCEDURE DisplayScreen;
+PROCEDURE ClearAll; {clears screen, including sliders,}
+FUNCTION Distance(PtOne, PtTwo : RealPoint) : real;
+PROCEDURE WindowOutline;
+FUNCTION inttochar(number : integer) : char;
+PROCEDURE BottomMessage(message : string);
+PROCEDURE DrawArrow(PtOne, PtTwo : RealPoint);
+
+{These are the procedures for Multipole Expansion Mode: }
+
+PROCEDURE DrawMERadioButtons;
+FUNCTION Legendre (Order : integer ; X : real) : real;
+FUNCTION Potential (X, Y : real) : real; FAR;
+PROCEDURE EfieldME( Pt : RealPoint ; VAR EfieldX, EfieldY : real);
+PROCEDURE DrawFieldLineME(initPt : RealPoint);
+PROCEDURE DisplayEFieldME;
+PROCEDURE DisplayMoment;
+PROCEDURE DrawMEConductor;
+PROCEDURE UpdateMEDisplay;
+PROCEDURE SetMomentsKeyboard;
+
+{These are the procedures for Image Charge Mode: }
+
+PROCEDURE DrawICRadioButtons;
+PROCEDURE DrawCharges;
+PROCEDURE Efield( Pt : RealPoint ; VAR EfieldX, EfieldY : real);
+FUNCTION NearCharge(Pt : RealPoint; radius : real):integer;
+FUNCTION InConductor(Pt : RealPoint) : Boolean;
+PROCEDURE DrawFieldFromLine(angle :real);
+PROCEDURE DrawFieldFromSphere;
+PROCEDURE DrawConductorLines;
+PROCEDURE DrawConductor;
+PROCEDURE DisplayImageChargeScreen(Lines : integer);
+PROCEDURE DrawCloseUpConductor;
+FUNCTION GetConductAngle(IntersectPt : RealPoint): real;
+FUNCTION GetIntersectAngle(VAR ConductAngle : real ; LineAngle : real): real;
+PROCEDURE DrawAngle(IntersectPt : RealPoint);
+PROCEDURE CloseUpFieldLine(VAR IntersectPt : RealPoint);
+PROCEDURE DisplayCloseUpBox;
+PROCEDURE UpdateICDisplay;  {redraws the IC screen, using the above routines}
+PROCEDURE SpecifyArbitraryLine;
+PROCEDURE PlaceChargesKeyboard;
+PROCEDURE PlaceCharge(mousePt : RealPoint);
+PROCEDURE SelectCharge(MousePt : RealPoint);
+PROCEDURE MoveCloseUpBox;
+PROCEDURE SetChargePosition;
+
+{These are procedures for both modes: }
+
+PROCEDURE RedisplayScreen;
+PROCEDURE FieldProbe;
+PROCEDURE SliderHandler;
+PROCEDURE MultipoleMenuHandler;
+PROCEDURE Multipole;
+PROCEDURE ImageChargeOptionHandler(rowchosen : integer);
+PROCEDURE ImageChargeMenuHandler;
+PROCEDURE ImageCharge;
+
+   {Main program}
+
+BEGIN 
+   Initialize;
+   HideCursor;
+   Help(Credits);
+   REPEAT
+      DisplayScreen;
+      ShowCursor;
+      CASE SimulationMode OF
+         1: Multipole;
+         2: ImageCharge;
+      END;
+      ClearAll;
+   UNTIL (SimulationMode = 0);
+   MultipoleMenu.done;
+   ImageChargeMenu.done;
+   CUPSdone;
+END.

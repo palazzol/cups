@@ -1,0 +1,1076 @@
+HELPSCREEN26
+
+             MICHELSON INTERFEROMETER
+
+                    Spectrum
+
+  Select the Spectrum button.
+
+  The fringe pattern for the Michelson
+  Interferometer is shown as a function of angle.
+  Two wavelengths are chosen. The order of the
+  fringes can be determined using the mouse in
+  the upper window. The distance that you want
+  the mirror to travel can is set on the input
+  screen. The behaviour of the fringe pattern
+  can also be seen in an animation mode if the
+  Animation button is chosen.
+
+  The other button choice on the input screen
+  will set up the parameters for Problem 2.7.6:
+  No 3.
+
+
+
+
+
+
+
+
+
+HELPSCREEN25
+
+             MICHELSON  INTERFEROMETER
+
+            Refractive Index of a Solid
+
+
+  The input screen allows you to choose the
+  initial efective mirror separation, two
+  wavelengths, the angular range in the field of
+  view and the thickness of a transparent sample
+  that will be place into one arm of the
+  interferometer.  The default material is crown
+  glass.
+
+  The main screen shows the fringes for the
+  interferometer with the sample out of the arm
+  - Sample Out.   Find the mirror setting for the
+  black field. Then introduce the sample and find
+  a new setting of the mirror for the black field.
+
+  You can change the slider to a high sensitivity
+  setting using the zoom button. Initially set
+  both wavelengths to the same value simulating
+  monochromatic light.  Later try two wavelengths.
+
+
+
+
+HELPSCREEN1
+
+           APPLICATIONS OF INTERFERENCE
+                 AND DIFFRACTION
+
+     THE GRATING
+          a)  Transmission Grating - Spectrum
+          b)  Transmission Grating - Resolution
+          c)  Blazed Reflection Grating
+
+       THE PRISM
+          a)  Spectrum
+          b)  Resolution
+
+       THE MICHELSON INTERFEROMETER
+          a) Spectrum
+          b) Fourier Transform Spectrosopy
+          c) Refractive Index of a Gas
+          d) Refractive Index of a Solid
+
+       THE FABRY PEROT ETALON
+          a)  Spectrum and Resolving Power
+
+
+
+
+
+
+
+
+HELPSCREEN2
+
+               TRANSMISSION GRATING
+
+  In this Program you can set two separate
+  wavelengths and observe the diffraction
+  pattern.
+
+  The slit width, slit separation and the two
+  wavelengths are set using sliders.
+
+  Investigate the effect of changing the slit
+  width, the slit separation and the wavelengths.
+
+  Note the variation of intensity with
+  diffraction angle and the resolution between
+  wavelengths.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN3
+
+            BLAZED REFLECTION GRATING
+
+  This program shows the diffraction pattern
+  given by a blazed reflection grating.
+
+  Choose the wavelength of the incident light,
+  the angle of incidence, the angle of blaze and
+  the step length along the grating using
+  sliders.
+
+  Study the effect of changing all the variables
+  which can be effected using the sliders.
+
+  Try adjusting the blaze angle to select a
+  particular order at a particular wavelength.
+
+
+  You can use the mouse to measure the angle of
+  diffraction in the lower viewport.
+
+
+
+
+
+
+
+
+
+HELPSCREEN9
+
+   APPLICATIONS OF INTERFERENCE AND DIFFRACTION
+
+
+                       by
+                Dr. Robin A. Giles
+         Department of Physics and Astronomy
+                Brandon University
+                Brandon, Manitoba
+                  Canada R7A 6A9
+                Tel: 204 727 7402
+            E-Mail: giles@BrandonU.CA
+         (c) 1995 John Wiley & Sons, Inc.
+
+  In this program you will be able to study the
+  Transmission and the Reflection Grating, the
+  Prism, the Michelson Interferometer and the
+  Fabry-Perot Interferometer.
+
+  The question of Resolving Power is examined
+  and some important applications are considered.
+
+
+      Press <Enter> or Click Mouse to continue
+
+
+
+
+
+HELPSCREEN10
+
+                PRISM - SPECTRUM
+
+  The Input Screen allows a choice of prism
+  angle and material. The prism material is
+  chosen using the material buttons. The
+  appropriate Refractive Index will then be
+  calculated using the two parameter Cauchy
+  equation, the A and B constants are listed in
+  the printed text. The default material is
+  crown glass. Three other  materials can be
+  selected or you can choose your own material.
+  The light source is chosen using the Source
+  buttons. The default source is helium (8
+  lines). Five other sources - hydrogen, mercury,
+  sodium, krytpon and lithium - can be chosen or
+  you can enter your own source. If this is
+  the case, enter the number of lines and
+  their values.
+
+  You can vary the incident angle from the main
+  screen using the slider, which has a fine
+  adjustment facility.
+
+
+
+
+
+
+HELPSCREEN11
+
+                 PRISM - RESOLUTION
+
+  The position of two closely seperated
+  wavelengths can be studied using the resolution
+  program.  You can display the line widths which
+  are shown as a function of the Fraunhofer
+  Diffraction from the effective width of the
+  prism. You can choose the prism material from
+  the input screen as in the Prism - Spectrum
+  program.
+
+  You can choose one of four light sources -
+  krypton, sodium, mercury and potassium
+  all of which have a doublet. You can also
+  choose your own material and source parameters
+  if so desired.
+
+  The baselength of the prism can be varied in
+  order to show that the resolving power is a
+  function of this parameter.
+
+  It might be interesting to use both the Spectrum
+  program and Resolving Power programs together.
+
+
+
+
+
+HELPSCREEN12
+
+    RESOLVING POWER OF A TRANSMISSION GRATING
+
+  The diffraction patterns for two wavelengths
+  are displayed. The wavelengths, slit
+  separation, slit width and number of slits
+  can be varied using the sliders.
+
+
+  A special facility is available to change the
+  angular range in the field of view.  Click the
+  mouse on a new low and high angle.  The
+  spectrum will then be redisplayed on an
+  expanded scale. You can zoom the scale as
+  many times as you like. The original setting
+  is available using the <F4-Zoom Out> hot key.
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN14
+
+               FABRY PEROT ETALON
+
+  You can adjust the Reflectance and the Etalon
+  thickness.  Two wavelengths are chosen and
+  the etalon spectrum is displayed over the
+  chosen angular range.
+
+  If the mouse is clicked on the fringes in the
+  upper window you can determine the fringe
+  order at the given wavelength.  The angular
+  range can be changed by clicking the mouse on
+  a new low and a new high angle.  The fringes
+  will then be redisplayed on an expanded scale.
+  You can zoom the range as many times as you
+  like. Select the original range using the
+  <F4-Zoom Out> hot key.
+
+  You can also use the mouse in the lower
+  viewport to measure intensity and check the
+  Rayleigh resolution criterion.
+
+  The ring structure can be seen using the
+  <F3-ShowRings> hot key.  <F4-Zoom Out> will
+  clear the rings and return the original lines.
+
+
+
+
+
+HELPSCREEN17
+
+             MICHELSON INTEFEROMETER
+
+     Wavelength Measurement using Fast Fourier
+                    Transform
+
+  Three wavelengths are chosen and the fringe
+  structure is shown as a function of angle. The
+  intensity at the central position is shown as
+  a function of the position of the rear mirror.
+  This signal is then Fast Fourier transformed.
+  The wavelengths corresponding to the frequency
+  components can be determined using the mouse.
+
+  Different sampling numbers can be chosen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN18
+
+              MICHELSON INTERFEROMETER
+
+  Determination of the Refractive Index of a Gas
+              Choose the Gas 'AIR'.
+
+  The fringe structure for a given wavelength
+  is shown as a function of the pressure in a
+  gas cell introduced into one arm of the
+  interferometer.  The orders of the initial and
+  final fringe are shown in the viewport.
+
+
+  Problems Section 2.7.8: Nos 2 and 3 can be
+  selected using the buttons on the input screen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN20
+  MICHELSON INTERFEROMETER - PROBLEM  6.7.6 (c)
+  In a remarkable experiment carried out by
+  Meissner the rate at which a plant grew was
+  investigated using a Michelson Inteferometer.
+  One mirror was attached to the top of the
+  plant and the moveable mirror was adjusted
+  to give a black field of view indicating that
+  the effective plate separation was zero. As
+  the plant grew the effective plate separation
+  changed so that fringes appeared. At regular
+  intervals as the plant grew the position of
+  the moveable mirror was changed to return the
+  black field and from the distance that the
+  mirror had to be moved the rate of plant
+  growth was calculated. Set the lower button
+  to Start of Growth and find the position of
+  the moveable mirror to give the black field.
+  Then select Finish of Growth, simulating a time
+  interval of 8 hours during which the plant grew
+  and its mirror moved. Find the distance that
+  you have to move the other mirror to return the
+  black field and hence calculate the rate of
+  plant growth in mm/hour.  Take the wavelength
+  of the source to be 550 nm.
+    Press <Enter> or Click Mouse to Continue
+
+
+
+
+HELPSCREEN21
+
+            MICHELSON INTERFEROMETER
+           Refractive Index of a Solid
+
+                PROBLEM 6.7.9 (b)
+
+  The sample button will be set at Sample Out
+  and there is no sample in one of the arms of
+  the interferometer.
+
+  First find the position of the moveable
+  mirror to give the black field. Then place
+  the sample into the arm with the fixed mirror.
+
+  Find the new position of the moveable mirror
+  to return the black field.
+
+  If the thickness of the sample was
+  0.001 m, what was its refractive index.
+
+  Can you identify the solid?
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN23
+
+            MICHELSON  INTERFEROMETER
+            Refractive Index of a Gas
+
+               PROBLEM 6.7.8 (b)
+
+  Measure the refractive index of Gas A using a
+  gas cell 0.015 m in length.
+
+
+  Can you identify the gas?
+
+
+
+
+
+
+
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN24
+
+            MICHELSON  INTERFEROMETER
+            Refractive Index of a Gas
+
+                PROBLEM 6.7.8 (c)
+
+
+  The gas cell was filled with Gas B (Hydrogen)
+
+  Determine the length of the gas cell, if the
+  refractive index of the gas was 1.000132.
+
+
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN27
+
+             MICHELSON  INTERFEROMETER
+                    Spectrum
+
+                PROBLEM 6.7.6 (c)
+
+
+  The initial conditions are at the start of
+  growth. Move the mirror to find the black
+  field condition.  Press the Finish of Growth
+  button which simulates the time during which
+  the plant grows and the mirror moves.
+
+  Re-establish the black field condition by
+  moving the mirror.
+
+  From this information calculate the growth
+  rate.
+
+  The time elapsed was 8 hours and the
+  wavelength of the light was 550 nm.
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN28
+
+             MICHELSON  INTERFEROMETER
+            Refractive Index of a Solid
+
+                PROBLEM 6.7.9 (b)
+
+  Adjust the mirror to find the black field
+  condition. Then place the sample into the
+  beam using the Sample Out button.  Find the
+  new position to return the black field.
+
+  From these data calculate the refractive
+  index of the solid.
+
+  Can you identify it?
+
+
+
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN30
+
+             MICHELSON  INTERFEROMETER
+             Refractive Index of a Gas
+
+                 PROBLEM 6.7.8 (b)
+
+  The gas flow has been stopped.  The number
+  of fringes that have been created is a
+  function of the refractive index of the gas
+  and the cell length.
+
+
+  Using the cell length calculate the refractive
+  index.
+
+  Normalise to 760 mm Hg.
+
+  Use a reference text to see if you can
+  identify the gas.
+
+  Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN31
+
+             MICHELSON  INTERFEROMETER
+             Refractive Index of a Gas
+
+                 PROBLEM 6.7.8 (c)
+
+  The gas flow has been stopped. The number of
+  fringes that have been created is a function
+  of the cell length and the refractive index
+  of the gas.
+
+  Using the data given calculate the cell length.
+  The gas was Hydrogen n = 1.000132.
+
+
+
+
+
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN32
+
+                PRISM - SPECTRUM
+
+  You can choose your own material to study if
+  you provide the appropriate Cauchy A and B
+  constants and then select [OK].
+
+  If you select [CANCEL] the program will run
+  with the previously selected material.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN33
+
+                PRISM - SPECTRUM
+
+  You can choose your own source to study if
+  you enter the appropriate wavelengths.  Up
+  to 8 new wavelengths can be entered. Enter
+  the number of wavelengths as well. Then
+  select [OK].
+
+  If you select [CANCEL] the program will run
+  with the previously selected source.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN34
+
+                PRISM - RESOLUTION
+
+  You can choose your own material to study if
+  you provide the appropriate Cauchy A and B
+  constants and then select [OK].
+
+  If you select [CANCEL] the program will run
+  with the previously selected material.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN35
+
+                PRISM - RESOLUTION
+
+  You can choose your own source to study if
+  you enter the appropriate pair of wavelengths
+  and then select [OK].
+
+  If you select [CANCEL] the program will run
+  with the previously selected source.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN38
+
+              MICHELSON  INTERFEROMETER
+              Refractive Index of a Gas
+
+  The mirror has been halted in its motion
+  and you can see the fringe pattern in the
+  viewport.  The order of the centre of
+  initial fringe is displayed in the window
+  together with the current order of the
+  central fringe.
+
+
+  At all times the distance the mirror has
+  travelled is shown.
+
+  From this distance travelled you can
+  calculate the refractive index of the sample.
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN39
+
+
+              MICHELSON INTERFEROMETER
+             Refractive Index of a Solid
+
+  The sample is CROWN GLASS.
+
+  The main screen shows the fringes for the
+  interferometer with the sample out of the arm
+  - Sample Out.  Find the mirror setting for the
+  black field. Then introduce the sample and
+  find the new setting of the mirror for the
+  black field.
+
+  You can change the slider to a high
+  sensitivity setting using the zoom button.
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN41
+
+              MICHELSON INTERFEROMETER
+
+  The mirror has been halted in its motion
+  and you can see the fringe pattern in the
+  viewport.  The order of the centre of initial
+  fringe is displayed in the window together
+  with the current order of the central fringe.
+
+
+
+  At all times the distance the mirror has
+  travelled is shown.
+
+  From this distance travelled you can calculate
+  the refractive index of the sample.
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN42
+
+              MICHELSON INTERFEROMETER
+           Fourier Transform Spectroscopy
+
+  The upper viewport shows the INTENSITY
+  variation as a function of the position of
+  the mirror.  It is what you would observe
+  as the mirror moves.
+
+  The lower viewport is the result of applying
+  a Fast Fourier Transform to the plot in the
+  upper viewport. It represents the number of
+  waves of each frequency that fit into the
+  distance that the mirror travelled.  Knowing
+  this distance you can calculate the
+  wavelength.
+
+  This is most easily seen if you use just one
+  wavelength (by setting both to be the same)
+  and a small mirror travel distance that is a
+  small multiple of the wavelength.
+
+  Sliders control the two wavelengths and the
+  distance the mirror travels. The buttons allow
+  you choose the number of FFT sampling points.
+
+
+
+
+HELPSCREEN43
+
+                PRISM - SPECTRUM
+
+
+  You can vary the incident angle using the
+  slider, which has a fine adjustment facility.
+
+  The paths of the rays are shown in a ray
+  diagram. Angle data can be seen by pressing
+  the <F5-Data> hot key.  The angular range can
+  be reduced using the Zoom Range button on the
+  left side of the viewport.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN44
+
+                 PRISM - RESOLUTION
+
+
+
+  The angle of incidence can be varied using the
+  slider. The baselength of the prism can also
+  be varied using the slider in order to show
+  that the resolving power is a function of
+  this parameter also.
+
+
+
+
+
+  It might be interesting to use both the
+  Spectrum program and Resolving Power programs
+  together.
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN45
+
+              MICHELSON INTERFEROMETER
+
+  The upper viewport shows the individual fringe
+  patterns for the two wavelengths.  The lower
+  viewport the sum of the two fringe patterns.
+
+  The plate separation can be changed using the
+  slider which has a fine adjustment capability.
+
+  By using the <F3-ShowRings> hot key you can
+  see the appearance of the rings in the field
+  of view. The rings mark the position of the
+  maxima. Note that in fact the fringes are not
+  as sharp as drawn.
+
+  The <F4-ClearRings> hot key will clear the
+  fringes and return the original screen.
+
+  The Animation button will show the appearance
+  of the fringes as the mirror travels.
+
+
+
+
+
+
+
+
+HELPSCREEN50
+
+              MICHELSON INTERFEROMETER
+           Fourier Transform Spectroscopy
+
+                Problem 6.7.7.(d)
+
+  A source of light is used with the
+  spectrometer. The upper viewport will show
+  the variation of intensity as a function of
+  the position of the moveable mirror.
+
+  Select suitable parameters to measure the
+  wavelengths present in the source.
+
+  Can you identify the source?
+
+
+
+
+
+
+
+      Press <ENTER> or Click Mouse to continue
+
+
+
+
+
+
+HELPSCREEN51
+
+              MICHELSON INTERFEROMETER
+           Fourier Transform Spectroscopy
+
+                  Problem 6.7.7.(e)
+
+  The upper viewport will show the variation of
+  intensity as a function of the position of
+  the moveable mirror.
+
+  Select suitable parameters to measure the
+  wavelengths present in the source.
+
+  Can you identify the source?
+
+
+
+
+
+
+
+
+      Press <ENTER> or Click Mouse to continue
+
+
+
+
+
+
+HELPSCREEN52
+
+              MICHELSON INTERFEROMETER
+           Fourier Transform Spectroscopy
+
+                 Problem 6.7.7.(d)
+
+
+  The upper viewport shows the variation of
+  intensity as a function of the position of
+  the moveable mirror.
+
+  Adjust the distance travelled by the mirror
+  and the number of FFT points to get greatest
+  accuracy.
+
+
+  Make sure that you are not troubled by
+  aliasing.
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+HELPSCREEN53
+
+              MICHELSON INTERFEROMETER
+           Fourier Transform Spectroscopy
+
+                  Problem 6.7.7.(e)
+
+  A source of light is used with the
+  spectrometer. The upper viewport shows the
+  variation of intensity as a function of the
+  position of the moveable mirror.
+
+  Adjust the distance travelled by the mirror
+  and the number of FFT points to get greatest
+  accuracy.
+
+  Make sure that you are not troubled by
+  aliasing.
+
+
+
+
+
+     Press <Enter> or Click Mouse to Continue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
