@@ -1,0 +1,104 @@
+TPPATCH does fix a bug appearing in all programs that have
+been written using Turbo Pascal when such a program is run on a
+Pentium Pro 200MHz or a faster computer.
+
+This bug causes a runtime error 200 when the startup code of
+Delay() is executed. The bug appears when a DIV instruction is
+executed and the result does not fit into the destination
+register.
+
+With this bugfix you can patch all files that have been compiled with
+Turbo Pascal, for example Crosspoint. This procedure does also
+work with applications compiled for the protected mode.
+
+To patch software without having the source of it, you can
+apply better methods, for example replacing Delay() if you have
+the runtime sources, and a unit has been posted in some
+newsgroups that will circumvent this with various low-level
+tricks.
+
+With this patch Delay() does run correctly on all slower
+machines, likewise on a Pentium Pro with 200MHz. But if there
+are even faster processors one day, Delay() will wait a bit to
+short on them. But the programs patched with TPPATCH will never
+hang again because of the bug.
+
+Here comes the explanation:
+
+>530B:0087 E83C02         call   02C6
+>530B:008A F7D0           not    ax
+>530B:008C F7D2           not    dx
+>530B:008E B93700         mov    cx,0037
+>530B:0091 F7F1           div    cx
+                          ^^^^^^^^^
+>530B:0093 A35C00         mov    [005C],ax
+
+This division on CS:0091 or CS:0099 causes exeption #0, and
+this causes a runtime error 200. The first procedure (here it
+is on CS:0087) detects how long the cpu can decrease a counter
+within a time of 55ms. The following two NOT instructions
+negate the value of the counter and divide it then by 55.
+(37h=55d)
+
+The result is saved in a variable (here [005C]) und is used by
+Delay() later to wait exactly one millisecond.
+
+I've changed it as follows:
+
+>  cs:007E E88501         call   ....
+>  cs:0081 F7D0           not    ax
+>  cs:0083 F7D2           not    dx
+>  cs:0085 B93700         mov    cx,0037
+>  cs:0088 3BD1           cmp    dx,cx
+>  cs:008A 7205           jb     0091
+>  cs:008C B8FFFF         mov    ax,FFFF
+>  cs:008F EB02           jmp    0093
+>  cs:0091 F7F1           div    cx
+>  cs:0093 A35C00         mov    [005C],ax
+
+This prevents the result to grow larger than a word. Of course
+I had to insert some instructions, so I optimized some laxities
+done by the programmers of BP/TP and circumvented the need
+to move the code completely.
+
+before the changes:
+
+>  cs:0062 33C0           xor    ax,ax
+>  cs:0064 A25100         mov    [0051],al
+>  cs:0067 A26100         mov    [0061],al
+>  cs:006A A26200         mov    [0062],al
+>  cs:006D 40             inc    ax
+>  cs:006E A25000         mov    [0050],al
+
+after the changes:
+
+>  cs:0062 33C0           xor    ax,ax
+>  cs:0064 A36100         mov    [0061],ax
+>  cs:0067 40             inc    ax
+>  cs:0068 A35000         mov    [0050],ax
+
+The program (TPPATCH.EXE) examines the file it is commanded to
+patch exactly, so no exe file will be "patched to death". The
+position of the variables are scanned automatically, so the
+patch should work with *all* versions of TP7/BP7. But I haven't
+tested it with TP6. Of course it is possible that it also can
+patch those files.
+
+Of course, the whole thing is only necessary if the unit CRT
+is used in the program.
+
+It is possible to make a batch run TPPATCH on all executables
+on the hard disk, because TPPATCH does a bunch of tests with
+every file, so not a single wrong file will be patched.
+
+Of course, compressed files have to be uncompressed before
+patching, for example with UNP
+(ftp://garbo.uwasa.fi/pc/execomp/unp411.zip).
+
+I'm not responsible for any action that is performed by
+TPPATCH, nor do I give any waranty about the function of it.
+Before you go and patch foreign software you should take a look
+into a LICENSE.DOC file or anything similar .
+
+Andreas Bauer <andi.tio@hit.handshake.de>
+
