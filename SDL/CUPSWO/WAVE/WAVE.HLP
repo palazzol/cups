@@ -1,0 +1,793 @@
+About Wave
+                                                  01
+       This program uses the finite difference    02
+   approximation algorithm to model the time      03
+   evolution of three common partial differential 04
+   equations for  Y(x,t):  linear and nonlinear   05
+   wave, diffusion, and Schroedinger.             06
+                                                  07
+       The user may specify the initial distri-   08
+   bution and boundary conditions.  The buttons   09
+   in the lower left corner of the simulation     10
+   graph allow the user to  customize  the        11
+   simulation by creating:                        12
+                                                  13
+   Reflectors (light blue)                        14
+   Sources (red)-- add amplitude to the wave      15
+   Segments (green)-- represent changes in refrac-16
+     tive index, potential energy, or temperature.17
+   Detectors  (blue) -- monitor wave amplitude    18
+                                                  19
+      Menu items [Graph-1] and [Graph-2] provide  20
+   graphs for analysis of the simulation.         21
+      Simulation configurations can be saved to a 22
+   or loaded from a file. Save/load options are   23
+   under the [Files] menu. The merge option allows24
+   for "adding" a file's wave to current display. 25 
+
+Advanced Help
+                                                  01
+                                                  02
+                                                  03
+     The source may generate left-traveling,      04
+ right-traveling, or bidirectional amplitude.     05
+                                                  06
+                                                  07
+     A source may be periodic, in which case its  08
+ period is set by the user, or non-periodic.      09
+ A non-periodic source generates for the amount   10
+ of time specified by period, then lies dormant.  11
+                                                  12
+                                                  13
+      "Random" noise may be added to a source     14
+ such that the amplitude differs from the         15
+ "expected" amplitude by as much as the amount    16
+ specified in "noise amp." The "coherence time"   17
+ parameter specifies the average time between     18
+ random phase shifts.                             19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Boundary Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+ At a [Fixed] boundary, y = 0.                    08
+                                                  09
+                                                  10
+ At a [Periodic] boundary, y(left-most-point) is  11 
+ determined by treating the right-most-point as   12
+ the left-most-point's left neighbor, and vice    13
+ versa.  This creates a "wrap-around" effect,     14
+ useful for simulating "infinite" media.          15 
+                                                  16
+                                                  17
+ An [Absorbing] boundary completely absorbs       18
+ the incident wave.  The [Absorbing] boundary     19
+ is not available for diffusion simulations.      20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Demo Help
+                                                  01
+                                                  02
+                                                  03
+    When Demo Mode is enabled, a demonstration    04
+simulation will evolve for the amount of time     05
+specified by DemoTime.  Then a Reset will occur   06
+and the demo will be run again.                   07
+                                                  08
+                                                  09
+   EXIT Demo Mode by pressing ESC or a hot key.   10 
+                                                  11 
+                                                  12
+   DemoMode models whatever simulation (including 13 
+graphs, detectors, reflectors, segments, and      14
+sources) is present when DemoMode is enabled.     15
+                                                  16
+                                                  17
+   If  time > DemoTime when DemoMode is enabled,  18
+the time will be automatically reset so that      19
+no "infinitely long" demonstrations occur.        20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Detector Average Help
+                                                  01
+                                                  02
+ The [Time Average] option allows for calculation 03
+ of the average amplitude or intensity of a       04
+ selected wave component (right, left, or total). 05
+ The average will be calculated over the time     06
+ interval specified by "start-time" & "end-time." 07
+                                                  08
+                                                  09
+                                                  10
+ Click [OK] to calculate average of specified     11
+ component and time interval.                     12
+                                                  13
+                                                  14
+ Click [Cancel] to EXIT [Time Average] and return 15
+ to simulation.                                   16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Diffusion Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+     The display options which apply to the       08
+     diffusion simulation are:                    09
+                                                  10
+    * specifying the color of the graph           11
+      (the "Total Wave" color is used)            12
+                                                  13
+    * connecting/not connecting the points        14
+      used to graph the function                  15
+                                                  16
+    * plot the DERIVATIVE of the distribution     17
+      or the physical distribution.  Note         18
+      that the F3 hot key toggles between         19
+      derivative/no derivative.                   20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+EandM Help
+                                                  01
+                                                  02
+ The user can specify several features about the  03
+ display style of the electromagnetic wave graph: 04
+                                                  05
+  * show/hide the right traveling wave, the       06
+    left traveling wave, and the sum of the       07
+    two waves (In the default mode, all three     08
+    components are displayed.)                    09
+                                                  10
+  * specify the colors of the waves               11
+                                                  12
+  * show wave components on separate axes (Hot    13
+    key F3, Offset/NO Offset, toggles between     14
+    separate/same axes for wave components.)      15
+                                                  16
+  * connect the grid points that comprise the     17
+    wave (Note: points will be connected only     18
+    when the simulation is paused.)               19
+                                                  20
+ You may notice that changing the display mode    21
+ affects the speed of simulation.  In general,    22
+ a simpler display mode runs faster.              23
+                                                  24                                                                                                    
+                                                  25
+
+Energy Average Help
+                                                  01
+                                                  02
+                                                  03
+ The [Space Average] option allows you to calcu-  04
+ late the energy density in a region of space     05
+ specified by the integral bounds.                06
+                                                  07
+                                                  08
+                                                  09 
+                                                  10 
+                                                  11 
+  Click [OK] to calculate the energy distribution 12
+  over the specified interval.                    13 
+                                                  14
+  Click [Cancel] to EXIT [Space Average] and      15
+  return to the simulation.                       16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+FastFt Help
+                                                  01
+   The Fourier Transform graphs display the       02
+power spectrum of the specified configuration as  03
+a function of position or time (y(x) or y(t)).    04
+The power spectrum consists of the magnitudes of  05
+of the coefficients of the combined sine and      06
+terms of the Fourier expansion. The left-most     07
+term of the transform is the DC (constant) term.  08
+                                                  09
+   The graph of Fourier Transform y(x) displays   10
+the power spectrum of the Fourier transform of    11
+amplitude as a function of position. The graph    12 
+of Fourier Transform y(t) displays the power      13 
+spectrum of the Fourier transform of amplitude    14 
+at a detector position as a function of time.     15
+                                                  16
+   The user may choose between a basis set of sine17
+functions or a basis set containing both sine and 18
+cosine terms.  A basis set of sine functions is   19
+generally used for simulations which fix the end- 20
+points at y=0 (e.g., fixed boundaries).           21
+                                                  22
+   A "Frozen" graph remains unchanged during      23
+continued simulation.                             24
+                                                  25
+
+Function Help
+                                                  01
+                                                  02
+                                                  03
+    When defining a function, keep in mind that   04
+the parser recognizes the following pre-defined   05
+functions, constants, and variables:              06
+                                                  07
+ * FUNCTIONS: ABS(absolute value), sin, cos, tan, 08
+   cot, sec, csc, sinh, cosh, tanh, coth, sech,   09
+   csch, arcsin, arccos, arctan, arcsinh, arccosh,10
+   arctanh, exp(exponential), ln, log, sqrt, sqr, 11
+   H(Heaviside-unit step function), int(integer   12
+   part of the argument, frac(fractional part     13
+   of the argument, re(real part of a complex     14
+   number), im(imaginary part of complex number), 15
+   !(factorial--works for integers only)          16
+                                                  17
+   The functions above work for both real and     18
+   imaginary numbers except when noted otherwise. 19
+                                                  20
+ * CONSTANTS: pi, e, i                            21
+                                                  22
+ * VARIABLES: r=SQRT(x^2 + y^2 + z^2), c=x+i*y    23
+                                                  24
+                                                  25
+
+Global Help
+                                                  01
+  Several of this program's objects are directly  02
+  accessable through the mouse, which pulls up a  03
+  panel of parameters when selected:              04
+                                                  05
+  * double-click on a source, reflector, segment, 06
+    or detector to examine or edit its attributes 07
+                                                  08
+  * click the upper left (red) corner of a graph  09
+    to change its scale (zoom in or out)          10                
+                                                  11
+  * click the upper right (purple) corner of a    12
+    graph to Expand or Contract the image         13
+                                                  14
+  * click the lower right corner of a graph to    15
+    change its display attributes                 16
+                                                  17
+    To read the coordinates of a point on a       18
+    graph, click the mouse on the graph. A        19
+    box displaying the  coordinates of the        20 
+    mouse will appear at the bottom of the        21
+    graph. The coordinate reader will remain      22
+    active until the mouse button is released.    23
+                                                  24
+                                                  25
+
+Index Plot Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+   The graph of Segment: n(x), V(x), or K(X)      05
+   represents one of the following:               06
+                                                  07
+ * index of refraction vs. position, n(x), for    08
+   simulations of electromagnetic waves.  In      09
+   this case, the background index of refraction  10
+   is 1, corresponding to free space.             11
+                                                  12
+ * potential energy vs. position, V(x), for       13
+   simulations of the Schroedinger wave equation. 14
+   The background potential is 0. The potential   15
+   for regions beyond the simulation boundaries   16
+   is infinite under fixed boundary conditions.   17
+                                                  18
+ * diffusivity vs. position, K(x), for diffusion  19
+   simulations. Background diffusivity is 1.      20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Initial Screen
+                     Wave:                        01
+          A CUPS Waves and Optics Program         02
+                      by                          03
+             Dr. Wolfgang Christian               04
+               G. Andrew Antonelli                05
+                Susan L. Fischer                  07
+                Davidson College                  08
+                  Davidson, NC                    09
+
+    Copyright(c) John Wiley & Sons 1995           10
+ This program uses the finite difference approxi- 11
+ mation algorithm to solve the time evolution of  12
+ three common partial differential equations for  13
+ Y(x,t):  linear and nonlinear wave, diffusion,   14
+ and Schroedinger.                                15 
+                                                  16
+ The user may specify the initial configuration   17
+ and boundary conditions. The buttons in the lower18
+ left corner of the simulation graph allow the    19 
+ user to customize the configuration by creating: 20
+   Reflectors (light blue)                        21
+   Sources (red)    --add amplitude to the wave   22
+   Detectors (blue) --monitor wave amplitude      23
+   Segments (green) --represent changes in index  24
+ of refraction, potential energy, or temperature. 25
+
+Integrated YSquare Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+  The graph of the Space Integrated I(t)=Y*Y      06
+  represents an integral over the spatial region  07 
+  defined by the bounds of the simulation. The    08
+  value represented by the integral is one of the 09
+  following, depending on what is being simulated:10
+                                                  11
+  * total energy, electric energy, or magnetic    12
+    energy of an electromagnetic wave (User       13
+    specifies which energy to depict.)            14
+                                                  15
+  * the total number of particles in a diffusion  16
+    simulation                                    17
+                                                  18
+  * probability (not normalized!) as a function   19
+    of time (Psi*Psi) for a Schroedinger          20
+    simulation                                    21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+KleinGordon Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+     The display options which apply to the       07
+     Kline-Gordon, sine-Gordon, phi-four, and     08
+     double sine-Gordon equations are:            09
+                                                  10
+    * specifying the color of the graph           11
+      (the "Total Wave" color is used)            12
+                                                  13
+    * connecting/not connecting the points        14
+      used to graph the function                  15
+                                                  16
+    * plot the DERIVATIVE of the distribution     17
+      or the physical distribution.  Note         18
+      that the F3 hot key toggles between         19
+      derivative/no derivative.                   20
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+MediumParser Help
+ You may input a function to describe n (refract- 01
+ ive index), K (diffusivity), or V (potential)    02
+ as a function of position (x). Values generated  03
+ by the function will be added to those specified 04
+ by segments, if segments are present.            05
+                                                  06 
+ The parser recognizes the following:             07
+                                                  08
+ * FUNCTIONS: ABS(absolute value), sin, cos, tan, 09
+   cot, sec, csc, sinh, cosh, tanh, coth, sech,   10
+   csch, arcsin, arccos, arctan, arcsinh, arccosh,11
+   arctanh, exp(exponential), ln, log, sqrt, sqr, 12
+   H(Heaviside-unit step function), int(integer   13
+   part of the argument, frac(fractional part     14
+   of the argument, re(real part of a complex     15
+   number), im(imaginary part of complex number), 16
+   !(factorial--works for integers only)          17
+                                                  18
+   The functions above work for both real and     19
+   imaginary numbers except when noted otherwise. 20
+                                                  21
+ * CONSTANTS: pi, e, i                            22
+                                                  23
+ * VARIABLES: r=SQRT(x^2 + y^2 + z^2), c=x+i*y    24
+                                                  25
+
+Mode Help
+                                                  01
+                                                  02
+                                                  03
+   If an electromagnetic wave is placed in a      04
+   single mode under fixed boundary conditions,   05
+   each point on the wave will exhibit simple     06
+   harmonic motion. Under periodic boundary       07
+   conditions, an electromagnetic wave placed     08
+   in a single mode is a traveling sine wave.     09                          
+                                                  10
+   Phenomena such as standing waves, traveling    11
+   waves, galloping waves, and beats can be       12
+   simulated by selecting appropriate combin-     13
+   ations of modes and boundary conditions.       14
+                                                  15
+                                                  16
+                                                  17
+   The Schroedinger wave equation, under fixed    18
+   boundary conditions, is a stationary state     19
+   when placed in a single mode. Under periodic   20
+   boundary conditions, the Schroedinger equation 21
+   placed in a single mode is a traveling wave.   22
+                                                  23
+                                                  24
+                                                  25
+                                                  24
+                                                  25
+
+Points Help
+                                                  01
+  You may change the bounds of the region over    02
+  which the differential equation is solved.      03
+                                                  04
+  The number of horizontal grid points corresponds05
+  to the number of points used to represent the   06
+  equation in the uniform default medium (with no 07
+  segments).  If there are segments in an electro-08
+  magnetic simulation, the number of points is ad-09
+  justed to preserve appropriate density. If fewer10 
+  than four points lie in a segment, severe dis-  11
+  tortion will result. A larger number of grid    12 
+  points yields greater accuracy but slower speed.13
+                                                  14
+  Changing the region of simulation or the number 15
+  of grid points will destroy data, reset the     16
+  graphs, and change the time step, dt, between   17
+  calculations.  Thus, if you wish to zoom in on  18
+  a portion of the current simulation (without    19
+  resetying it), you should adjust the scale of   20
+  the simulation graph rather than the bounds of  21
+  the simulation.  If you wish to alter the speed 22
+  of the simulation without destroying the current23
+  configuration, use the speed-adjusting hot keys,24
+  F5 and F6, or select menu items [Pref]->[Speed].25
+
+Run Help
+                                                  01
+                                                  02
+  The following hot keys are available while      03
+  the simulation is running:                      04
+                                                  05
+        F1--Help                                  06
+        F2--Pause simulation                      07
+        F3--Offset/NO Offset for the different    08
+            wave components (display the wave     09
+            components on separate/same axis)     10
+        F4--toggle between positive and negative  11
+            time steps (Pos dt/Neg dt)            12
+        F5--make the simulation run faster        13
+        F6--slow down the simulation              14
+                                                  15
+  A bar at the bottom of the screen displays hot  16
+  keys and their functions. Note that the hot key 17
+  options change when the simulation is paused.   18
+                                                  19
+  The mouse is not available while the simulation 20
+  is running.  Pause the program using the  <F2>  21
+  hot key if you wish to use the mouse.           22
+                                                  23
+                                                  24
+                                                  25
+
+Saturation Help
+                                                  01
+ When the saturation option is activated, the     02
+ gain of segments will be adjusted such that      03
+ total energy does not exceed 10:                 04
+                                                  05
+       g_effective = g(1-E/10)                    06
+                                                  07
+ "g_effective" represents the "effective gain"    08
+ "g" is the user-specified gain (i.e., the gain   09 
+   present if saturation were not activated)      10 
+ "E" is the total energy in the system            11 
+                                                  12
+                                                  13 
+ Note that if total energy exceeds 10 when        14
+ saturation is activated, the resultant           15
+ "effective gain" will be negative and the        16
+ total energy will approach 10 asymptotically.    17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Save Help
+  The [Save As] option saves the current config-  01
+  uration to a drive as an ASCII file which can   02
+  be edited with any standard text editor.        03
+                                                  04
+  Information pertaining to reflectors (r),       05
+  detectors (d), segments (n), and amplitude      06
+  sources (s) will be saved. Neither the time     07
+  nor the data corresponding to analysis graphs   08
+  will be saved.  However, the CHOICES for        09    
+  analysis graphs WILL be saved.                  10
+                                                  11
+  To change the target drive and directory,       12
+  select [Files] under the [Preferences] menu.    13
+                                                  14
+  The .WAV extension should be included in the    15
+  file name so that the file can be recognized    16
+  and loaded by this program.                     17
+                                                  18
+  The [Merge] menu item ADDS a file's wave to     19
+  the current configuration.  [Load] REPLACES     20
+  the current configuration with a file's wave.   21
+                                                  22
+  The "comments" will be saved and displayed when 23
+  a file is loaded.  These allow you to provide   24
+  useful descriptions for the saved simulation.   25
+
+Scaling Help
+                                                  01
+                                                  02
+ The scale of a graph can be altered in two ways: 03
+                                                  04
+                                                  05
+      Manually -- the user chooses minimum and    06
+ maximum values for the x- and y-axis by clicking 07
+ the mouse on the appropriate boxes and entering  08
+ the desired values.                              09
+                                                  10
+      Automatically -- the scale is adjusted by   11
+ the computer such that the graph is conveniently 12
+ sized with respect to the x-axis (option X), the 13
+ y-axis (option Y), or both the x- and y-axis     14
+ (option XY).                                     15
+                                                  16
+  ** the user may also choose not to display      17
+     a scale by clicking the mouse in the         18
+     scale on/off box.                            19
+                                                  20            
+  ** the "full screen" option, when selected,     21
+     enlarges the graph to fill the entire screen.22
+                                                  23
+                                                  24
+                                                  25
+
+Schroedinger Help
+                                                  01
+ The user can specify several features about the  02
+ display of the Schroedinger equation graph:      03
+                                                  04
+ * show/hide the real component, the imaginary    05
+   component, and the magnitude SQRT(Psi*Psi) of  06
+   the Schroedinger wave equation. (In the        07
+   default mode, all three components are         08
+   displayed.)                                    09
+                                                  10
+ * specify the colors of the wave components      11
+                                                  12
+ * show the wave components on separate axes      13
+   (Hot key F3, Offest/NO Offset, toggles between 14
+   separate/same axes for wave components.)       15
+                                                  16
+                                                  17
+ * connect the grid points that comprise the      18
+   wave (Note: points will be connected only      19
+   when the simulation is paused.)                20
+                                                  21
+ You may notice that changing the display mode    22
+ affects the speed of simulation. In general,     23
+ a simpler display mode runs faster.              24
+                                                  25
+
+Speed Help
+ Depending on your computer (80386, 80486, or P5) 01
+ and the complexity of your simulation, you may   02
+ find it necessary to adjust the simulation speed.03
+                                                  04
+ For faster simulations, increase the number of   05
+ time steps between each screen redraw or decrease06
+ the time lag between computations. Disabling the 07
+ mouse while the simulation is running also helps.08
+                                                  09
+ For slower simulations, decrease the number of   10
+ time steps between each screen redrawing or      11
+ increase the time lag between computations.      12
+                                                  13
+ The F5 and F6 hot keys will speed and slow the   14
+ simulation, respectively, while it is running.   15
+                                                  16
+ Adjusting speed in the manners described above   17
+ does not change the time interval, dT, between   18
+ calculations.  Thus, the numerical algorithm and 19
+ the accuracy of the simulation are unaffected.   20
+                                                  21
+ Other methods of adjusting speed are changing    22
+ number of points used to represent the function  23
+ or altering the time step between calculations.  24
+ These methods WILL affect simulation accuracy.   25
+
+Source Power Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+   The graph of Source Power vs. Time, P(t),      06
+   shows the amount of power delivered to the     07
+   system by the selected source.                 08
+                                                  09
+                                                  10
+   You may "Freeze" the graph so that the plot    11
+   remains unchanged with continued simulation.   12
+                                                  13
+                                                  14
+   To read the exact coordinates of a point on    15
+   the graph, click the mouse on the graph.  A    16
+   box  showing  the coordinates of the mouse     17
+   will appear at the bottom of the graph. The    18
+   coordinates  box will remain visible unti      19
+   the mouse button is released.                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+ThreeD Help
+                                                  01
+ Options for the Contour of y(x) vs. Time graph:  02
+  * display legend of the amplitudes represented  03
+    by the color-coded isoclines                  04
+  * change color palette                          05
+                                                  06
+ Options for the 3D plot of y(x,t):               07
+  * specify the Euler angles describing the       08
+    orientation of the plot (This option allows   09
+    for rotation of the plot.)                    10
+  * hide/show the axes "box" defined by the       11
+    amplitude, time, and x axes of the plot       12
+                                                  13
+ Toggling between the Contour of y(x) vs. Time    14
+ and 3D plot of y(x,t) does not affect data.      15
+                                                  16
+ A "frozen" graph will remain unchanged during    17
+ continued simulation.                            18
+                                                  19
+ To read the exact coordinates of a point on a    20
+ two-dimensional graph, click the mouse on the    21
+ graph and hold the button down.  The coordinates 22
+ of mouse will appear at the bottom of the graph. 23
+                                                  24
+                                                  25
+
+Time Help
+                                                  01
+                                                  02
+  You may change the time corresponding to the    03
+  current wave configuration.  This option is     04
+  useful when something interesting happens and   05
+  you wish to investigate.  Set the time to 0;    06
+  the configuration of interest becomes the       07
+  "initial" configuration.  Run the simulation as 08
+  desired. Pressing [Reset], the F7 hot key, will 09
+  return the configuration of t = 0.              10
+                                                  11
+  You may select a positive or negative time step 12                    
+  by selecting or de-selecting the [Positive dt]  13
+  selection box. The F4 hot key also toggles      14
+  between positve and negative time steps.        15
+                                                  16
+  You may adjust the time step used in diffusion  17
+  and Schroedinger simulations. (The time step is 18
+  automatically set such that dx = dt for other   19
+  simulations.) A smaller time step will improve  20 
+  simulation accuracy and decrease simulation     21
+  speed.  To adjust the simulation speed WITHOUT  22
+  affecting numerical accuracy, use hot keys F5   23
+  and F6 or select [Pref]-->[Speed] from the menu.24
+                                                  25
+
+Wave Detectors Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+   A Detectors graph displays amplitude vs. time  05
+   at the positions of the detectors.             06
+                                                  07
+   The [Time Average] option allows for graphing  08
+   the running average of amplitude over a user-  09
+   specified interval.                            10
+                                                  11
+   For simulations of electromagnetic waves, the  12
+   user has the option of displaying the ampli-   13
+   tude of the left-traveling wave, the right-    14
+   traveling wave, or the total wave.             15
+                                                  16
+   For simulations of the Schroedinger wave       17
+   equation, the user may choose to display       18
+   amplitude of the real component of Psi, the    19
+   imaginary component of Psi, or abs(Psi).       20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+YSquare Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+  The graph of I(x,t)=Y(x,t)*Y(x,t) represents    07
+  one of the following, depending on what is      08
+  being simulated:                                09
+                                                  10
+  * total energy, electric energy, or magnetic    11
+    energy distrubution of an electromagnetic     12
+    wave (user specifies which energy to depict)  13
+                                                  14
+  * particles density in a diffusion simulation   15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+  * unnormalized probability density, Psi*Psi,    20
+    for a Schroedinger simulation                 21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+

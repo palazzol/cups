@@ -1,0 +1,943 @@
+IntroHelp
+
+     ************ The Help Menus ************
+
+ Choose a menu topic to get help on that topic.
+ Help menus are red.
+
+ To leave the help system, choose the "Quit Help"
+ menu item, press any key, or click the mouse
+ outside the menus.
+
+
+      ***** Setting the Stars in Motion *****
+
+ Press F2 to start motion
+ F3 to stop it
+ F2 again to restart it from where you stopped
+
+ F key actions are at the bottom of the screen
+ you can either press the key or click the mouse 
+ on the "F-" display of the key at the bottom 
+ of the screen.
+
+ Watch for messages on the top of the screen
+
+
+
+
+
+
+ConfigureHelp
+               System Configuration
+
+Path to temporary files directory: (ALT-d)
+  Specify where files read and written are placed
+
+Change colors: (ALT-c)
+  You can change all red objects (for example)
+  into blue, etc., including all black or white.
+
+Change double click time: (ALT-t)
+  Determines how close together two mouse clicks
+  have to be to be considered a double click
+
+Delay time: (ALT-y)
+  Allows you to slow down all calculations if they
+  display too rapidly
+
+Print Screen Setup: (ALT-p)
+  Provides instruction for you to set up to print
+  a screen to your printer
+
+Check Memory: (ALT-m)
+  Tells you the amount of free memory available.
+
+Hotkeys (in Parentheses) do the same thing quicker
+
+
+
+CreateSystemHelp
+               Create New System
+ Similar to  Add Body.
+
+ The default for the first body's position and
+ velocity are 0.0, 0.0. These will automatically
+ be adjusted later to keep the center of mass
+ stationary.
+
+ You will have a chance to change the scale of
+ the whole diagram in order to add
+ bodies at large distances. 
+
+ Change the time step size (Choices | Settings 
+ Menu) if you find that  motion is either too
+ slow or too fast.
+
+ After each body, you are allowed to chose to add
+ another or not.
+
+ A maximum of five massive bodies are allowed,
+ to keep the computational burden and thus the
+ speed of computation tolerable.
+
+ When possible, set masses to zero before you get
+ to five. 
+
+
+
+
+
+
+
+
+ManyHelp
+
+             Replicating A Body
+
+    Several bodies will be launched in
+     orbits starting very near the orbit
+     of the body you select.
+
+    You can choose:
+      - How many bodies
+      - How close they start
+      - The direction they are displaced
+          or to displace them in velocity
+      - Whether to start them at time 0
+          or at the present position:"Now"
+           if you have added or moved a body.
+
+    Each of these options can be chosen
+    with the mouse or a number key
+
+
+
+
+
+
+
+
+ReadHelp
+
+     Saving (Reading) Systems to (from) Files
+
+ The present state of a system can be saved to a
+ file or read from one.
+
+ This allows you to save new systems that you
+ have created or modified, save the state of a
+ system after it has run for a while, or share
+ such systems with others.
+
+ When you save a system you are asked for a file
+ name and warned if the name is already in use.
+
+ When you ask to read a file, a list of available
+ files appears on a menu.
+
+ The files are in an ASCII format with ample
+ prompts so that they may  easily be modified
+ (or even created) with any text editor.
+
+ If you do edit one, be careful to keep the number
+ of characters the same, except for body names
+ which are all at the ends of lines.
+
+
+
+ClearHelp
+
+               Clear and Continue
+
+ This clears the screen, displays the present
+ body positions, and ALLOWS you to continue
+ running from the present position.
+
+ To continue, you must press or click F2 again.
+
+ You can also replay the motion up to the present.
+ Doing so presents more realistic body speed
+ variations, since in the replay there is no
+ calculation slowdown at apastron.
+
+ (That slowdown is sometimes necessary in the
+ original calculation to preserve accuracy.)
+
+ Note that if bodies come close, there may be a
+ LENGTHY interval during which nothing seems to
+ happen. Invisible calculations are continuing.
+ However, if they come TOO close, you will
+ receive a message telling you precision was
+ lost, and the calculation will halt.
+
+
+
+
+
+RestartHelp
+
+                     Restart
+
+ Clears the screen and returns all bodies to
+ their original positions.
+
+ If you have added or moved a body, you will be
+ given the choice of restarting with:
+
+ - the original system
+ - the replicated system at its starting time
+ - the positions of the bodies after being moved
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ReplayHelp
+
+                     Replay
+
+ Clears the screen and retraces the previously
+ calculated orbits.
+
+ Speed variations in the replay are realistic,
+ unlike the original calculation, which slows
+ down to preserve accuracy whenever bodies come
+ close to each other.
+
+ There will be a gap in the orbit track every ten
+ time steps, just as in the original calculation,
+ unless "Show body positions' is turned off in
+ the Choices | Settings menu.
+
+ The orbits will be shown even if "Show past
+ track of bodies" is turned off in the
+ Choices | Settings menu.
+
+
+
+
+
+
+
+FreeReplayHelp
+
+                Free Replay Memory
+
+ If your memory is limited and you need more for
+ Poincar‚ diagrams, this MAY help. So far, the
+ author of the program has not had a need to use
+ it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SettingsHelp
+
+                    Settings
+
+ Allows changing the following system parameters:
+
+ - Time Step
+    determines the time interval used in plotting
+    orbits. The integration will use a shorter
+    time step if necessary for accuracy but these
+    will not affect the plot.
+
+ - Largest Time Step
+    The integration routine will never exceed this
+    no matter how good the accuracy. Only
+    meaningful if less than Time Step.
+
+ - Automatic Replay after changing number of plots
+ - Automatic Replay when choosing next plots
+    If these are off, only the current position
+    will be shown after changing plots, not the
+    track of the orbit.
+
+                (Continued on next screen)
+
+
+
+
+MoreSettings
+
+                  Settings II
+
+ - Size of Dots marking present body positions
+    1 and 2 are the most useful, but try 3, 4, ...
+
+ - Show body positions
+    Turning this off yields solid tracks;
+    with it on, when the dot marking the current
+    position is erased it erases some of the
+    track, leaving time marks. If the body moves
+    slowly enough, the whole track is erased.
+
+ - Show past track of bodies
+    Turn this off to see only the current body
+    position (every 10 time steps).
+
+ - Absolute Integration Error
+ - Relative Integration Error
+    The integration routine will reduce the time
+    step if necessary to make the error in every
+    position and velocity satisfy:
+
+       |Error of x| < |Rerr*x + Abserr|.
+
+
+
+
+
+ReverseTimeHelp
+
+                   Reverse Time
+
+ This can be used to see what the orbits leading
+ to a present position would be.
+
+ Another important use is to check the accuracy
+ of the orbit calculation, since they should
+ retrace exactly if run backwards.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ChangeParametersHelp
+
+                Change Parameters
+
+ Change G, time step, body names, positions,
+ masses, and velocities.
+
+ When you select this choice, you will be
+ presented with a menu of body names.
+
+ Select "System" to change G, body masses, or
+ the time step.
+   (time step is also in Choices | Settings)
+
+ Select any body to change its name, position, or
+ velocity, expressed as a magnitude and angle.
+
+ You can choose to change orbital elements
+ instead of position and velocity.
+
+ Select "Done" when finished.
+
+
+
+
+
+
+
+MoveBodyHelp
+              Move Body (with Mouse)
+
+ Not available if you don't have a mouse.
+
+ The Center of Mass frame will appear.
+
+ Point to the body you want and drag it to the
+ desired new place, holding the mouse button
+ down. Its distance from the nearest massive body
+ will be shown at the bottom of the screen.
+
+ When you release the mouse button, a line
+ indicating circular velocity about the nearest
+ massive body will be shown. You may either
+ adjust it with the mouse or pick exact circular
+ velocity in either direction with the F keys as
+ indicated.
+
+ While adjusting the velocity with the mouse, its
+ magnitude will be shown at the bottom of the
+ screen.
+
+ F-5 allows you to choose a different massive
+ body to relate position and circular velocity to.
+
+
+
+AddBodyHelp
+
+                    Add a Body
+
+ A screen will appear on which you can enter a
+ name and (sometimes) a mass.
+
+ Then the center of mass frame will appear
+ (if you have a mouse).
+
+ Point to the location desired for the new body,
+ and click the mouse.
+
+ Then adjust its velocity as described under
+ "Move Body".
+
+ A screen will then appear again showing name and
+ mass of the new body. You can make adjustments
+ to the position and velocity if desired. This
+ screen also appears during "Move Body".
+
+ If you have no mouse, this last screen will
+ appear immediately.
+
+
+
+
+
+ThrustHelp
+
+                   Allow Thrust
+
+ Some systems have a single body to which you can
+ apply thrust, usually a comet if there is
+ nothing described as a spacecraft. If not, this
+ menu item is inactive.
+
+ If there is such a body, you will get a message
+ telling which one. If you have four or six
+ windows open, you will be advised to choose
+ fewer.
+
+ If you add a body to a system, it can have
+ thrust applied to it.
+
+            (Continued on next screen)
+
+
+
+
+
+
+
+
+
+MoreThrust
+
+                 Applying Thrust
+
+ Once thrust is enabled, you apply it with the
+ arrow keys. Each keypress increases the 
+ acceleration a specified amount which continues
+ until you increase it by pressing the same key
+ or decrease it with the opposite arrow key.
+
+ The up arrow key acclerates the body in the
+ direction of its orbit, the down arrow in the
+ opposite direction, and the left and right
+ arrows apply thrust at right angles.
+
+ The Page Up (Page Down) key increases
+ (decreases) the acceleration  per keypress by a
+ factor of three.
+
+ The Home key immediately sets the acceleration
+ to zero.
+
+
+
+
+
+
+
+
+NFrameHelp
+      Choose One, Two, Four, or Six Windows
+
+ Displays a list of windows to select among.
+
+ Four of the views have either the Center of Mass,
+ Body 1, Body 2, or Body 3 at the center of the
+ window and move with the body or center.
+
+ The Universe Window is centered on an arbitrary
+ "stationary" point.
+
+ The Rotating Window rotates along with the line
+ from Body 1 to Body 2, and  is centered somewhere
+ along that line, sometimes at the average
+ position of Body 2, or wherever makes sense for
+ the particular system. You are allowed two
+ rotating windows. One of them can then be
+ zoomed to show detail, and may have a different
+ center point.
+
+ "Poincar‚ (Vx vs X at Y=0)" plots the phase
+ space position of body 3 every time that
+ Body 2 passes the é = 0 line. The resulting
+ patterns help identify long period orbits or
+ Chaos in a system.
+
+
+
+NextOneHelp
+
+                 Next One Window
+
+ If more than one window is displayed at the time
+ this option is selected, the Center of Mass
+ window will be displayed (alone).
+
+ If a single window is displayed at the time this
+ option is selected, the "next" window will be
+ displayed (alone). The order is the order in
+ which the windows are displayed for selection
+ when you Choose one or more windows.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MarkCofMassHelp
+
+               Mark Center of Mass
+
+ This places or removes a cross at the center of
+ mass in each window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FullScreenHelp
+
+                   Full Screen
+
+ This displays as large a single window as will
+ fit comfortably on the screen.
+
+ If more than one window is displayed at the
+ time, you will be asked to choose.
+
+ When a full screen window is being displayed,
+ the menu item changes to "Part Screen", which
+ restores the smaller view of the same single
+ window view and displays more orbital data. It
+ does not restore any multiple window view you
+ may have had open.
+
+
+
+
+
+
+
+
+
+
+ZoomHelp
+
+               Zoom In and Zoom Out
+
+ Zoom In magnifies the selected window by a
+ factor of 10.
+
+ Zoom Out diminishes it by 10.
+
+ You are given a chance to change the factor in
+ both cases.
+
+ In either case you are asked to select which
+ window(s) to zoom.
+
+ When you have zoomed as many windows as you
+ want, select "Done".
+
+ If you have a mouse, Zoom In allows you to use
+ it to select the center of the magnified window.
+ If you have no mouse, you are asked to select
+ one of the three most massive bodies as the
+ center.
+
+
+
+
+
+
+
+
+
+
+DefaultScaleHelp
+
+                  Default Scales
+
+ This cancels the effect of all zooms that you
+ may have performed, but does not lose the orbit
+ history (for Replay) or present body positions.
+
+ In contrast, Restart loses the history but does
+ not cancel zooms, while selecting the same system
+ as if it were a new one cancels both zooms and
+ history.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SunEMoonHelp
+
+            Sun, Earth, and Moon System
+
+ This displays (initially) four views of this
+ three body system:
+
+ - Center of Mass Window:
+
+ - Sun Window:
+    Magnified enough to show the orbits
+    separately (wait till they come by). This one
+    may surprise you. Contrast it with the
+    similar view of Jupiter's moons.
+
+ - Earth Window:
+    Magnified to show the moon's orbit on a
+    decent scale (note the scale marker).
+
+ - Rotating Window:
+    Shown at the same high magnification as the
+    Earth Window. Since the earth's orbit is
+    eccentric, the earth is NOT stationary.
+
+
+
+
+
+SolarHelp
+
+                  Solar System
+
+ The Outer Planets Window is scaled to show the
+ entire system out to Pluto.
+
+ The Inner Planets Window is scaled to show the
+ planets out through Mars.
+
+ The planets all have their correct
+ eccentricities.
+
+ The planetary aphelia are arbitrarily located
+ rather than being correctly related. Correcting
+ them is an exercise.
+
+ The planets are all at aphelion at time zero,
+ not their real current locations.
+
+ This is worth watching from the Jupiter or
+ Saturn windows, with a ten times bigger time
+ step and a thousand times lower precision to
+ allow speed-up.
+
+
+
+ShuttleHelp
+
+                 Shuttle Docking
+
+ This system consists of the Earth, a Space
+ Station, and the Shuttle.
+
+ You can try your hand at "docking": placing the
+ shuttle in the same orbit as the station in the
+ same location.
+
+ The shuttle will not move relative to the
+ station until you apply thrust because it is in
+ the same orbit at a different position.
+
+ Don't apply too much thrust; the relative motion
+ gets faster later.
+
+ A sketch of the techniques Buzz Aldrin developed
+ for the maneuver is given in the text. Don't
+ crash into the Earth!!
+
+ The size of the bodies is increased to give you
+ a bigger target! That is unrealistically large
+ for the earth window. You can reduce it using
+ Choices | Settings.
+
+
+SunJupCometHelp
+
+          Sun, Jupiter, and Comet System
+
+ This three body system is designed to show the
+ effect on comet and asteroid orbits of close
+ encounters with Jupiter. The first such
+ encounter happens in the third orbit. This is
+ worth watching for many orbits. Replicate the
+ comet and see if the behavior is chaotic or
+ regular.
+
+ Use Choices | Replay to see the dramatic
+ acceleration as the comet goes by the sun.
+
+ The Poincar‚ plot is shown because it shows an
+ interesting pattern for this system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SunJupMoonsHelp
+
+           Sun, Jupiter, and Its Moons
+
+ The same four windows as in the Sun, Earth, and
+ Moon system.
+
+ What do you have to change in the Earth system
+ to make its Moon's orbit similar to the orbits
+ of Jupiter's moons? (You will have to change
+ more than one parameter.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+LagrangeHelp
+
+                Lagrangian points
+
+ The Sun and Jupiter with bodies in the same
+ orbit as Jupiter but 60ø, 90ø, and 180ø away
+ from Jupiter. One body is in a stable
+ equilibrium location: which one?
+
+ One body is in an unstable equilibrium location:
+ which one?
+
+ One body is in a location that is neither stable
+ nor unstable: which one?
+
+ The equilibrium points are known as Lagrangian
+ points. The stable ones are occupied (in the
+ solar system) by asteroids known as the "Trojan"
+ asteroids.
+
+ What happens if you increase Jupiter's mass by
+ 10 or 100?
+
+ Replicating the bodies is interesting.
+
+
+
+
+BinaryHelp
+
+            Binary Star & Comet System
+
+ The two stars have equal masses.
+
+ The comet is closer to Star B and essentially
+ bound to it.
+
+ The system has a velocity through the universe
+ because that's fun to watch. (Universe Window)
+
+ Almost anything you do to this system is fun to
+ watch.
+
+ What happens if you change the masses of the
+ stars?
+
+ Try moving the comet or replicating it.
+
+
+
+
+
+
+
+
+
+RetrogradeHelp
+
+      Retrograde System (Earth and Jupiter)
+
+ This system demonstrates why planets at times
+ reverse their apparent direction of motion in
+ the sky. A line is drawn reaching from the earth
+ nearly to Jupiter to indicate the direction of
+ the line of sight from the earth.
+
+ This is also worth watching from the Jupiter 
+ window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CenterBodyHelp
+
+                Pick Central Body
+
+ The position and velocity of the body you are
+ adding are displayed at the bottom of the screen
+ as you add it with the mouse. They are
+ calculated relative to the nearest massive body.
+ If you would rather relate them to a different
+ body, use this screen.
+
+ That body will also be used in calculating
+ orbital elements if you have chosen to use them.
+
+ Orbital elements assume an orbit about a single
+ other body. This can only be an approximation
+ when there are many bodies in the system, but it
+ is often a reasonably good one.
+
+
+
+
+
+
+
+
+
+
+
+PickCircularHelp
+
+              Set Circular Velocity
+
+ The circular velocity relative to the chosen
+ massive body is shown.
+
+ Use F3 or F4 to choose a circular orbit about
+ the selected body. If there are other massive
+ bodies nearby, it may not really be circular.
+
+ Use F5 to start over and relate position and
+ velocity (and orbital elements) to a different
+ massive body.
+
+ Using F9 at this point is the last chance to
+ change your mind and not add a body. 
+
+
+
+
+
+
+
+
+
+
+
+AddAnotherHelp
+
+              A Body Has Been Added
+
+ Press F3 if you wish to add another to the
+ system you are creating.
+
+ Press F4 if you have as many bodies as you want.

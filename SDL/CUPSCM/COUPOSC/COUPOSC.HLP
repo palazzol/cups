@@ -1,0 +1,570 @@
+General Help
+
+              COUPLED OSCILATORS                  01
+                                                  02
+       Randall Jones, Rhody Holthaus              03
+       Loyola College In Maryland                 04
+       Copyright (c) 1994                         05
+                                                  06
+This program allows you to investigate the motion 07
+of a set of objects connected by harmonic springs.08
+                                                  09
+You can animate and control the system using the  10
+hotkeys at the bottom of the screen.  The initial 11
+conditions can be selected either by specifying   12
+the normal mode occupation or the initial         13
+displacements and velocities.                     14
+                                                  15
+The animation can be generated using the normal   16
+mode solution or using a numerical solution.      17
+When the numerical method is chosen, an external  18
+force can be included.                            19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Modify Help
+                  MODIFY:                         01
+                Menu Choices:                     02
+                                                  03
+Modify System - Change arrangement of objects     04
+     and springs.  Additional help is             05
+     available after selecting this option.       06
+                                                  07
+Modify Simulation Parameters - Change default     08
+     animation interval and maximum energy per    09
+     mode.  This input screen also allows you     10
+     to switch between the eigenvector solution   11
+     method and the numerical solution method.    12
+     When a numerical solution is used, the mode  13
+     occupation can be updated on a continuing    14
+     basis.  Plots of displacement versus time    15
+     can be turned off and on from this input     16
+     screen.                                      17
+                                                  18
+Modify External Force - Change default values of  19
+     the applied force.  The magnitude and        20
+     frequency of the applied force can also be   21
+     changed using sliders from the main screen.  22
+     Note that this force is only considered when 23
+     a numerical solution is selected.            24
+                                                  25
+
+Modify Configuration Help
+Coordinates 0.0 0.08
+             MODIFYING THE SYSTEM                 01
+                                                  02
+A Mass and Spring system including the mass and   03
+spring constant values is called a SYSTEM.        04
+                                                  05
+Note that a system has just 3 mass types          06
+(plus an infinite mass) and four spring types.    07
+You can build a system containing as many         08
+as 10 objects and 50 springs.                     09
+                                                  10
+Select "Mod. Numer. Values" to change the mass    11
+and spring numerical values.  Select "Modify      12
+Objects" to add, delete, move or change objects.  13
+Select "Modify Springs" to add, delete or change  14
+springs.  The mouse can be used in most of these  15
+operations.                                       16
+                                                  17
+When you are finished modifying the system        18
+select "Done".  The dynamical matrix is calculated19
+automtically and you can select initial conditions20
+by clicking with the mouse on the mode occupation 21
+window or on the animation itself.  The new       22
+configuration can be saved by selecting the "File"23
+menu choice.                                      24
+                                                  25
+
+Modify Masses Help
+Coordinates 0.0 0.08
+             MODIFY OBJECTS                       01
+                                                  02
+The currently hilighted object has a box around it03
+You can move this object with the arrow keys or by04
+clicking and dragging with the mouse.  Change the 05
+object type with the PgUp key.  You can delete the06
+object by hitting the delete key.                 07
+                                                  08
+Change selected object by hitting the tab key or  09
+by clicking on the new object with the mouse.     10
+                                                  11
+The insert key will add a new object slightly     12
+displaced from the currently hilighted object. Use13
+the arrow keys (or mouse) to move a new object to 14
+the desired position.  Springs are added by       15
+selecting Modify Springs option after finishing   16
+modifying objects.                                17
+                                                  18
+To position object more accurately select the Fine19
+Tune Positions option after modifying object.     20
+                                                  21
+Note that an infinite mass ties the system down   22
+at that point.                                    23
+                                                  24
+Hit Enter when finished modifying objects.        25
+
+
+Modify Springs Help
+Coordinates 0.0 0.08
+          MODIFY SPRINGS                          01
+                                                  02
+The currently hilighted spring has a line drawn   03
+through the center.  Change the spring type with  04
+the PgUp key.  You can delete the spring by       05
+hitting the delete key.                           06
+                                                  07
+Select a new spring by hitting the tab key or by  08
+clicking on the spring with the mouse.            09
+                                                  10
+The insert key will allow you to add a new spring.11
+You will be prompted to select the two objects to 12
+be connected by the spring.  Note that you cannot 13
+add a second spring between two objects already   14
+connected by a spring.                            15
+                                                  16
+Numerical values of the spring constants may be   17
+changed by selecting Mod. Num. Vals from the      18
+previous menu.                                    19
+                                                  20
+Hit Enter when finished modifying springs.        21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Select first mass for spring help
+Coordinates 0.0 0.08
+         SELECT FIRST OBJECT                      01
+                                                  02
+You are about to add a new spring.                03
+                                                  04
+Select one of the objects that will be connected  05
+by the spring. You can do this by clicking        06
+on the desired object with the mouse or by        07
+hitting the tab key until the desired object      08
+is selected.  Hit enter to choose the selected    09
+object.                                           10
+                                                  11
+Note that you cannot add a spring between two     12
+objects that are already connected by a spring.   13
+                                                  14
+Press escape if you do not want to add a new      15
+spring.                                           16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+Select second mass for spring help
+Coordinates 0.0 0.08
+          SELECT SECOND OBJECT                    01
+                                                  02
+Select second object to be connected by the new   03
+spring.  You can do this by clicking on the       04
+desired object with the mouse or by pressing the  05
+tab key until the desired object is hilighted.    06
+Hit enter to choose the selected object.          07
+                                                  08
+Note that you cannot add a spring between two     09
+objects that are already connected by a spring.   10
+                                                  11
+There are only four types of springs allowed in a 12
+configuration.  You can change the spring         13
+constants of these four springs by selecting      14
+Mod. Num. Vals. in the previous menu.             15
+                                                  16
+Press escape if you do not want to add a new      17
+spring.                                           18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Fine Tune Mass Positions
+Coordinates 0.0 0.08
+         FINE TUNE OBJECT POSITIONS               01
+                                                  02
+Enter the numerical coordinates of the currently  03
+defined objects.  To add or delete objects select 04
+the Modify Objects option from the previous menu. 05
+                                                  06
+To change the numerical values of the masses      07
+select Mod. Num. Vals when finished with this     08
+input screen.                                     09
+                                                  10
+Note that you are specifying equilibrium          11
+positions here (and in Modify Objects option)     12
+so in effect you are changing the equilibrium     13
+lengths of the springs by changing object         14
+positions.                                        15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Modify Numerical Values
+Coordinates 0.0 0.08
+           MODIFY NUMERICAL VALUES                01
+                                                  02
+A system can contain only three types of          03
+objects (plus an infinite mass) and four types of 04
+springs.  You can specify the numerical values    05
+of these quantities in this input screen.  Note   06
+that the sizes and colors of the objects and      07
+springs are fixed.  You might want to choose      08
+numerical values in accordance with the sizes of  09
+the objects.                                      10
+                                                  11
+The equilibrium lengths of the springs are        12
+determined by the placement of the objects since  13
+in this simulation the equilibrium system cannot  14
+have stretched springs (as would be possible, for 15
+example, between infinite masses).  "Identical"   16
+springs may therefore have different equilibrium  17
+lengths.  It is their spring constants that are   18
+identical.                                        19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Initial Condition Help
+       SPECIFYING INITIAL CONDITIONS              01
+                                                  02
+The initial conditions may be specified by giving 03
+the occupation of the modes or by giving the      04
+initial displacements and velocities.             05
+                                                  06
+Normal Mode Occupations - This option allows you  07
+to graphically change normal mode occupations.    08
+You can select this from the main menu or by      09
+clicking in the normal modes window. Note that    10
+phases are set to 0 (or 180) in this option.      11
+                                                  12
+Fine Tune Normal Mode Occupations - This option   13
+allows you to enter numerical values for mode     14
+energies and phases.                              15
+                                                  16
+Initial Displacements - This option allows you    17
+to graphically change the initial displacements.  18
+You can select this from the main menu or by      19
+clicking in the animation window.  Note that      20
+initial velocities are set to 0 in this option.   21
+                                                  22
+Fine Tune Initial Displacements - This option     23
+allows you to enter numerical values for the      24
+initial displacements and velocities.             25
+
+Change Initial Displacement Help
+       CHANGE INITIAL DISPLACEMENTS               01
+                                                  02
+Initial velocities are set to zero when this      03
+option is selected.  Only initial displacements   04
+can be set here.  Choose Fine Tune Displacements  05
+if you want non-zero initial velocities.          06
+                                                  07
+Change displacement of selected object by using   08
+arrow keys.  Mode occupations are updated         09
+continuously.  Change selected object by pressing 10
+tab key.  You can also use the mouse to select    11
+object.  Holding the mouse button for a brief time12
+allows you to drag the initial displacement       13
+vector to the desired position.                   14
+                                                  15
+Press Enter when finished modifying initial       16
+displacements.                                    17
+                                                  18
+Note: This option can be selected by clicking with19
+the mouse in the animation window whenever the    20
+animation is paused.                              21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Fine Tune Initial Displacements Help
+                                                  01
+      FINE TUNE INITIAL DISPLACEMENTS             02
+                                                  03
+Use this input screen to specify the initial      04
+displacements and velocities.  Note that the      05
+velocities are shifted after the screen is        06
+accepted so that there is no initial center of    07
+mass motion or rotation.                          08
+                                                  09
+Note that the harmonic approximation is used even 10
+for very large compressions or expansions of the  11
+springs.  This may generate unphysical results    12
+for large initial displacements.  In particular,  13
+note that motion of an object in a direction      14
+perpendicular to a connecting spring generates no 15
+restoring force in the harmonic approximation.    16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Fine Tune Normal Mode Occupation Help
+         FINE TUNE MODE OCCUPATIONS               01
+                                                  02
+Use this input screen to specify normal mode      03
+occupations and phases.  Note that phases of 0    04
+or 180 degrees correspond to pure displacements   05
+while phases of 90 or 270 degrees correspond to   06
+pure velocities.                                  07
+                                                  08
+The graphical Mode Occupation option does not     09
+allow non-zero initial velocities (i.e. phases    10
+are restricted to 0 or 180 degrees).  This        11
+simplifies representation and comprehension of    12
+the normal modes.                                 13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+Change Normal Mode Occupation Help
+Coordinates 0.35 0.08
+      CHANGE NORMAL MODE OCCUPATION               01
+                                                  02
+Initial velocities were set to zero when this     03
+option was selected to simplify visualization of  04
+the modes.                                        05
+                                                  06
+Change the occupation of the selected mode with   07
+the left/right arrow keys.  Note that the initial 08
+displacements are updated continuously.  Change   09
+the phase with the tab key.  Change the selected  10
+mode with the up/down arrow keys.                 11
+                                                  12
+The mouse can also be used to change the mode     13
+occupation.  Click on the phase diagram to toggle 14
+between 0 and 180 degrees.                        15
+                                                  16
+The maximum mode energy can be changed by         17
+selecting Change Program Parameters under the     18
+Modify menu option.                               19
+                                                  20
+Note: This option can be selected by clicking with21
+the mouse in the normal mode occupation window    22
+whenever the animation is paused.                 23
+                                                  24
+                                                  25
+
+Configuration Save
+                                                  01
+            SAVE CONFIGURATION                    02
+                                                  03
+A configuration consists of mass and spring info, 04
+initial conditions, the dynamical matrix and      05
+eigenvector/eigenvalue values.  A configuration   06
+saved to disk may be loaded later for further     07
+investigation.                                    08
+                                                  09
+When a configuration is loaded the eigenvector    10
+solution method is always selected.  You can      11
+change to a numerical solution (which allows      12
+inclusion of an external force) by selecting the  13
+Modify Program Parameters option under the Modify 14
+menu option.                                      15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Change Program Parameters
+      CHANGE PROGRAM PARAMETERS                   01
+You can change various program defaults from this 02
+input screen:                                     03
+                                                  04
+Maximum Mode Energy - determines the scale used in05
+the normal modes occupation histogram.            06
+                                                  07
+Animation Interval - determines the default time  08
+step for animations.  Note that this is based on  09
+the highest normal mode frequency.                10
+                                                  11
+Numerical/Normal Modes solution - The numerical   12
+solution method uses and RK4 scheme to integrate  13
+the equations of motion.  An external force and   14
+damping can be included when the numerical method 15
+is selected.                                      16
+                                                  17
+Integration Interval - time step for RK4 scheme.  18
+                                                  19
+Update Normal Modes - When the numerical solution 20
+method is selected this option causes the normal  21
+mode occupations to be updated continuously.  This22
+can be very enlightening when an external driving 23
+force is in resonance with one of the normal modes24
+of the system.                                    25
+
+Modify External Force
+            MODIFY EXTERNAL FORCE                 01
+                                                  02
+Two external forces are allowed.  A linear damping03
+force can be applied to all objects and a         04
+sinusoidal driving force can be applied to a      05
+single object.  This force is initially applied to06
+the first object.  This can be changed whenever   07
+the animation is paused by pressing the space bar.08
+                                                  09
+The magnitude and frequency of the driving force  10
+can be also be modified whenever the animtion is  11
+paused by clicking on the sliders or by using the 12
+arrow keys and the tab.                           13
+                                                  14
+Note that this external force is ignored if the   15
+normal mode solution method is used.  This exact  16
+solution is only valid for a purely harmonic      17
+system.  Select Change Program Parameters from the18
+Modify menu option to change to a numerical       19
+solution method.                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+Show Help
+                                                  01
+This menu option allows you to look at various    02
+results associated with this configuration.       03
+                                                  04
+Show Eigenvectors displays the dynamical matrix   05
+and the eigenvectors and eigenvalues.  If there   06
+are too many degrees of freedom, the entire       07
+dynamical matrix is not accessible from this      08
+screen.  If you save the configuation, however,   09
+all of this data is written to the .CFG file      10
+and can be viewed there.                          11
+                                                  12
+Show Mass/Spring Types displays the current       13
+mass and spring definitions and their numerical   14
+values.  These can be modified by selecting       15
+Modify Configuration under the Modify menu option.16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+SelectFirstObjectForGraphHelp
+         SELECT FIRST OBJECT                      01
+                                                  02
+You are selecting the object whose displacement   03
+will be graphed as a function of time.            04
+                                                  05
+Select the object by clicking on it with the      06
+mouse or by hitting the tab key until the desired 07
+object is selected.  Then hit Enter to choose the 08
+selected object.                                  09
+                                                  10
+Press escape if you do not want to add a new      11
+object.                                           12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+SelectSecondMassForGraphHelp
+          SELECT SECOND OBJECT                    01
+                                                  02
+Select second object to be graphed.               03
+You can do this by clicking on the                04
+desired object with the mouse or by pressing the  05
+tab key until the desired object is hilighted.    06
+Then hit enter to choose the selected object.     07
+                                                  08
+Press escape if you do not want to add a new      09
+object.                                           10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+Last Blank Help Screen
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+                                                  09
+                                                  10
+                                                  11
+                                                  12
+                                                  13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25

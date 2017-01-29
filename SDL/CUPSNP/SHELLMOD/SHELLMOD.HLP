@@ -1,0 +1,189 @@
+HelpScreen1
+ NUCLEAR SHELL MODEL: SPHERICAL & DEFORMED NUCLEI 01
+    This simulation explores the single particle  02
+    model for the spherical and deformed shell    03
+    models. You have four main menu choices:      04
+1. Shell Model-Potential:  This explores nuclear  05
+    wavefunctions and energy levels for three     06
+    different potentials.                         07
+2. Shell Model-Nuclei:  The experimental          08
+    value for the spin and parity of the nucleus  09
+    is compared with the shell model prediction.  10
+3. Deformed Potential:  The anisotropic harmonic  11
+    oscillator is used to represent the deformed  12
+    nucleus. Energy levels as a function of       13
+    deformation are explored.                     14
+4. Deformed Nuclei: The deformed shell model      15
+    predictions of nuclear spin and parity for six16
+    nuclei are compared with experimental values. 17
+                                                  18
+ Menus:                                           19
+   File - About CUPS: The software Project        20
+        - About the program: Calls up this screen 21
+        - Quit: Quits the program                 22
+ Shell Model:  Your first 2 simulation choices    23
+ Deformed Potential: Energy levels versus Î       24
+ Deformed Nuclei: Examples                        25
+
+HelpScreen2
+             SHELL MODEL POTENTIALS               01
+The Schrodinger equation is solved with your      02
+choice of a spherically symmetric potential.  You 03
+can choose the depth of the potential,            04
+diffuseness of the Woods-Saxon potential, number  05
+of neutrons and protons in the nucleus (the sum   06
+must be odd), and the strength of the spin-orbit  07
+interaction.                                      08
+The left display shows the shape of the potential 09
+normalized to -1, the shape of the wavefunction,  10
+and the energy levels for the chosen nucleus and  11
+potential. The potential is drawn with & without  12
+spin-orbit coupling except for the square well    13
+where energy levels are only calculated without   14
+spin-orbit coupling. The right display shows all  15
+the energy levels found, the degeneracy of each   16
+level, the sum of the degeneracies, and the magic 17
+numbers.                                          18
+HOT KEYS: - HELP calls up this screen             19
+    - SETUP calls the input screen                20
+    - DRAW turns the intermediate state           21
+           drawing on and off                     22
+    - PAUSE pauses the calculation                23
+    - MENU returns control to pull down  menus    24
+    - ESC end the search for energy levels        25
+
+HelpScreen3
+              SHELL MODEL NUCLEI                  01
+A comparison is made between the experimental     02
+value and the shell model prediction of the spin  03
+and parity for an odd-A nucleus. The      04
+experimental value is obtained from a look up     05
+table and the shell model prediction is obtained  06
+from the spin and parity of the unpaired nucleon. 07
+The isotopes listed in the look up table is       08
+limited to nominally spherical nuclei.            09
+The upper left display shows information about the10
+nucleus and which state is being considered. The  11
+lower left display shows information about the     12
+stability or abundance of the nucleus and the spin13
+and parity. The right display shows the levels    14
+around the unpaired nucleon and the occupation of 15
+the levels. Neutron levels (in blue) and Proton   16
+levels (in red) are shown separately.             17
+HOT KEYS: - HELP calls up this screen             18
+    - SETUP calls the input screen                19
+    - GROUND, 1 EXCITED, 2 EXCITED                20
+calculates the Shell Model predicted spin         21
+and parity value of the chosen nucleus in the     22
+chosen state and compares with the                23
+experimental value.                               24
+    - MENU returns control to the pull down menu  25
+
+HelpScreen4
+           DEFORMED SHELL MODEL LEVELS            01
+The Nilsson anisotropic harmonic oscillator (HO)  02
+potential is used to explore the energy levels of 03
+deformed odd-A nuclei of various sizes. The left  04
+display shows energy levels as a function of      05
+deformation, Î.  They are labeled on the far left 06
+with a spherical state label; n, l, j & on the    07
+right with asymptotic quantum numbers for the     08
+anisotropic HO: [N nz Lambda]Í„. N-HO shell #,    09
+nz-# of oscillator quanta along the symmetry axis,10
+Lambda-orbital angular momentum along the symmetry11
+axis, Í-total angular momentum along the          12
+symmetry axis, and „-the parity. The odd parity   13
+levels are drawn in blue and even parity levels   14
+are drawn in red. The right display shows the     15
+energy levels for a particular Î, indicated on the16
+left display by a solid vertical line. You can    17
+change the value of Î by dragging the line to a   18
+new value. The right display will change to match 19
+the new value of Î that was chosen.               20
+HOT KEYS:                                         21
+    - HELP calls up this screen                   22
+    - REFRESH redraws the left display            23
+    - MENU returns control to the pull down menus 24
+    - ESC ends the calculation of energy levels   25
+
+HelpScreen5
+            DEFORMED NUCLEI: EXAMPLES             01
+The Nilsson anisotropic harmonic oscillator (HO)  02
+potential is used to explore the energy levels    03
+of deformed odd-A nuclei. The left display shows  04
+the energy levels as a function of deformation, Î.05
+They are labeled on the far left with a spherical 06
+state label; n, l, j & on the right with asymptotic07
+quantum numbers for the anisotropic HO:           08
+[N nz Lambda]Í„.  N-HO shell #, nz-number of 09
+oscillator quanta along the symmetry axis,        10
+Lambda-orbital angular momentum along the symmetry11
+axis, Í-total angular momentum along the symmetry 12
+axis, and „-the parity. The odd parity levels are 13
+drawn in blue and even parity levels are drawn in 14
+red. The right display shows the energy levels for  15
+the experimentally determined Î, indicated on the 16
+left display by a shaded vertical line. The       17
+occupation of the levels is shown, as well. The   18
+bottom display shows the experimental and model   19
+values for the spin & parity of the chosen state. 20
+HOT KEYS: - HELP calls up this screen             21
+    - GROUND, 1 EXCITED, 2 EXCITED calculates the 22
+model prediction for spin and parity values and   23
+compares with experimental values.                24
+    - MENU returns control to the pull down menus 25
+
+HelpScreen6
+NUCLEAR POTENTIAL INPUT: THE SPHERICAL SHELL MODEL01
+    1. Select the potential form which will be    02
+       integrated in the Schrodinger equation.    03
+                                                  04
+    2. Input the absolute value of the potential  05
+       at r = 0.                                  06
+                                                  07
+    3. The potential is more rounded when the     08
+       diffuseness factor is large. This factor is09
+        automatically set to zero for the Square  10
+       Well and Harmonic Oscillator potentials.   11
+                                                  12
+    4. The number of neutrons and protons deter-  13
+       mines the size of the nuclear potential.   14
+       The sum is odd because this simulation     15
+       considers single particle states.          16
+                                                  17
+    5. Input a number which determines the        18
+       spacing between the two levels: j=l+s and  19
+       j=l-s. If the number is negative j=l+s is  20
+       lower than j=l-s.                          21
+                                                  22
+    6. Press Return to accept the input screen,   23
+       press cancel to use the last set of values.24
+                                                  25
+
+HelpScreen7
+                                                  01
+        SINGLE PARTICLE SHELL MODEL NUCLEI        02
+                                                  03
+Decide on an odd-A isotope that you want to       04
+explore and enter the appropriate number of       05
+neutrons and protons. The simulation will         06
+calculate the spin and parity, I„, of the unpaired07
+nucleon (which is I„ of the isotope). If the      08
+isotope is in the look-up table the experimental  09
+value will be displayed along with stability or   10
+abundance information. The shell model levels     11
+for neutrons and protons will be displayed on the 12
+right with the occupation of the level indicated  13
+by filled and unfilled circles.                   14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+  Press Ok or Return to accept the input screen,  20
+press Cancel or ESC to use the last set of values.21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+

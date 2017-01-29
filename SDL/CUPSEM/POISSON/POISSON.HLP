@@ -1,0 +1,248 @@
+
+About Program
+                                                  01
+                                                  02
+    Calculating Electromagnetic Fields and        03
+                                                  04
+      Potentials using Poisson's Equation         05
+                                                  06
+                                                  07
+          Written by Jarek Tuszynski              08
+           George Mason University                10
+          (c) 1995, John Wiley & Sons             11
+                                                  12
+   This program iteratively solves the two        13
+   dimensional Poisson's equation for an          14
+   arbitrary system of conductors  and            15
+   charges. The system is drawn by the            16
+   user, using a mouse. Once the potential is     17
+   found on a two-dimensional grid of points,     18
+   you can plot the potential, the electric       19
+   field, and the charge density in various       20
+   ways.  You can also perform  some experiments  21
+   that will help you to learn more about the     22
+   behavior of the system.                        23
+                                                  24
+   Press any Key or Click the Mouse when done.    25
+
+
+General Help
+                  General Help                    01
+ - Slider:                                        02
+   Controls the potential that a plate is set to  03
+   or the value of charges. Must be set before    04
+   plate is drawn.                                05
+ - Hot Keys:                                      06
+   <F1-Help>    - gives context-sensitive help    07
+   <Return-Run> - calculates potential using      08
+                  current data and draws results. 09
+   <Del-Erase>  - deletes all the plates and let  10
+                  you start again.                11
+   <F10-Menu>   - activates the menu.             12
+ - Plate Icons:                                   13
+   Allows you to choose the kind of plate you     14
+   want to use, or switch to "modify" mode.       15
+ - Menu:                                          16
+   File     - open/close file, exit program       17                                         15
+   Plot How - choose the way of ploting potential 18
+   Control  - set of parameters and options to    19
+              customize your program.             20
+   Extras   - set of utilities to help you learn  21
+              more about yor system.              22
+   Help     - help on some topics.                23
+                                                  24
+                                                  25
+
+
+How to use the program?
+             How to use the program?              01
+                                                  02
+ To create a new system of plates and charges:    03
+                                                  04
+1) Check if boundary conditions and other parame- 05
+   ters and conditions suits your task.           06
+2) Choose plate type and set its potential/charge.07
+3) Click and drag the mouse to draw the plate.    08
+   Let go of the button to finish. If you start   09
+   in the wrong place move the mouse to the point 10
+   you started or outside drawing area.           11
+4) Repeat the last two operations until your      12
+   system is complete.                            13
+5) If you want to change or read potential/charge 14
+   on any plate, or redraw, move or remove any of 15
+   them click "Modify" icon.                      16
+8) Press "Run" Hot Key to calculate the potential 17
+   on a x,y grid that matches the boundary        18
+   conditions you defined.                        19
+9) Use the menu to choose different plot type,    20
+   computation method, or boundary conditions.    21
+10) Use menu "Extras" to get additional           22
+    information about the system.                 23
+11) Press "Erase" Hot Key to start a new system.  24
+                                                  25
+
+Field Lines Help
+                                                  01
+  "Field line through the point" Help Screen.     02
+                                                  03
+ - Click the mouse inside the drawing area to     04
+   draw a field line through a point.             05
+                                                  06
+ - Hot Keys:                                      07
+   <F1-Help>   - gives this help screen           08
+   <Del-Clear> - clears all field lines.          09
+   <Esc-Exit>  - clears field lines and exits     10
+       field line drawing part of the program.    11
+                                                  12
+                                                  13
+    If the quality of field lines drawn is        14
+    not satisfactory then increase the accuracy   15
+    of potential calculation. You can do it       16
+    by using exact metchod of calculation,        17
+    if only charges are present, by adjusting     18
+    the Tolerance and Minimum Number of           19
+    of Iterations in the Relaxation Algorithm,    20
+    or by changing the grid size.                 21
+                                                  22
+                                                  23
+                                                  24
+     Press any Key or Click the Mouse when done.  25
+
+Cross Section Help
+                                                  01
+          Cross Section Help Screen.              02
+                                                  03
+ - Click the mouse inside the plot area and       04
+   drag it to draw a cross section line. The      05
+   potential and electric field along this line   06
+   are automaticaly calculated and drawn.         07
+                                                  08
+ - If you just move the mouse inside the plot     09
+   area you can see values of: charge, potential, 10
+   electric field, divergence, and curl of the    11
+   electric field at the place where the mouse    12
+   is located.                                    13
+                                                  14
+ - Hot Keys:                                      15
+   <F1-Help>  - gives this help screen            16
+   <Esc-Exit> - exits this part of the program    17
+                 to main menu.                    18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+     Press any Key or Click Mouse when done.      25
+
+3D Plot Help
+    "Three Dimentional Plot" Help Screen          01
+                                                  02
+ - Sliders:                                       03
+   controls Euler rotation angles.                04
+ - Mouse Double Click:                            05
+   draws the picture using current rotation angles06
+ - Hot Keys:                                      07
+   <F1-Help>    - gives context-sensitive help    08
+   <Return-Draw>- draws the picture using current 09
+                  rotation angles.                10
+   <Del-Erase>  - clears screen and opens a new   11
+                  session.                        12
+   <F10-Menu>   - activates the menu.             13
+ - Menu:                                          14
+   File     - open/close file, exit program       15                                         15
+   Plot How - choose the way of ploting potential 16
+   Control  - set of parameters and options to    17
+              customize your program.             18
+   Extras   - set of utilities to help you learn  19
+              more about your system.             20
+   Help     - help on some topics.                21
+                                                  22
+                                                  23
+                                                  24
+   Press any Key or Click the Mouse when done.    25
+
+
+Help on Modify
+             Help on Modify Mode                  01
+                                                  02
+If you want to:                                   03
+                                                  04
+- Select a figure: click on its edge using left   05
+  mouse button.                                   06
+                                                  07
+- Select a group of figures: select them one by   08
+  one using right mouse button, or enclose them   09
+  in a rubber rectangle.                          10
+                                                  11
+- Change potential/charge of a figure: select it  12
+  and then change its value on the slider.        13
+                                                  14
+- Reshape figure(s): select figure(s), click and  15
+  drag highlighted points.                        16
+                                                  17
+- Move figure(s): select figure(s), click and     18
+  drag any edge that belongs to it/them.          19
+                                                  20
+- Remove figure(s): select figure(s), and press   21
+  "Remove" hot-key (F7).                          22
+                                                  23
+- Define or change function of charge/potential:  24
+  select figure(s), press "Function" hot-key (F8).25                                  25
+
+
+About Plates
+                                                  01
+                About Plates                      02
+                                                  03
+  The system you define does not actually lie     04
+  on a two-dimensional surface, but rather it     05
+  is infinite in extent in the third dimension.   06
+  Thus all lines are really long flat slabs,      07
+  circles are circular cylinders, and points      08
+  are long lines. You can draw any combination    09
+  of these six shapes: line, rectangle, ellipse,  10
+  oppositely-charged parallel plates, point       11
+  charge, and a row of point charges. On all of   12
+  them, the potential/charge is set by the        13
+  slider, but in the case of parallel plates,     14
+  the potential on one plate is set by the        15
+  slider, and the potential on the other one      16
+  is its negative.                                17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+   Press any Key or Click the Mouse when done.    25
+
+
+4 Plots Help
+  Potential, Charge Distribution and Electric     01
+          Field Plots Help Screen                 02
+                                                  03
+ - Sliders:                                       04
+   controls Euler rotation angles.                05
+ - Buttons in top-left corner of each graph       06
+   switch between 2 and 3-dimensions plots.       07
+ - Hot Keys:                                      08
+   <F1-Help>    - gives context-sensitive help    09
+   <Del-Erase>  - clears screen and opens a new   10
+                  session.                        11
+   <F10-Menu>   - activates the menu.             12
+ - Menu:                                          13
+   File     - open/close file, exit program       14                                         15
+   Plot How - choose the way of ploting potential 15
+   Control  - set of parameters and options to    16
+              customize your program.             17
+   Extras   - set of utilities to help you learn  18
+              more about your system.             19
+   Help     - help on some topics.                20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+   Press any Key or Click the Mouse when done.    25
+

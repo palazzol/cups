@@ -1,0 +1,58 @@
+-------------------------------------------------------------------
+TWOBODY.INT - File of interactions for the two nucleon simulation
+-------------------------------------------------------------------
+
+  Initially, this file contains parameter sets for the two test
+interactions that appear as interactions 7 and 8 in the TWOBODY
+simulation.   These interactions are provided as templates which
+can easily be altered to describe other user-specified interactions.
+
+  This file will be read as follows.  The program scans the file
+line-by-line looking for the keyword "Title:".  When this keyword is
+encountered, the remaining text on that line is used as a title for
+the following set of interaction parameters.  Please keep your titles
+relatively short - not more than 2/3 across the screen.  Once a "Title:"
+keyword has been found, the program starts looking for other keywords.
+These are the first six characters of the words "Core radius:",
+"Include OPEP", "Singlet", "Triplet", "Spin-Orb" and "Tensor".  Each
+of these keywords must appear at the beginning of a line and each must
+be written out in full, exactly as in the examples.  These keywords may
+appear in any order.  After any one of these keywords is encountered,
+the program will parse the remainder of the line to extract relevant
+information.  The exact locations of the numbers on the lines is not
+important.  But they must appear in the correct order and there must
+be no intervening characters.  All other information is ignored.  Thus
+you may include comment lines at any point, provided only that no comment
+line may start with a keyword.  If the end of the file or another "Title:"
+keyword is encountered before a complete set of parameters has been read,
+the selected interaction will be rejected.
+
+-------------------------------------------------------------------
+
+Title: Test interaction 1 - No OPEP
+
+Core radius:    0.500 fermi
+
+              EVEN Parity             ODD  Parity
+            Depth     Range         Depth     Range
+Singlet    5023.62    0.362       -1.750e6    0.150
+Triplet    5157.69    0.353        1779.85    0.283
+Spin-Orb    204.17    0.425       12995.58    0.244
+Tensor      100.41    0.999         -50.58    0.908
+
+-------------------------------------------------------------------
+
+Title: Test interaction 2 - WITH OPEP
+
+Core radius:    0.500 fermi
+
+Include OPEP
+
+              EVEN Parity             ODD  Parity
+            Depth     Range         Depth     Range
+Singlet    8162.89    0.312        -8.37e5    0.143
+Triplet    1759.66    0.327          59.79    0.710
+Spin-Orb    227.15    0.536       19159.65    0.229
+Tensor       -4.25    1.630         147.55    0.505
+
+-------------------------------------------------------------------

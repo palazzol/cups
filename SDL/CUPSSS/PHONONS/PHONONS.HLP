@@ -1,0 +1,460 @@
+
+file help
+                                                  01
+                FILE MENU OPTION                  02
+                                                  03
+ The FILE menu option has five choices:           04
+                                                  05
+ About program -                                  06
+   This option provides a series of help screens  07
+   giving general information about the program.  08
+                                                  09
+ About theory -                                   10
+   This option provides a series of help screens  11
+   giving a brief outline of the basic theory.    12
+                                                  13
+ About CUPS -                                     14
+   This option gives general information about    15
+   the whole CUPS project, of which this program  16
+   is just one part.                              17
+                                                  18
+ Configuration -                                  19
+   This enables you to customize the program in a 20
+   number of ways, such as the default drive,     21
+   colour of the display, speed of operation etc. 22
+                                                  23
+ Exit program -                                   24
+   This allows you to exit from the program.      25
+
+
+
+
+structure help
+              STRUCTURE MENU OPTION               01
+                                                  02
+ This menu option gives a choice of crystal       03
+ structures. Only the first six are available for 04
+ the main part of the program, the rest are simply05
+ extra structures provided for interest when      06
+ looking at the 3-D display of the actual         07
+ structures.                                      08
+                                                  09
+    The structures always available are:          10
+    Simple Cubic                                  11
+    F.C.C.                                        12
+    B.C.C.                                        13
+    CsCl type                                     14
+    NaCl type                                     15
+    diamond                                       16
+                                                  17
+ The first three are monatomic and the others are 18
+ diatomic (diamond consists only of carbon atoms, 19
+ of course, but the primitive unit cell contains  20
+ two atoms).                                      21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+plotwhat help
+             PLOT-WHAT MENU OPTION                01
+ DISPERSION CURVES -                              02
+    Dispersion curves are plotted for the three   03
+    important symmetry directions in cubic        04
+    crystals - (100), (110) and (111). There are  05
+    three wave polarizations in each case, one    06
+    longitudinal and two transverse (the latter   07
+    are often degenerate, and are then plotted    08
+    in a different colour).                       09
+ DENSITY OF STATES -                              10
+    The number of vibration modes per unit        11
+    frequency interval (the 'density of states')  12
+    is plotted against frequency.                 13
+ COMBINED DISPLAY -                               14
+    The phonon dispersion curves and density of   15
+    states are plotted on the same display, with  16
+    the density of states curve rotated through   17
+    90 degrees so that it shares a common         18
+    frequency axis with the dispersion curves.    19
+ CRYSTAL STRUCTURES -                             20
+    A large variety of crystal structures and     21
+    Brillouin zones can be shown on a three-      22
+    dimensional projection that can be rotated.   23
+                                                  24
+                                                  25
+
+
+plothow help
+             PLOT-HOW MENU OPTION                 01
+ GENERAL DISPLAY -                                02
+    There is a choice to plot successive curves   03
+    superimposed  or always to remove the old     04
+    curves.                                       05
+ DISPERSION CURVES -                              06
+    The option is given to plot the dispersion    07
+    curves 'Separate' or 'Connected'. In the      08
+    latter case the three curves are drawn end to 09
+    end, with the middle curve plotted right to   10
+    left. This is done to show where there are    11
+    equivalences between the Brillouin zone       12
+    boundary points.                              13
+ DENSITY OF STATES -                              14
+    There is a choice to display the total curve  15
+    only or 'Total + components'. In the latter   16
+    case the total density of states is drawn in  17
+    the upper half of the screen, and the         18
+    contributions from the three separate         19
+    polarization modes in the lower half. The     20
+    latter are attributed to longitudinal and     21
+    transverse modes of vibration, but the        22
+    attribution is actually done more crudely,    23
+    in descending value of the frequencies.       24
+                                                  25
+
+
+
+set data help
+             SET DATA MENU OPTION                 01
+                                                  02
+ Input screen for various items of data:          03
+                                                  04
+ Bulk modulus, Density and Molecular weight -     05
+    These are needed for a user-defined substance.06
+    They are used to calculate the absolute value 07
+    of the force constants, unit cell size, etc.  08
+ Number and value of force constants -            09
+    How many force constants to include and the   10
+    ratio of each to the nearest neighbour force  11
+    constant.                                     12
+ Non-central force (ratio) -                      13
+    Only relevant for the diamond structure, where14
+    a non-central force between atoms is allowed  15
+ Ratio of masses -                                16
+    Sets the ratio of the masses of the two atoms 17
+    in diatomic structures.                       18
+ No. of modes in D.o.States -                     19
+    Sets the number of points in the 1/48 of the  20
+    Brillouin zone, used to calculate the density 21
+    of states. A large value gives more accurate  22
+    results, but takes longer.                    23
+                                                  24
+                                                  25
+
+
+
+display help
+                   HOT KEYS                       01
+                                                  02
+ F5 - RESCALE                                     03
+       This hot key will restore a sensible scale 04
+       for the display curves. It will be needed  05
+       where changes to parameters have resulted  06
+       in curves going off scale, or becoming very07
+       small.                                     08
+                                                  09
+ F6 - CLEAR OLD                                   10
+       This hot key will clear all the old curves 11
+       from the screen if the display has become  12
+       too cluttered, leaving only the latest     13
+       curve. It will NOT rescale the display.    14
+       Use F5 for this.                           15
+                                                  16
+ F7 - FINE SLDR                                   17
+ F8 - COARSE SL                                   18
+       As an alternative to using the buttons, or 19
+       when the buttons are not displayed (because20
+       there is no room on the display), the res- 21
+       olution of the sliders can be changed with 22
+       these hot keys. They change the operating  23
+       range of the sliders. (With the buttons an 24
+       intermediate range - Medium is provided.)  25
+
+
+
+crystal help
+         DISPLAY OF CRYSTAL STRUCTURES            01
+                                                  02
+     Angles of rotation are Euler angles. They    03
+       can be changed either by arrow keys or by  04
+       moving the sliders with the mouse.         05
+                                                  06
+  Menu:                                           07
+     File      - Allows exit from the program     08
+     Structure - you can choose a variety of      09
+                  different crystal structures    10
+     Plot-What - Select Dispersion Curves or      11
+                  other type of curve to display  12
+                                                  13
+  Hot Keys:                                       14
+     Box on/of - toggles box around crystal on or 15
+                    off (where box is not part of 16
+                         crystal structure)       17
+     Distance  - controls perspective             18
+     Size      - changes size [50%-200%]          19
+     Menu      - activates the menu               20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+crystal structure help
+      TYPES OF CRYSTAL STRUCTURE AVAILABLE        01
+                                                  02
+ A wide range of crystal structures can be        03
+ displayed. These include all the structures for  04
+ which the phonon dispersion curves can be        05
+ calculated, but for completeness a number of     06
+ other common structures are available as well.   07
+                                                  08
+ The two more complex Brillouin zones can also be 09
+ displayed (the Brillouin zone for a simple cubic 10
+ structure is also simple cubic, and so not worth 11
+ displaying).                                     12
+                                                  13
+ Where a structure has different types of atom,   14
+ these are shown in different colors (and         15
+ different sizes). The bonds between nearest-     16
+ neighbour atoms are always shown, and sometimes  17
+ betweeen next nearest neighbours.                18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+general help 1
+               ABOUT THIS PROGRAM                 01
+                                                  02
+ This program will calculate accurate phonon dis- 03
+ persion curves and density of states for a       04
+ variety of crystal structures, demonstrating the 05
+ different types of Brillouin zone and the effect 06
+ of more than one atom per unit cell. The two     07
+ chief parameters that are variable are the       08
+ various interatomic force constants (and more    09
+ particularly the ratios between them) and for    10
+ the multiatom unit cells,the ratio of masses of  11
+ the different atoms.                             12
+                                                  13
+ Six different (cubic) crystal structures can be  14
+ investigated. These comprise three monatomic     15
+ structures: simple cubic, FCC, BCC; two diatomic 16
+ lattices, CsCl and NaCl to show the formation of 17
+ optic modes, and diamond to show an example of an18
+ element with 2 atoms in the primitive unit cell. 19
+                                                  20
+ A data input screen allows the entry of any      21
+ combinations of force constant and mass ratios.  22
+ 6 force constants will be allowed for to enable  23
+ some realistic calculations. (The overall value  24
+ of the force constants is set by other values.)  25
+
+
+
+
+general help 2
+ The number of modes to be used in the calculation01
+ of the density of states can also be specified.  02
+ This allows the user to set the number low, to   03
+ make approximate calculations for many different 04
+ cases, and more accurate calculations for the    05
+ most interesting cases. For more rapid variation 06
+ of the key parameters, two sliders are available 07
+ to vary the ratio of the first two force         08
+ constants and (where appropriate) the ratio of   09
+ the two atomic masses over a physically realistic10
+ range, and alternative hot keys to vary the      11
+ ratios more widely. In this case the further     12
+ neighbour force constants are kept in fixed ratio13
+ to the SECOND constant.                          14
+                                                  15
+ There are various display options. Dispersion    16
+ curves or density of states can be shown. The    17
+ dispersion curves will be displayed either       18
+ completely separately, or 'end to end' to        19
+ demonstrate the degeneracy between different     20
+ symmetry directions at the ends of the curves.   21
+ The three polarization contributions to the      22
+ density of states can be displayed along with    23
+ the total, if desired.                           24
+                                                  25
+
+
+general help 3
+ It is possible to display both dispersion curves 01
+ and total density of  states together (dispersion02
+ curves in the quasi-continuous form) with common 03
+ frequency axes. This does of course mean plotting04
+ on a reduced scale, especially for the density of05
+ states which will be plotted 'sideways' compared 06
+ to its normal format.                            07
+                                                  08
+ A further display option allows the different    09
+ crystal structures to be displayed, and rotated  10
+ about in three dimensions.                       11
+                                                  12
+ Some suggested exercises:                        13
+                                                  14
+ a) by reducing the non-nearest neighbour force   15
+    constants observe the onset of soft modes in  16
+    the dispersion curves in certain symmetry     17
+    directions, and relate these to lack of       18
+    stability in those directions.                19
+                                                  20
+ b) by varying the relative masses for the 2-atom 21
+    structures the artificial folding back of the 22
+    dispersion curves into a reduced size         23
+    Brillouin zone when the masses approach each  24
+    other can be observed.                        25
+
+
+
+general help 4
+ c) by displaying the component densities of      01
+    states from each polarization mode along with 02
+    the total density of states, deduce the origin03
+    of the rather complex form of the density of  04
+    states.                                       05
+                                                  06
+ d) vary the number of modes used in the          07
+    calculation of the density of states to       08
+    illustrate the fact that these are not        09
+    strictly continuous curves, and decide what   10
+    number gives an acceptably smooth curve.      11
+                                                  12
+ e) by displaying the dispersion curves and       13
+    density of states together with the density   14
+    of states 'sideways' so that they have common 15
+    frequency axes, see how many of the Van Hove  16
+    critical points can be related to the turning 17
+    points of the dispersion curves for the       18
+    symmetry directions. (Why are so many of the  19
+    critical points related to the symmetry       20
+    directions?)                                  21
+                                                  22
+ f) modify the diamond structure to have two      23
+    different masses, i.e. the ZnS structure.     24
+                                                  25
+
+
+general help 5
+              USING THE PROGRAM                   01
+Menu:                                             02
+   File      - Allows exit from the program       03
+   Structure - you can choose 1 of 6 crystal      04
+                  structures                      05
+   Plot-What - Select type of curves displayed.   06
+               Phonon Dispersion Curves or        07
+               Density of States can be shown,    08
+               or both combined                   09
+   Plot-How  - various display options can be     10
+               selected, such as whether to       11
+               superimpose curves or clear old    12
+   Set Data  - force consts and other data        13
+               can be entered from keyboard       14
+                                                  15
+Hot Keys:                                         16
+   Rescale    - Restore the screen area to correct17
+                   scale, if changes have produced18
+                   inappropriate scaling          19
+   Clear Old  - Clear all but latest curve        20
+   Fine Sldr  - Set a fine range on the sliders   21
+   Coarse sl  - Set a coarse range on the sliders 22
+   Menu       - Activates the menu                23
+                                                  24
+PRESS THE MOUSE ANYWHERE ELSE TO PRODUCE A CURSOR 25
+
+
+theory help 1
+ THEORY OF DISPERSION CURVES AND DENSITY OF STATES01
+                                                  02
+ In one dimension, waves in a chain of atoms can  03
+ be considered to result from the collective      04
+ vibrations of the atoms due to the interatomic   05
+ forces, which can be treated as springs coupling 06
+ pairs of atoms. Each atom has an equation of     07
+ motion involving displacements of the neighbour- 08
+ ing atoms, and this gives a set of coupled       09
+ equations, the solution of which turn out to be  10
+ a set of waves (phonons). The shortest physically11
+ significant wavelength (highest k-value) is such 12
+ that the wavelength is just twice the interatomic13
+ spacing, and this sets the highest value of k    14
+ (the Brillouin zone boundary). For long wave-    15
+ lengths the variation of frequency with k is     16
+ linear (from c=w/k), but near the Brillouin zone 17
+ boundary the velocity reduces (dispersion) and   18
+ the resulting w-k relationship is a curve. Where 19
+ interatomic forces between non-nearest neighbours20
+ is important, w can actually decrease as k       21
+ increases.                                       22
+                                                  23
+                                                  24
+                                                  25
+
+
+theory help 2
+ In three dimension very similar behaviour occurs 01
+ due to the vibration of planes of atoms (for     02
+ waves propagating in symmetry directions in the  03
+ crystal), but the force constants between atoms  04
+ becomes a tensor quantity relating the vector    05
+ force acting on any atom to its (vector)         06
+ displacement, and the determination of the       07
+ frequency for a particular wave vector becomes   08
+ an eigenvalue problem, with three solutions for  09
+ each atom in the (primitive) unit cell. For the  10
+ case of waves in symmetry directions (but not in 11
+ general), these correspond to one longitudinal   12
+ and two transverse polarizations.                13
+                                                  14
+ In a finite solid the waves are in effect bounded15
+ and the boundary conditions only allow standing  16
+ waves, so the allowed k values are 'quantized'.  17
+ For a solid of N atoms there are 3N allowed modes18
+ of vibration.                                    19
+                                                  20
+ For the cases with two atoms per unit cell there 21
+ are six separate frequency solutions at each wave22
+ vector, giving six branches to the dispersion    23
+ curves. The other three branches form a separate 24
+ group, with high frequency at small wave number. 25
+
+
+
+theory help 3
+ The allowed k values (or states) are evenly      01
+ distributed in 'k-space', but the corresponding  02
+ frequency distribution of the states will be     03
+ uneven, having peaks where the dispersion curves 04
+ are flat.                                        05
+                                                  06
+ Calculation of this 'phonon density of states' is07
+ difficult, but an approximation can be obtained  08
+ by evaluating the frequency at a large mesh of   09
+ points in k-space within the Brillouin zone, and 10
+ plotting a histogram of the results.             11
+                                                  12
+ The program works by setting up the dynamical    13
+ matrices for each case, and calculates dispersion14
+ curves along the three principle symmetry        15
+ directions by solving for the eigenvalues of the 16
+ dynamical matrix. The density of states can also 17
+ be calculated, by solving the dynamical matrix   18
+ for a cubic array of reciprocal lattice points in19
+ the irreducible 1/48 of the Brillouin zone, and  20
+ building up a histogram of the frequencies. For  21
+ simplicity of student understanding, the normal  22
+ refinements ofinterpolation between calculated   23
+ points is not used.                              24
+                                                  25
+

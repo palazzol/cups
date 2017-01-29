@@ -1,0 +1,138 @@
+Help 1
+                                                  01
+       FOURIER ANALYSIS & FOURIER TRANSFORMS      02
+                                                  03
+                 Brian W James                    04
+    University of Salford, Salford, M5 4WT, UK    05
+                                                  06
+                  Version 1.0                     07
+               Copyright (c) 1995                 08
+                                                  09
+   In Fourier analysis any periodic function      10
+   can be represented by a sum of sine and        11
+   cosine functions. The effects of dispersion    12
+   and attenuation on the propagation of the      13
+   waveform can be investigated. The evolution    14
+   of a standing wave can be illustrated.         15
+                                                  16
+   Non-periodic functions can be represented      17
+   by a integral sum of a spectrum of sine and    18
+   cosine functions of all frequencies called the 19
+   Fourier transform. One and two dimensional     20
+   discrete Fourier transforms are illustrated.   21
+                                                  22
+   Press <enter> or click the mouse to continue.  23
+   F10  will select the menu.                     24
+                                                  25
+
+
+Help 2
+                                                  01
+                Fourier Analysis                  02
+                                                  03
+   Periodic waveforms are synthesized by a sum of 04
+   different amplitude sine and cosine terms.     05
+                                                  06
+    F1 - The current HELP SCREEN                  07
+                                                  08
+    F2 - Run/Stop - toggles the automatic         09
+         addition of successive terms to graph    10
+                                                  11
+    F3 - Step - alternately displays the next     12
+         term and adds the term to the graph      13
+                                                  14
+   'Propagate' The changes in the Fourier         15
+    synthesized waveform can be investigated.     16
+    F2 and F3 now control the propagation.        17
+                                                  18
+   'Evolve' The temporal variation of standing    19
+    waves can be investigated.                    20
+                                                  21
+   'Display setup' affects the screen resolution  22
+    and hence the lowest RMS Dif. to be found.    23
+                                                  24
+                                                  25
+
+
+Help 3
+                                                  01
+       One Dimensional Fourier Transform          02
+                                                  03
+  Any non-periodic function can be represented by 04
+  an infinite sum of sine and cosine functions.   05
+                                                  06
+    F1 - The current HELP SCREEN                  07
+                                                  08
+    F2 - The inverse Fourier transform or Fourier 09
+         transform of the display after filtering.10
+                                                  11
+    F3 - Real and imaginary parts of the current  12
+         transform can be displayed.              13
+                                                  14
+    F4 - The current transform is displayed as    15
+         an amplitude and phase plot by using     16
+         color to indicate phase.                 17
+                                                  18
+    F5 - Power spectrum of current transform      19
+                                                  20
+    F10 - MENU -  Used to select menu options:-   21
+                                                  22
+                                                  23                                                  23
+   Press <enter> or click the mouse to continue.  24
+                                                  25
+
+
+Help 4
+                                                  01
+     Two Dimensional Fourier Transforms           02
+                                                  03
+  Any non-periodic function can be represented by 04
+  an infinite sum of sine and cosine functions.   05
+                                                  06
+    F1 - The current HELP SCREEN                  07
+                                                  08
+    F4 - The Fourier transform or the inverse     09
+         Fourier transform of the current data.   10
+                                                  11
+    F6 - Real part of current data plotted        12
+                                                  13
+    F7 - Imaginary part of current data plotted   14
+                                                  15
+    F8 - Surface plot of a) modulus or b) power.  16
+         Grey levels of c) real part or d) power. 17
+                                                  18
+    F10 - MENU -  Used to select menu options:-   19
+       Fourier - analysis of periodic functions   20
+       1-D DFT - 1-D Discrete Fourier Transforms  21
+       2-D DFT - 2-D Discrete Fourier Transforms  22
+                                                  23
+    The SLIDERS can be used to select the view.   24
+                                                  25
+
+Help 5
+                                                  01
+      Cauchy normal dispersion expression         02
+                                                  03
+ The variation of refractive index, n, with       04
+ frequency, f, is conveniently described by the   05
+ expression introduced by Cauchy:-                06
+                                                  07
+       n = A + B * (c/f)^2                        08
+                                                  09
+ where c is the velocity of light and A and B are 10
+ constants. In this simulation the Cauchy         11
+ dispersion expression is used to determine the   12
+ variation of velocity for the harmonics from the 13
+ Fourier analysis.                                14
+                                                  15
+ The attenuation of the propagated waves is also  16
+ usually frequencey dependent with higher         17
+ harmonics being attenuated more.                 18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+   Press <enter> or click the mouse to continue.  24
+                                                  25
+

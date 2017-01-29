@@ -1,0 +1,279 @@
+ABOUTTHISPROGRAM
+
+              Stellar Pulsation
+
+                     by
+             Charles A. Whitney
+    Harvard-Smithsonian Center for Astrophysics
+            Cambridge, MA 02138
+
+            Copyright (c) 1994
+
+     This program starts by building a model of
+   a star envelope in hydrostatic equilibrium.
+   It then finds the eigenmodes for radial
+   pulsation.
+
+     You may display the pulsation in a variety
+   of ways, selected with the Plot-what menu.
+
+     The program does linear, adiabatic
+   pulsation, and it finds the motions by Fourier
+   synthesis. You may activate any combination
+   of the lowest four pulsation modes or start
+   from an arbitrary configuration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GETSTARTED
+            TO GET STARTED
+
+    The program is menu driven. Each item controls
+  a different set of functions:
+
+  MODEL--
+    To get started, specify the star with
+  SPECIFY and hit RETURN key or ACCEPT.
+  The model will be built automatically. You
+  may then view the static model with GRAPH
+  or LIST.
+
+  PLOT-WHAT--
+    Select a dynamic plot of the pulsation.
+
+  RUN--
+    Use Start from Modes to set amplitudes
+  and phases for the four lowest modes; or
+  use the start from Displacements to start
+  from an arbitrary shape.
+
+
+
+
+
+
+
+
+
+
+
+
+STATICMODEL
+             TO BUILD A MODEL
+
+     The SPECIFY/BUILD item in the MODEL
+ menu permits you to enter parameters
+ defining the model. You enter values for
+ the mass, radius, and luminosity in units
+ of the solar values.
+
+     You may specify the chemical composition
+ in terms of the abundances of helium and
+ the aggregate of the metals.
+
+     The structure of the model is specified
+ in terms of the number of shells (<=20),
+ the fractional mass in the envelope, and
+ the type of density distribution.  Four
+ types of density distribution are available:
+       1. Constant density;
+       2. Energy transfer by radiation or
+ convection, depending on gradient (a
+ mixing-length theory is used);
+       3. Radiation only;
+       4. Convection only.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MODES
+             MODES OF OSCILLATION
+
+      The pulsating star is represented by a
+ set of discrete shells carrying the inertial
+ mass and separated by elastic gas. This system
+ has normal modes consisting of independent
+ periodic motion, and all possible motions
+ of the system may be represented by a
+ superposition of modes. There are as many
+ normal modes as there are shells in the model.
+      This program evaluates all the modes and
+ it uses them in two ways during the computation:
+      1. The starting positions of the shells
+ are initially prescribed by a mixture of modes.
+ You may set the amplitudes and phases of
+ the modes using the Run/Set Modes menu item.
+      2. With the Run/Start from Displacement
+ item, these modes may be replaced with
+ Fourier synthesis based on arbitrary positions
+ established with the hot keys.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PLOTS
+            PLOTS AVAILABLE
+
+      TYPES OF PLOTS --
+            In addition to the graphs showing the
+ static structure of the star model, four types
+ of dynamic plots are available using the
+ Plot-what/Set Plot Types menu:
+           1. Strip chart, showing the time
+ evolution of a single variable at selected
+ shells;
+           2. Phase diagram, showing two
+ variables plotted against each other in
+ the course of the pulsation;
+           3. Profile, showing the spatial
+ profile of a variable in the course of the
+ pulsation;
+           4. Animation, showing a cross-
+ section of the star; colors show relative
+ values.
+
+      VARIABLES TO BE PLOTTED --
+      You may select the variables to be
+ plotted with a window opened by the
+ Plot-what/Select Variables item.
+
+
+
+
+
+
+
+
+
+
+METHODS
+       METHOD OF COMPUTING THE PULSATION
+
+    The current version computes all changes
+ during the pulsation as though there were no
+ energy exchange between the stellar layers.
+ This is the adiabatic assumption. With it,
+ you cannot evaluate the pulsational instability
+ of models. Motions are computed by Fourier
+ synthesis.
+
+    The pulsation motions may be started by
+ either of two methods:
+     1. Using the modal composition seleted
+ with the Start from Modes menu item;
+     2. Using the displacements established
+ with the Start from Displacements menu item.
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+RUNNING
+              RUNNING THE PULSATION
+
+   After the model has been built, the program
+ will automatically find the eigen-modes.  (The
+ current version finds only the adiabatic modes.)
+ You may then select which modes are to be active,
+ using the SET MODES window, or you may accept
+ the current selection.
+
+    Open the graphs you wish to plot (with the
+ PLOT-WHAT menu) and start the pulsation with the
+ hot-keys at the bottom or the RUN menu.
+
+
+
+
+
+
+
+
+
+
+
+
+
+DISPADJUST
+
+            ADJUSTING THE DISPLACEMENTS
+
+     The Run/Start from Displacements menu will
+ open a window that shows the instantaneous
+ values of shell displacements. These values
+ may be adjusted, and in this way you may start
+ the pulsation with any desired set of displace-
+ ments. Corresponding values of pressure,
+ temperature, etc., are computed by assuming
+ adiabatic compression or expansion from the
+ initial equilibrium model.
+     First, select the desired shell using hot
+ keys 5 and 6 to move the indicator left or
+ right. Then make the displacement of that shell
+ greater or smaller using hot keys 7 and 8.
+ When you have made the adjustments, use the
+ mouse to move the cursor to the Start button
+ and click on it. Or, you may click on the
+ Escape button to leave the model unchanged.
+
+
+
+
+
+
+
+

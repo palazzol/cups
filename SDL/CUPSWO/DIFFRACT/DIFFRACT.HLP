@@ -1,0 +1,579 @@
+HELPSCREEN1
+
+             INTERFERENCE AND DIFFRACTION
+
+     HUYGHENS CONSTRUCTION
+       a)  Slits
+       b)  Point Sources
+     FRESNEL DIFFRACTION - THE CORNU SPIRAL
+       a)  Study of the Spiral
+       b)  Edge
+       c)  Slit
+       d)  Obstacle
+       e)  Double Slit
+       f)  Double Obstacle
+    FRAUNHOFER DIFFRACTION
+       a)  Single Slit and Multiple Slits
+       b)  Rectangular Aperture
+       c)  Circular Aperture
+    COHERENCE
+       a)  One Slit/One Circle - Two Sources
+       b)  Two Slits - Two Narrow Line Sources
+       c)  Two Slits - One Line Source
+       d)  Double Star
+       e)  Star Diameter
+
+
+
+
+
+HELPSCREEN4
+
+               HUYGHENS CONSTRUCTION
+
+                   Point Sources
+
+
+  One or more point sources can be chosen lying
+  on a line.
+
+  The number of sources can be chosen using the
+  buttons.  The other variables can be controlled
+  using the sliders.
+
+  In order to see the intensity at large range,
+  use the Threshold slider. This cuts the top off
+  the intensity function at the desired level and
+  the contours are recalculated and displayed.
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN5
+
+              HUYGHENS CONSTRUCTION
+
+         Single Slit and Multiple Slits
+
+  One to four slits can be chosen using the
+  buttons.
+
+  The intensity can then be seen as a function
+  of the distance from the slit(s) by clicking
+  the mouse inside the viewport at the position
+  required.
+
+  The other variables can be controlled using
+  the sliders.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN6
+
+             FRAUNHOFER DIFFRACTION
+
+            Single and Multiple Slits
+
+  Far screen diffraction patterns are presented
+  as intensity patterns on a screen.
+
+  The number of slits can be chosen using the
+  buttons. The other variables can be changed
+  using the sliders.
+
+  More than one plot can be displayed for
+  comparsion purposes.  The viewport can be
+  cleared using the <F3-Clear All> hot key.
+  The last plot can be restored by pressing the
+  <F2-LastPlot> hot key.
+
+  If the angular range slider is changed the
+  viewport is automatically  cleaned and the new
+  plot shown relative to the new angular scale.
+
+
+
+
+
+
+
+
+HELPSCREEN7
+
+            FRAUNHOFER DIFFRACTION
+
+             Rectangular Aperture
+
+  The diffraction pattern from a single
+  rectangular aperture is shown as a 3D plot
+  and as a contour plot.
+
+
+  The proportions of the aperture and the
+  wavelength can be varied using the sliders.
+  You can also cut off the top of the central
+  maximum using the threshold slider. This will
+  allow you to study the lower intensity
+  sections of the pattern more easily.
+
+
+  The central location of this screen can be
+  varied using the mouse in the dummy screen so
+  that you can see the diffraction pattern at any
+  location away from the central axis.
+
+
+
+
+
+
+
+HELPSCREEN8
+
+             FRAUNHOFER DIFFRACTION
+               Circular Aperture
+
+  The diffraction pattern from a single circular
+  aperture are shown both as a 3D plot and a
+  contour plot.
+
+  The radius of the aperture and the wavelength
+  can be varied using the sliders. You can also
+  cut off the top of the central maximum using
+  the threshold slider. This will allow you to
+  study the lower intensity sections of the
+  pattern more easily.
+
+  The central location of this screen can be
+  varied using the mouse in the dummy screen so
+  that you can see the diffraction pattern at any
+  location away from the central axis.
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN9
+
+           INTERFERENCE and DIFFRACTION
+
+                       by
+                Dr. Robin A. Giles
+         Department of Physics and Astronomy
+               Brandon University,
+                Brandon, Manitoba
+                 Canada R7A 6A9
+                Tel: 204 727 7402
+           E-Mail: giles@BrandonU.CA
+        (c) 1995 John Wiley & Sons, Inc.
+
+  In this program you will be able to study some
+  of the more fundamental aspects of Interference
+  and Diffraction including Huyghens
+  Construction, Fresnel and Fraunhofer
+  Diffraction and Partial Coherence in relation
+  to visibility of fringe patterns.  In the
+  latter case you can study the Michelson
+  Stellar Interferometer and the measurement
+  of binary stars and stellar diameters.
+
+
+     Press <Enter> or Click Mouse to continue
+
+
+
+
+HELPSCREEN13
+
+                PARTIAL COHERENCE
+
+                Circular Aperture
+
+  A circular aperture is illuminated by two
+  incoherent point sources. The resulting
+  diffaction pattern is shown as a three-
+  dimensional plot and also as an intensity
+  plot.  The mouse can be used to measure the
+  intensity as function of position to test
+  the Rayleigh criterion.
+
+  Sliders are available to adjust the radius of
+  the aperture, the wavelength of the incident
+  illumination and separation of the two sources.
+
+  If you click the mouse in the top left hand
+  corner of the 3D plot you can see the contour
+  plot of the intensity.
+
+
+
+
+
+
+
+
+
+HELPSCREEN14
+
+                PARTIAL COHERENCE
+
+                  Slit Aperture
+
+  A slit is illuminated by two incoherent thin
+  line sources. The resulting diffaction pattern
+  is shown as a three-dimensional plot and also
+  as an intensity plot.  The mouse can be used
+  to measure the intensity as function of
+  position to test the Rayleigh criterion.
+
+  Sliders are avalable to adjust the width of the
+  slit, the wavelength of the incident
+  illumination and the separation distance
+  between the two sources.
+
+  If you click the mouse in the top left hand
+  corner of the 3D plot you can see the contour
+  plot of the intensity.
+
+
+
+
+
+
+
+
+
+HELPSCREEN15
+
+                PARTIAL COHERENCE
+             Two Sources - Two Slits
+
+  Two slits are illuminated by two narrow and
+  incoherent line sources.  The upper viewport
+  shows the fringe pattern in the field of view
+  for one source.  The middle viewport shows the
+  fringe pattern for the second source.
+
+  The lower viewport shows the combined fringe
+  pattern.   Sliders can be used to adjust the
+  separation of the sources and the separation of
+  the slits. Both of these sliders have a fine
+  adjustment capability.
+
+  Sliders are also available to adjust the
+  wavelength of the incident light and the slit
+  width.
+
+  This program will help in understanding the
+  Michelson Stellar Interferometer - Double Star
+  program.
+
+
+
+
+
+
+HELPSCREEN16
+
+               PARTIAL COHERENCE
+            Line Source - Two Slits
+
+  Two Slits are illuminated by a line source.
+
+  The lower viewport shows the resulting fringe
+  pattern.  Sliders can be used to adjust the
+  width of the line source and the separation
+  of the slits. Both of these sliders have a
+  fine adjustment capability.
+
+  Sliders are also available to adjust the
+  wavelength of the incident light and the slit
+  width.
+
+  The upper viewport shows the visibility
+  function. The vertical green line defines the
+  value of the visibility function for the
+  chosen parameters.
+
+  This program will help in understanding the
+  Michelson Stellar Interferometer - Star
+  Diameter program.
+
+
+
+
+
+HELPSCREEN17
+
+       THE MICHELSON STELLAR INTERFEROMETER
+                  Double Stars
+
+  The viewport shows the fringe pattern obtained
+  with the inteferometer.
+
+  Four double stars can be studied, the default
+  star is Castor.  The other stars can be chosen
+  using the buttons.
+
+  The separation of the mirrors can be changed
+  using the mirror slider which has a fine
+  adjustment capability.
+
+  A slider is also available to allow changes
+  to be made in the wavelength  of the incident
+  light.
+
+  It will be useful to study the Coherence
+  Two Line Sources program first.
+
+
+
+
+
+
+
+
+HELPSCREEN18
+
+     THE MICHELSON STELLAR INTERFEROMETER
+                Star Diameters
+
+  The viewport shows the fringe pattern obtained
+  with the inteferometer.
+
+  Three stars can be studied, the default star
+  is Betelgeuse.  The other stars can be chosen
+  using the buttons.
+
+  The separation of the mirrors can be changed
+  using the mirror slider which has a fine
+  adjustment capability.
+
+  A slider is also available to allow changes
+  to be made in the wavelength of the incident
+  light.
+
+  It will be useful to study the Coherence One
+  Line Source program first.
+
+
+
+
+
+
+
+
+HELPSCREEN22
+
+        FRESNEL DIFFRACTION FROM AN EDGE
+
+
+  Select the source to edge distance, the edge
+  to screen distance and the wavelength of the
+  incident light.
+
+  The X and Y values for the spiral are
+  calculated using Simpson's Rule to evaluate
+  the Fresnel Integrals.
+
+  The diffaction pattern is then calculated and
+  displayed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HELPSCREEN23
+
+     FRESNEL DIFFRACTION FROM A SINGLE SLIT
+
+  Select the source to slit distance, the slit
+  to screen distance, the wavelength  of the
+  incident light and the slit width.
+
+  The X and Y values for the spiral are
+  calculated using Simpson's Rule to evaluate
+  the Fresnel Integrals.
+
+  If inappropriate values are chosen an
+  information screen indicates the changes that
+  need to be made to the variables. The plot
+  will be displayed on release of the slider
+  thumb.
+
+  The geometrical shadow of the slit is also
+  shown on the screen.
+
+  By moving the source back and forward you
+  can investigate the transition from Fresnel to
+  Fraunhofer conditions.
+
+
+
+
+
+
+HELPSCREEN24
+
+    FRESNEL DIFFRACTION FROM A SINGLE OBSTACLE
+
+  Select the source to obstacle distance, the
+  obstacle to screen distance, the wavelength
+  of the incident light and the obstacle width.
+
+  The X and Y values for the spiral are
+  calculated using Simpson's Rule to evaluate
+  the Fresnel Integrals.
+
+
+  If inappropriate values are chosen an
+  information screen indicates the changes that
+  need to be made to the variables. The plot
+  will be displayed on release of the slider
+  thumb.
+
+  The geometrical shadow of the obstacle is also
+  shown on the screen.
+
+  By moving the source back and forward you can
+  investigate the transition from Fresnel to
+  Fraunhofer conditions.
+
+
+
+
+
+HELPSCREEN25
+
+       FRESNEL DIFFRACTION FROM TWO SLITS
+
+  Select the source to slits distance, the slits
+  to screen distance, the wavelength of the
+  incident light and the left slit width.  The
+  right slit can chosen to be up to five times
+  the width of the left slit. The slit
+  separation can be chosen to be up to five
+  times the width of the left slit.
+
+  The X and Y values for the spiral are
+  calculated using Simpson's Rule to evaluate
+  the Fresnel Integrals. If inappropriate values
+  are chosen an information screen indicates
+  the changes that need to be made to the
+  variables. The plot will be displayed on
+  release of the slider thumb.
+
+  The geometrical shadow of the two slits is
+  also shown on the screen. By moving the
+  source back and forward you can investigate
+  the transition from Fresnel to Fraunhofer
+  conditions.
+
+
+
+
+
+HELPSCREEN26
+
+       FRESNEL DIFFRACTION FROM TWO OBSTACLES
+
+  Select the source to obtacles distance, the
+  obstacles to screen distance, the wavelength
+  of the incident light and the width of the left
+  obstacle.   The right obstacle can chosen to
+  be up to five times the width of the left
+  obstacle.  The obstacle separation can be
+  chosen to be up to or five times the width of
+  the left obstacle. The X and Y values for the
+  spiral are calculated using Simpson's Rule
+  to evaluate the Fresnel Integrals.
+
+  If inappropriate values are chosen an
+  information screen indicates the changes that
+  need to be made to the variables. The plot will
+  be displayed on release of the slider thumb.
+
+  The geometrical shadow of the two obstacles is
+  also shown on the screen. By moving the source
+  back and forward you can investigate the
+  transition from Fresnel to Fraunhofer
+  conditions.
+
+
+
+
+
+HELPSCREEN27
+
+                THE CORNU SPIRAL
+
+  The Cornu Spiral is calculated for a series of
+  values of the V parameter.  Initially
+  calculated for V = 1, the <F2-Step> hot key
+  advances the calculation by one unit in V.
+
+  The <F3-Cos> hot key displays the Fresnel
+  Cosine Function up to the current value of the
+  V parameter.  The <F4-Sin> hot key displays the
+  Fresnel Sine Function.
+
+  The mouse can be used in the Spiral Viewport
+  to measure the X and Y values from the curve.
+  The red astrisks mark integral values of V
+  from V = 1 to a maximum value of V = 5.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

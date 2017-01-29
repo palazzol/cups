@@ -1,0 +1,12 @@
+
+MCTest
+
+ This program generates random distributions
+ according to a Gaussian and a Breit-Wigner
+ (or Lorentzian) distribution. The number of
+ events generated may be changed in the code.
+ After generating the events the distributions
+ are fitted with the appropriate functions.
+ The center and width of the fitting functions
+ may be chosen in an input menu. The value of
+ chi-squared for the fit is displayed.

@@ -1,0 +1,367 @@
+zoom help
+               ZOOM HOT KEY (F5)                  01
+                                                  02
+ To explore the low temperature region of the     03
+ specific heat curves (or the Debye equivalent    04
+ temperature curves) you can use the zoom         05
+ facility. As soon as you press the mouse button  06
+ after pressing the hot key, a 'zoom box' will    07
+ appear with the mouse arrow as the top right     08
+ corner.                                          09
+    Drag the box until it outlines the area of    10
+ the curve that you would like to move in on,     11
+ then release the mouse button. The screen area   12
+ will be rescaled to your chosen size.            13                                                16
+    In the case of the Debye equivalent           14
+ temperature, the zoom box is replaced by a       15
+ vertical line, since in this plotting mode the   16
+ zoom is only needed along the temperature axis.  17                                                21
+    There is no partial zoom out, but you can     18
+ always restore the full curve by using the       19
+ rescale hot key.                                 20
+    If you don't have a mouse, the program will   21
+ detect this, and you can drag the zoom box with  22
+ the cursor keys instead. Press RETURN when done. 23
+                                                  24
+                                                  25
+
+
+set data help
+             SET DATA MENU OPTION                 01
+                                                  02
+ Input screen for various items of data:          03
+                                                  04
+ No. of modes in D.o.States -                     05
+    Sets the number of points in the 1/48 of the  06
+    Brillouin zone, used to calculate the density 07
+    of states. A large value gives more accurate  08
+    results, but takes longer.                    09
+ Bulk modulus, Density and Molecular weight -     10
+    These are needed for a user-defined substance.11
+    They are used to calculate the absolute value 12
+    of the force constants, unit cell size, etc.  13
+ Ratio of force constants -                       14
+    Sets the ratio between the nearest and the    15
+    second-nearest neighbour force constants.     16
+ Ratio of masses -                                17
+    Sets the ratio of the masses of the two atoms 18
+    in diatomic structures.                       19
+ Non-central force constant (ratio) -             20
+    Only relevant for the diamond structure, where21
+    a non-central force between atoms is allowed. 22
+ Structure -                                      23
+    There is a choice of crystal structures, some 24
+    of which are monatomic and some diatomic.     25
+
+
+schottky data help
+          SCHOTTKY DATA MENU OPTION               01
+                                                  02
+ Input screen for data for Schottky Specific Heat:03
+                                                  04
+ Energy levels -                                  05
+    There is a choice between 3 energy level      06
+    schemes: 1) Up to 4 individual energy levels; 07
+    2) Up to 99 equally spaced energy levels;     08
+    3) Up to 99 levels increasing as n, 2n, 3n... 09
+                                                  10
+ No. of excited energy levels -                   11
+    The Schottky specific heat can be calculated  12
+    for any number of excited levels between 1    13
+    and 99 (1 to 4 for individually specified     14
+    levels)                                       15
+                                                  16
+ Energy level spacing -                           17
+    For the case of individual energy levels, up  18
+    to 4 level spacings can be set. The levels    19
+    are specified as equivalent temperatures,     20
+    T_S.                                          21
+    For the regular energy level schemes, the     22
+    first energy level only is needed.            23
+                                                  24
+                                                  25
+
+
+file help
+                                                  01
+                FILE MENU OPTION                  02
+                                                  03
+ The FILE menu option has three choices:          04
+                                                  05
+ About program -                                  06
+    This option provides a series of help screens 07
+    giving general information about the program. 08
+                                                  09
+ About CUPS -                                     10
+    This option gives general information about   11
+    the whole CUPS project, of which this program 12
+    is just one part.                             13
+                                                  14
+ Configuration -                                  15
+   This enables you to customize the program in a 16
+   number of ways, such as the default drive,     17
+   colour of the display, speed of operation etc. 18
+                                                  19                                                  14
+ Exit program -                                   20
+    This option allows you to exit from the       21
+    program                                       22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+model help
+                MODEL MENU OPTION                 01
+ This menu option gives a choice of 5 different   02
+ models for the specific heat:                    03
+                                                  04
+ 1) Einstein                                      05
+    This is the earliest theoretical model that   06
+    gives a qualitative understanding of the form 07
+    of the specific heat at low temperature.      08
+ 2) Debye                                         09
+    The Debye theory was the first to predict the 10
+    correct T^3 behaviour of the specific heat at 11
+    low temperature.                              12
+ 3) Comb.Einstein/Debye                           13
+    This theoretical model takes equal contribut- 14
+    ions from a Debye model and an Einstein model.15
+    It is a reasonable model for a diatomic       16
+    structure with a narrow optic band frequency  17
+    approximated by the Einstein model.           18
+ 4) Real Crystal                                  19
+    This model uses a realistic density of states 20
+    calculation to give the most accurate simulat-21
+    ion of the lattice specific heat.             22
+ 5) Schottky                                      23
+    This model simulates the specific heat anomaly24
+    from one or more excited energy levels.       25
+
+
+structure help
+              STRUCTURE CHOICES                   01
+                                                  02
+ The 'Set Data' input screen includes a choice of 03
+ crystal structures. It is only relevant (and     04
+ available) when the model selected is 'Realistic 05
+ Density of States'. Its main effect is its       06
+ influence on the density of states used in the   07
+ simulation, although it does also have some      08
+ effect on the Debye temperature for a given set  09
+ of material parameters (bulk modulus etc),       10
+ through the dependence of the Debye temperature  11
+ on the sound velocities which have a complex     12
+ relationship to the bulk modulus that also       13
+ involves the crystal structure.                  14
+    The most important difference will be between 15
+ the monatomic structures, the diatomic structures16
+ and the diamond structure.                       17
+                                                  18
+    The structures available are:                 19
+                                                  20
+    F.C.C.                                        21
+    B.C.C.                                        22
+    CsCl type                                     23
+    NaCl type                                     24
+    diamond                                       25
+
+
+substance help
+              SUBSTANCE MENU OPTION               01
+                                                  02
+ This menu option gives a choice of 7 different   03
+ substances, including one or more of each of the 04
+ available crystal structure types. In addition,  05
+ there is a 'User defined' substance in which the 06
+ user can specify the material properties such as 07
+ the density and bulk modulus, through the 'set   08
+ data' menu option, and the crystal structure.    09
+                                                  10
+    The substances available are:                 11
+                                                  12
+    USER DEFINED                                  13
+    Solid Argon    (FCC structure)                14
+    Aluminium      (FCC structure)                15
+    Nickel         (FCC structure)                16
+    Iron           (BCC structure)                17
+    CsCl                                          18
+    NaCl                                          19
+    Diamond                                       20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+plotoptns help
+             PLOT OPTNS MENU OPTION               01
+ PLOT-WHAT -                                      02
+    The specific heat can be plotted against temp-03
+    erature, or alternatively against T^3 in order04
+    to facilitate a check on the Debye low temp-  05
+    erature T^3 law. The specific heat can also be06
+    plotted as the equivalent Debye temperature   07
+    (except for the Debye and Schottky models)    08
+ PLOT-HOW -                                       09
+    There are choices to plot successive curves   10
+    superimposed (unless there is a change of     11
+    scale due to zooming in), to retain just the  12
+    last of the previous curves, or always to     13
+    remove the old curves.                        14
+ PLOT-WHEN -                                      15
+    Normally Automatic drawing will be sensible,  16
+    in which case a new curve is drawn after any  17
+    change is made. But on a slow machine, when   18
+    plotting real crystal curves, if you want to  19
+    make a lot of changes you may prefer to choose20
+    the option to 'Draw when instructed'          21
+ PLOT-SCHOTTKY -                                  22
+    The Schottky specific heat anomaly can be     23
+    plotted alone, or superimposed on the lattice 24
+    specific heat as it would be in practice.     25
+
+
+
+
+display help
+               DISPLAY HOT KEYS                   01
+                                                  02
+ F6 - UNZOOM                                      03
+       This hot key will restore full scale after 04
+       a zoom, or rescale the axes if necessary   05
+       after changing substance. Note that a      06
+       change of substance may result in the      07
+       curves going off-scale but will NOT result 08
+       in automatic rescaling.                    09
+                                                  10
+ F7 - CLEAR                                       11
+       This hot key will clear all the curves     12
+       from the screen if the display has become  13
+       too cluttered. It will NOT rescale the     14
+       display. Use F6 for this.                  15
+                                                  16
+ F8 - DRAW                                        17
+       Normally Automatic drawing will be used,   18
+       in which case a new curve is drawn after   19
+       any change is made, and this hot key will  20
+       not be necessary. But on a slow machine,   21
+       when plotting real crystal curves, if you  22
+       want to make a lot of changes you may      23
+       prefer to choose 'Draw when instructed'    24
+       and use F8 when you want to draw the curve 25
+
+
+general help 1
+               ABOUT THIS PROGRAM                 01
+                                                  02
+ This program will calculate the temperature      03
+ dependence of the lattice specific heat of a     04
+ solid for a variety of different theoretical or  05
+ realistic models. The models available are:      06                                       07
+                                                  07
+ 1) The Einstein model. This is the earliest      08
+    theoretical model that gives a qualitative    09
+    understanding of the form of the specific heat10
+    at low temperature. It treats the lattice as  11
+    a collection of independent oscillators with  12
+    a characteristic frequency. Because it is not 13
+    a very realistic model there is no obvious    14
+    value to be used for the oscillator frequency.15
+    Therefore in this simulation the frequency is 16
+    chosen to make the resulting specific heat    17
+    have a similar form to the Debye theory.      18
+                                                  19
+ 2) The Debye model. This is the first realistic  20
+    model of the specific heat. It treats the     21
+    solid as an elastic continuum and introduces  22
+    an artificial maximum frequency of vibration  23
+    to limit the number of possible modes of      24
+    vibration to that expected.                   25
+
+
+general help 2
+    The Debye theory was the first to predict the 01
+    correct T^3 behaviour of the specific heat at 02
+    low temperature.                              03
+                                                  04
+ 3) A combined Einstein/Debye model. This         05
+    theoretical model takes equal contributions   06
+    from a Debye model and an Einstein model.     07
+    It is a reasonable model for a diatomic       08
+    structure with a narrow optic band frequency  09
+    approximated by the Einstein model.           10
+                                                  11
+ 4) A 'realistic density of states' model that    12
+    uses a proper density of states calculation   13
+    to give the most accurate simulation of the   14
+    lattice specific heat.                        15
+                                                  16
+ 5) Schottky specific heat anomaly. This model    17
+    simulates the specific heat anomaly from one  18
+    or more excited energy levels such as those   19
+    that can arise from crystal field splitting   20
+    of the ground state of a paramagnetic ion.    21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+general help 3
+ In addition to displaying the specific heat, it  01
+ is possible to display results in the form of    02
+ the temperature variation of 'Debye equivalent   03
+ temperature'. This is the value of the Debye     04
+ temperature which would result in the Debye      05
+ model giving the same value of the specific heat 06
+ at the spot temperature being considered. It is  07
+ a more sensitive way of displaying differences   08
+ between different models.                        09
+                                                  10
+ The main purpose of the program is to provide    11
+ a way of escaping from the limitations of the    12
+ Debye model and see what the specific heat looks 13
+ like when calculated from realistic assumptions  14
+ about a solid. The results can then be compared  15
+ with the simpler models to see to what extent    16
+ the latter give reasonable results.              17
+                                                  18
+ Data for various real substances is built into   19
+ the program, and in addition the user can        20
+ work with a 'user-defined' material, and hence   21
+ vary the important material properties and see   22
+ how they affect the specific heat.               23
+                                                  24
+                                                  25
+
+
+general help 4
+              USING THE PROGRAM                   01
+Menu:                                             02
+   File      - Allows exit from the program       03
+   Model     - you can choose from four theoret-  04
+       ical models, or simulate a real crystal    05
+   Substance - Select a pre-defined substance,    06
+       or set up your own values                  07
+   Plot Optns- set up various display and other   08
+       options, including what to plot            09
+   Set Data  - force constants and other data     10
+       can be entered from keyboard               11
+   Schtky Dta- special data and options for the   12
+       Schottky specific heat model               13
+   Sldr Resln- Select whether the sliders work    14
+       on a fine, medium or coarse scale          15
+Hot Keys:                                         16
+   Help    - Offers context sensitive help        17
+   Zoom    - Use mouse to zoom in and expand      18
+       the area of the graph near the origin      19
+   Unzoom  - Restore the screen area to full      20
+       scale, after zooming or changing substance 21
+   Clear   - Clear screen area (no scale change)  22
+   Draw    - Plot the currently selected model    23
+       (only needed when not in Automatic mode)   24
+   Menu    - Activates the menu                   25
+
+

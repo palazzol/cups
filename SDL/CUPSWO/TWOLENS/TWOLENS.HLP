@@ -1,0 +1,231 @@
+set data help
+                                                  01
+             SET DATA MENU OPTION                 02
+                                                  03
+ This input screen can be used to set values as   04
+ an alternative to using the mouse. It also       05
+ enables the user easily to set exact values.     06
+                                                  07
+ The following parameters can be changed:         08
+                                                  09
+      Object Height                               10
+      Object Distance                             11
+      Lens position                               12
+      Position of Lens 2 (for two lens systems)   13
+      Focal Length                                14
+      Focal Length of Lens 2 (two lens systems)   15
+                                                  16
+ The object distance is the distance to the       17
+ (first) lens or mirror. This distance may be     18
+ made negative for the case of a virtual object.  19
+                                                  20
+ The focal length should be made negative for     21
+ a diverging lens or mirror.                      22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+file help
+                                                  01
+                FILE MENU OPTION                  02
+                                                  03
+ The FILE menu option has four choices:           04
+                                                  05
+ About CUPS -                                     06
+    This option gives general information about   07
+    the whole CUPS project, of which this program 08
+    is just one part.                             09
+                                                  10
+ About program -                                  11
+    This option provides two help screens giving  12
+    general information about the program.        13
+                                                  14
+                                                  15
+ Configuration -                                  16
+   This enables you to customize the program in a 17
+   number of ways, such as the default drive,     18
+   color of the display, speed of operation etc.  19
+                                                  20
+ Exit program -                                   21
+    This option allows you to exit from the       22
+    program                                       23
+                                                  24
+                                                  25
+
+
+
+
+lenstypes help
+                                                  01
+              LENS TYPE MENU OPTION               02
+                                                  03
+ This menu option gives a choice of 10 different  04
+ lenses, mirrors or lens systems, including two   05
+ well-known optical instruments. Note however     06
+ that convex lenses can also be turned into       07
+ concave lenses and vice versa, by dragging the   08
+ focal point through the lens. The 'Distant       09
+ object' choice is not a separate lens type, but  10
+ sets a distant object for the current choice.    11
+                                                  12
+   Distant object                                 13
+   LENSES                                         14
+     Convex Only                                  15
+     Concave Only                                 16
+     Convex-Convex                                17
+     Concave-Concave                              18
+     Convex-Concave                               19
+     Concave-Convex                               20
+     Microscope                                   21
+     Telescope                                    22
+   MIRRORS                                        23
+     Concave Mirror                               24
+     Convex Mirror                                25
+
+
+
+
+raypaths help
+                                                  01
+             RAY PATHS MENU OPTION                02
+                                                  03
+ This menu option allows the user to choose the   04
+ number of rays that are shown in situations      05
+ where there is a choice.                         06
+                                                  07
+ For two lens systems the three principal rays    08
+ for the first lens are always shown. This menu   09
+ option allows five rays to be shown instead,     10
+ the last two being the extra principal rays for  11
+ the second lens (the ray through the first       12
+ focus of the first lens is also the ray through  13
+ the second focus of the second lens).            14
+                                                  15
+ For mirrors there are two choices for the third  16
+ ray that is plotted. The closest analogy to the  17
+ ray through the center of a lens is the ray that 18
+ strikes the center of the mirror and is          19
+ reflected at the same angle, but for mirrors     20
+ there is a more fundamental ray that passes      21
+ through the center of curvature, and hence       22
+ strikes the mirror normally and retraces its     23
+ path.                                            24
+                                                  25
+
+
+zoom help
+                                                  01
+                ZOOM MENU OPTION                  02
+                                                  03
+ It is possible to change the scale of the        04
+ screen display, both larger and smaller, and     05
+ also to pan across the display.                  06
+                                                  07
+ ZOOM-Out expands the display by 200% in either   08
+ the X direction, the Y direction or both.        09
+                                                  10
+ ZOOM-In can enlarge the display by a factor 2 in 11
+ the same way, but in addition the 'Variable'     12
+ option allows the user to mark out the region of 13
+ interest by clicking and dragging with the mouse 14
+ a rectangle which will be expanded to fill the   15
+ screen.                                          16
+                                                  17
+ The PAN option moves the 'window' represented    18
+ by the screen across the display by half a       19
+ screen in the direction chosen.                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+Finetune help
+                                                  01
+              FINE TUNE MENU OPTION               02
+                                                  03
+ It is possible, by the use of sliders, to move   04
+ the position of either the object or the focal   05
+ points depending upon the choice that is made    06
+ with this menu item.  Once the 'Fine tune'       07
+ option has been chosen the menu item changes     08
+ to 'Drag mode' until 'Return to drag mode'       09
+ is selected from the submenu. Below the diagram  10
+ of the ray paths the numerical values change as  11
+ the sliders are moved - the exact positions are  12
+ calculated using the paraxial approximation.     13
+ The 'Fine tune' option allows the user precise   14
+ control not available in 'Drag mode'.            15
+                                                  16
+ In order to get the fine tuning, the range of    17
+ the sliders is deliberately kept small. If you   18
+ need to make larger changes, you will have to    19
+ roughly position the item first in the drag      20
+ mode.                                            21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+
+display help
+               DISPLAY HOT KEYS                   01
+                                                  02
+ F2 - Full/Scrn                                   03
+       This hot key will expand the ray diagram   04
+       so that it fills the display by removing   05
+       the numerical data displayed at the bottom 06
+       of the screen. A reduced set of data is    07
+       instead displayed in the corner of the     08
+       main display.                              09
+                                                  10
+ F3 - Center                                      11
+       This hot key will automatically center     12
+       the lens/mirror, or the center of a two    13
+       lens system, in the middle of the display. 14
+                                                  15
+ F4 - Zoom-in                                     16
+       This hot key reproduces the most useful    17
+       Zoom-in function on the menu, by allowing  18
+       the user to mark out a rectangle with the  19
+       mouse to zoom in on.                       20
+                                                  21
+ F5 - Zoom-out                                    22
+       This hot key reproduces the most useful    23
+       Zoom-out function, to expand the display   24
+       area by a factor 2.                        25
+
+
+
+general help
+                                                  01
+               USING THIS PROGRAM                 02
+                                                  03
+ TwoLens is a program that can be used to         04
+ demonstrate simple ray diagrams for a single     05
+ thin lens, two thin lenses or spherical mirrors. 06
+ The program shows how the image of an object can 07
+ easily be located by graphical means by the use  08
+ of two or three rays.                            09
+                                                  10
+ The mouse can be used to move the object by      11
+ dragging the object arrow shown in white by the  12
+ mouse pointer.  The actual paths of rays are     13
+ shown as continuous lines.  The apparent paths   14
+ of rays to virtual object positions or to virtual15
+ image positions, when they are not actual paths, 16
+ are shown as dotted lines.  Color is used to     17
+ identify the different principal rays drawn.     18
+ The mouse can also be used to drag the focal     19
+ points to change the focal length of the lens.   20
+ It can even be used to change the lens from a    21
+ converging lens to a diverging lens by moving    22
+ the focal point through the lens.  The position  23
+ of the lens can be changed by dragging the lens. 24
+                                                  25

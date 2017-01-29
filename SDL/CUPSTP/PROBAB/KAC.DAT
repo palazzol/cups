@@ -1,0 +1,14 @@
+ A Small Ring 
+ number of balls: 9
+ number of markers: 2
+ initial number of dark balls: 2
+ number of members in the ensemble: 36
+ No. of Moves  N(D)-N(L)  <N(D)-N(L)>
+       0          -5          -5
+       1          -1          -3
+       2          -1          -1
+       3          -5           0
+       4          -1           1
+       5           3           1
+       6           3           0
+       7           3          -1

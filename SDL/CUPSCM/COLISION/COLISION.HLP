@@ -1,0 +1,836 @@
+IntroHelp
+         Introduction to the Help System           01
+   
+ Use the menus to seek help on the topic you want.
+
+ When you are done reading a screen, click the
+ mouse or press any key; you may then choose
+ another topic from the menu.
+
+ To leave the help system and restore the main
+ menu, click the mouse a second time.
+
+ The HELP!! entry on the menu leads to this 
+ screen, to help on the F-keys which launch
+ collisions, and also to the help screens that 
+ you see if you press the "Help" button on an 
+ input screen.
+
+ You can start a collision by clicking the mouse
+ button with the cursor in the laboratory window,
+ or with the F-keys.
+
+ Change force types using the menu, NOT F-3 and
+ "Vary Force Type". The latter makes quick 
+ comparisons without setting up all parameters.
+
+
+
+
+
+OneFrameHelp
+
+                  Choose One Window
+
+ Allows you to view the collision in a single 
+ large window which displays either:
+
+    Trajectories in the laboratory frame
+    Trajectories in the center of mass frame
+    Momentum vectors in the laboratory frame
+    Momentum vectors in the center of mass frame
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ConfigureHelp
+               System Configuration
+
+Path to temporary files directory: (ALT-d)
+  Specify where files read and written are placed
+
+Change colors: (ALT-c)
+  You can change all red objects (for example)
+  into blue, etc., including all black or white.
+
+Change double click time: (ALT-t)
+  Determines how close together two mouse clicks
+  have to be to be considered a double click
+
+Delay time: (ALT-y)
+  Allows you to slow down all calculations if they
+  display too rapidly
+
+Print Screen Setup: (ALT-p)
+  Provides instruction for you to set up to print
+  a screen to your printer
+
+Check Memory: (ALT-m)
+  Tells you the amount of free memory available.
+
+Hotkeys (in Parentheses) do the same thing quicker
+
+ReadXsHelp
+
+             Read Cross Section File
+
+ Loads a file containing one or more previously
+ saved Cross Section graphs that were written to
+ a file by "Save Cross Section File"
+
+ These are then available like any other set of
+ saved cross sections, and can be added to or 
+ graphs deleted in the same way.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SaveXSHelp
+
+             Save Cross Section File
+
+ Whatever Cross section graphs have been saved
+ will be written to a file.
+
+ You will be asked for a file name and 
+ a description.
+
+ If a file by the same name exists, you will
+ be asked whether you wish to:
+    - Write over it (throwing the old one away)
+    - Use another name for the new file
+    - Don't write a file after all
+
+ The "Cancel" button also allows you to change
+ your mind and not write a file.
+
+ The file is in ASCII format and is commented,
+ so that it is intelligible if read into a text
+ editor or printed.
+
+
+
+
+ReadHistHelp
+
+           Read Collision History File
+
+ Reads in and displays a history of a single
+ collision previously saved in a file.
+
+ This will be displayed in whatever set of
+ windows you have chosen at the time.
+
+ You can read in another file and display both
+ at once, or several at once. (Read Help on the
+ options.) Either file can be displayed as a
+ set of object images (round dots) or as a path
+ (line without dots) according to the option
+ in effect at the time the file is read.
+
+
+
+
+
+
+
+
+
+
+ReadHistOptionsHelp
+
+   Options for Reading a Collision History File
+
+  - Show Object History
+      Shows the collision as a series of round
+      dots marking the position of the objects
+      at successive times.
+
+  - Show Paths Only
+      Shows the collision as a pair of lines with
+      no time markers.
+
+  - Don't Clear Screen
+      The next file read will be displayed on top
+      of whatever collision is already there.
+
+      This allows comparison of collisions. It is
+      easier to tell them apart if one is
+      displayed as a history and the other as
+      paths.
+
+
+
+
+
+SaveHistHelp
+
+        Save Collision History (to a) File
+
+ This saves the history of the current collision
+ including:
+
+   - What force
+   - Force parameters
+   - Mass ratio
+   - Scattering angle
+   - Time at each step
+   - Position & velocity components at each step
+
+ The file is in ASCII format and is commented,
+ so that it is intelligible if read into a text
+ editor or printed.
+
+
+
+
+
+
+
+
+
+TrajectoryHelp
+
+            Display Trajectories Only
+
+ Display subsequent collisions in two windows
+ showing the trajectories in the laboratory and
+ center of mass reference frames.
+
+ The laboratory window also displays a graph of
+ the potential function for the force parameters
+ in effect at the last time the screen was
+ cleared.
+
+ The impact parameter will be displayed as a
+ magenta line unless you turn that option off.
+
+ You can start a collision by clicking the mouse
+ button with the cursor in the laboratory window,
+ or with the F-keys.
+
+
+
+
+
+
+
+VectorHelp
+
+               Display Momentum Vectors Only
+
+ Display subsequent collisions in two windows
+ showing the momentum vectors in the laboratory 
+ and center of mass reference frames, showing
+ their sum in the laboratory frame.
+
+ The F-keys are the only way to launch a 
+ collision. (Help on the F-keys will be found
+ under the "Help" item on the menu.)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traj&VectHelp
+
+   Display Both Trajectories & Momentum Vectors
+
+ Displays both sets of graphs at once. 
+ A collision may be launched either with the 
+ F-keys or by clicking in the laboratory 
+ trajectory window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ZoomHelp
+
+                     Zoom In
+
+ Enlarges the scale of the graphs, showing more
+ detail during the closest part of the encounter.
+
+                     Zoom Out
+
+ Reduces the scale of the graphs, showing a
+ larger area.
+
+ The enlargement or reduction is by a factor
+ of 3, unless you change it. (Minimum: 1.0)
+
+
+ You can also change:
+
+  the time step to keep the graphs smooth
+
+  the interval between object images (Min: 1.0)
+
+
+
+
+
+
+Default Scale Help
+
+            Restore the Default Scale
+
+ After a series of zooms, returns the scale of the
+ graphs, the time step, and the image spacing to
+ those in effect when the program started.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Display Saved Cross Sections
+
+           Display Saved Cross Sections
+
+ When you create a cross section graph, you are
+ asked if you wish to save it. You may save up
+ to ten cross sections and display them with
+ this menu choice.
+
+ You will be presented with a list of the cross
+ sections saved and can choose to display any
+ number of them that you wish. 
+
+ You can also choose between displaying the
+ cross section values and displaying their
+ logarithms. Since the values change by many
+ orders of magnitude, the logarithm graph is
+ often more informative.
+
+ When the cross sections are displayed, you can:
+  - change from values to logs or the reverse
+  - make a new selection of graphs displayed
+  - conceal the legend if it is in the way
+  - discard (unsave) some or all cross sections
+  - quit plotting: return to further collisions
+
+CoulombHelp
+                Coulomb Force Law
+
+ The interaction is governed by the equation:
+
+     Fc = m k/r^2 in the r direction,
+
+ thus, positive k corresponds to a repulsive
+ force.
+
+              Coulomb with Shielding
+
+     F = Fc (1+R/R0) Exp(-R/R0)
+
+ This reduces the force at large radii to 
+ approximate the effect of electrons
+ shielding the nucleus.
+
+                Truncated Coulomb
+
+    F = Fc      (r > R0)  (Unchanged above R0)
+      = Fc(R0)  (r <= R0) (Constant below R0)
+
+ Approximates being inside the nuclear charge.
+
+
+PowerHelp
+
+               Arbitrary Power Law
+
+ Substitutes an arbitrary (user chosen) power for
+ the exponent of r in the coulomb force law.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+HardHelp
+
+              Hard Sphere Collision
+
+ The component of the velocity parallel to r
+ reverses direction when r = R0: reflection
+ like the reflection of light from a mirror.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SoftHelp
+
+              Soft Sphere Collision
+
+      F = 0         (r > R0)
+        = k (r-R0)  (r <= R0)   (Spring force)
+
+ The two objects behave like a spring while they
+ are in contact.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+YukawaHelp
+
+                   Yukawa Force
+
+ The force is derived from the Yukawa potential:
+
+    V =  = - V0 exp(-r/c)/r
+
+ This was a very early attempt at understanding 
+ the forces between nucleons. Notice that the 
+ well, like the Coulomb potential well, has no 
+ bottom.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WSHelp
+
+                Woods-Saxon Force
+
+ The force is derived from the potential:
+
+     V = - V0 1/( 1+exp((r-R_0)/a) )
+
+ This potential does have a bottom and is 
+ therefore a better approximation to the actual
+ force between nuclei. There is no exact force law
+ known for nuclei or nucleons.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+User Force Help
+
+                User Defined Force
+
+ You must write your own code for the procedures
+   User_Accel
+   User_Potential
+   User_Parameters
+
+ These procedures now contain an error message
+ and comments telling you what you need to know
+ to write your own code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Previous Force Help
+
+                  Previous Force
+
+ Changes to the most recently used previous
+ force or parameters to enable comparisons.
+
+ The previous force and parameters are whatever 
+ they were before the last time you changed
+ force laws.
+
+ The screen is not cleared, so that you can
+ readily compare collisions between the forces.
+
+ Pressing F2 after the change will run a
+ collision with the same impact parameter
+ as the last one run before the change.
+
+
+
+
+
+
+
+
+
+
+Range Help
+
+            Range of Impact Parameters
+
+ You may change:
+   the number of collisions
+       ___ Impact parameters
+
+   their distribution:
+       Evenly Distributed from 0 to 1
+       Concentrated (more near 0)
+       Heavily Concentrated (even more near 0)
+
+   and any of the parameters you could change for
+       a single collision (another input screen
+       will appear).
+
+
+ Concentrating the impact parameters near 0 gives
+ more collisions in the region where the
+ scattering angles are large and fewer collisions
+ with almost nothing happening.
+
+ Choose fewer collisions if your computer is slow
+ or the screen is too cluttered.
+
+
+
+
+Set Condition Help
+               Collision Conditions
+
+   This input screen allows you to modify the
+   display and change the force and collision
+   parameters.
+
+Show Center of Mass displays a white cross
+
+Show Impact Parameter displays a magenta line
+
+Show Effective Potential controls a display 
+     (in red) on the Lab System window
+
+Show Object Now displays only the current position
+     giving the effect of a movie of the collision
+
+Show Object History displays past positions
+     giving the effect of a time-lapse photograph
+
+Show Paths Only displays lines without time marks
+
+ You can change the impact parameter, mass ratio,
+ energy (projectile speed), and the force
+ strength, range, and steepness parameters for
+ those forces that have them.
+
+
+Energy Range Help
+
+         Energy or Force Parameter Range
+
+ The number of energies, force strengths, etc:
+ the collision will be repeated for this many 
+ different energies, force strenghts, etc.
+
+ You may also select the lowest and highest
+ values to be used, and change any of the
+ other parameters if you wish.
+
+ Note that the word "range" is being used in two
+ different senses here:
+     1) The distance over which a force is strong
+     2) The amount by which some parameter varies
+
+ For the case of mass ratios, you also have the
+ choice of arithmetic or geometric progression.
+ Geometric progression is generally more useful
+ in this case.
+
+
+
+
+
+
+
+Collision Type Help
+                  Collision Type
+
+ You may now choose either a single collision or
+ one of a number of types of multiple collisions.
+
+ The multiple collision choices each vary a
+ single parameter through a range; you may vary:
+    - The impact parameter
+    - The collision energy (projectile speed)
+    - The force type
+    - The ratio of the object masses
+    - The force strength parameter
+    - The force range parameter (if it exists)
+    - The force steepness parameter (if it exists)
+    - The parameters of a force that may be
+          combined with the Coulomb force
+
+ You may also plot differential cross section
+ against impact parameter for this set of
+ collision parameters.
+
+ In each case, you will next be given an
+ opportunity to select the number of collisions
+ and the range through which the parameter is
+ varied.
+
+
+
+XSect Help
+
+             Cross Section Parameters
+
+ In addition to the same choices that you have
+ when you vary the impact parameter, you may
+ save up to ten cross sections, which may be
+ displayed together on a single graph, or saved
+ to a file.
+
+ You will be asked for a description, which is
+ only way you can tell which is which on the
+ graph later.
+
+ When you display the graph ("Display Saved
+ Cross Sections" on the "Plots&Zoom" menu), you
+ can also discard all or some of the cross
+ sections you have saved, to make room for more.
+
+
+
+
+
+
+
+
+
+
+Coulomb Choice Help
+
+              Coulomb Force Choices
+
+ Note that the attractive potential at small
+ impact parameters and low energies can cause
+ the objects to come too close together for the
+ numerical integration routine to handle,
+ resulting in an error message (but not a crash).
+
+ Combining Coulomb and nuclear forces gives some
+ idea of how nuclei modify electron scattering.
+ However, it is difficult to do realistically
+ because the length scales of the two are so
+ different. To readily see an effect here, the
+ "size" of the nucleus must be made
+ unrealistically large. Bear this in mind in
+ interpreting your results.
+
+
+
+
+
+
+
+
+
+
+XSext Display Help
+
+          Cross Section Display Choices
+
+ You may display all of the cross sections
+ listed, or any subset.
+
+ You may display either values or logarithms,
+ but not both at once, which would be too
+ confusing.
+
+ If no cross sections are listed, you have not
+ saved any, nor read any in from a file.
+
+ If check boxes appear with no information except
+ numbers, you did not type descriptions when you
+ saved the cross sections.
+
+
+
+
+
+
+
+
+
+
+New XSect Help
+            Change Cross Section Plot
+
+ Show Logarithms or 
+ Show Values
+
+ New Choice of Plots
+   Make an entirely new selection from the list
+   of cross sections.
+
+ Quit Plotting
+   Return to simulate a new collision
+   ("Cancel" does the same thing.)
+
+ Show Legend
+   Turn this off if the legend gets in the way
+   of seeing the curves.
+
+ Discard All XSects & quit Plotting
+   Removes all saved cross sections from memory;
+   ten new ones can now be saved.
+
+ Discard Unselected Cross Sections
+   Removes from memory all the cross sections
+   that are NOT visible on the graph at the
+   moment so new ones can be added.
+
+
+F-key Help
+
+         What the Main Set of F-Keys Does
+
+F1-Help:Activates the Help system
+     in Secondary F-keys sets: context-sensitive
+
+F2-Go: Runs a collision with current parameters
+
+F3-New Data: Allows you to choose collision types
+     and parameters
+
+F5-Clear: Clears the screen and the history
+     (Tip: Trajectories from the menu will clear
+      all but the last collision if several show)
+
+F6-Speed: Allows you to slow down the action
+
+F-10 Menu: Activates the Menu for those without
+     a mouse.
+
+ Click the mouse in the Lab System window to 
+ select b & launch a collision. b may be specified
+ more precisely on the`"Collision Conditions" 
+ screen.
+
+
+
+
+

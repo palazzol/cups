@@ -1,0 +1,21 @@
+* particle.dat - input file of DetSim.pas program
+* particle      class       color             mass         lifetime  width
+*                                             MeV           nsec      MeV
+gamma       gam photon      lightred    1       0.0         -1.0      0.0
+electron    e   lepton      lightgreen  2       0.5110      -1.0      0.0
+positron    e+  lepton      lightmagenta3       0.5110      -1.0      0.0
+neutrino    nu  lepton      lightgray   4       0.0         -1.0      0.0
+muon        mu  lepton      yellow      5     105.6584     2197.03    0.0
+pion        pi  meson       lightcyan   6     139.5679      26.030    0.0
+pizero      pi0 meson       lightcyan   7     134.9743      -1.0      0.0
+kaon        K   meson       lightgreen  8     493.646       12.371    0.0
+kzero       K0  meson       lightgreen  9     497.671        0.08922  0.0
+proton      p   baryon      lightmagenta10    938.27231     -1.0      0.0
+neutron     n   baryon      lightgreen  11    939.56563     889.1E9   0.0
+rho         rho vmeson      lightmagenta12    768.1         -1.0     151.5
+lambda      lam baryon      lightred    13    1115.63       0.2632    0.0
+                            white       14      0.0         -1.0      0.0
+eta         eta meson       lightcyan   15     547.45       -1.0      0.0
+tau         tau lepton      yellow      16    1784.1      0.000305    0.0
+W           W   Boson       lightgreen  17   80220.0        -1.0    2120.0
+Z0          Z0  Boson       lightgreen  18   91173.0        -1.0    2487.0

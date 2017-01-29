@@ -1,0 +1,647 @@
+Initial Screen
+                                                  01
+                     Chain:                       02
+         A CUPS Waves and Optics Program          03
+                                                  04
+                      by:                         05
+                                                  06
+             Dr. Wolfgang Christian               07
+              G. Andrew Antonelli                 08
+                  Susan Fischer                   09
+                                                  10
+                Davidson College                  11
+                  Davidson, NC                    12
+                Copyright(c) 1994                 13
+                                                  14
+
+ You may begin the simulation (or pause if it is   16
+ already running) by pressing the F2 hot key. A    17
+ complete list of hot keys and their functions is  18
+ at the bottom of the screen.                      19
+                                                  20
+ NOTE: hot key functions are different depending   21
+ on whether the simulation is paused or running.   22
+                                                  23
+      *** Press F1 for more help. ***             24
+                                                  25
+
+About Chain
+                                                  01
+                                                  02
+                     Chain:                       03
+         A CUPS Waves and Optics Program          04
+                                                  05
+                      by:                         06
+             Dr. Wolfgang Christian               07
+              G. Andrew Antonelli                 08
+                  Susan Fischer                   09
+                                                  10
+                Davidson College                  11
+                  Davidson, NC                    12
+                Copyright(c) 1994                 13
+                                                  14
+  A lattice of coupled oscillators is an excellent15
+place to begin the study of wave phenomena since  16
+coupled masses exhibit the phenomena of traveling 17
+waves, normal modes, dispersion, band gaps, and,  18
+with the addition of non-linear restoring forces, 19
+solitons.                                         20
+                                                  21
+  Since masses on springs are easy to visualize,  22
+we will model wave propagation using this system. 23
+                                                  24
+                                                  25
+
+Atom Help
+                                                  01
+The user can specify the following for each atom: 02
+                                                  03
+* displacement, mass, and velocity                04
+ * the coefficients of the linear, quadratic,     05
+   force terms on an atom due to the vertical     06
+   distance, d, between the atom and its nearest  07
+   right-hand neighbor:                           08
+                                                  09
+       F_interaction = Kd + Ad^2 + Bd^3           10
+                                                  11
+ * the coefficient for the Hooke's force which    12
+   attracts an atom to its equilibrium position:  13
+                                                  14
+       F_self = -S(y)                             15
+                                                  16
+ * the constant C for velocity-dependent damping: 17
+                                                  18
+       F_damp = -Cv                               19
+                                                  20
+    Option "Make Source" adds an external force   21
+ to the system.  The user selects whether the     22
+ source pattern describes the magnitude of the    23
+ FORCE on the atom or the atom's DISPLACEMENT.    24
+                                                  25
+
+Cell Help
+                                                  01
+                                                  02
+ The chain of oscillators is broken up into units 03
+ called cells. You may select the number of atoms 04
+ per cell, as it is arbitrary and unrelated to    05
+ the mathematics behind the simulation.           06
+                                                  07
+ The primary purpose of grouping atoms by cells   08
+ is to facilitate the creation of periodic        09
+ configurations.                                  10
+                                                  11
+ You may edit the data within a cell (under       12
+ [Parameters] menu item) and apply edited         13
+ conditions to a single cell or to the entire     14
+ chain.                                           15
+                                                  16
+ **NOTE: when editing a cell, be sure to specify  17                                             
+   to which cell(s) the edited parameters should  18
+   be applied. The default selection is to apply  19
+   parameters to the entire chain, creating a     20
+   periodic pattern.                              21
+   If you choose [Apply to Single Cell Only],     22
+   you must select the cell to modify.  The       23
+   default cell to modify is the first cell.      24
+                                                  25
+
+Chain-Parser Help
+   The chain may be initialized to a user-defined 01
+ function of displacement (x) and time (t).       02
+                                                  03
+    When defining a function, keep in mind that   04
+the parser recognizes the following functions,    05
+ constants, and variables:                        06
+                                                  07
+ * FUNCTIONS: ABS(absolute value), sin, cos, tan, 08
+   cot, sec, csc, sinh, cosh, tanh, coth, sech,   09
+   csch, arcsin, arccos, arctan, arcsinh, arccosh,10
+   arctanh, exp(exponential), ln, log, sqrt, sqr, 11
+   H(Heaviside-unit step function), int(integer   12
+   part of the argument, frac(fractional part     13
+   of the argument, re(real part of a complex     14
+   number), im(imaginary part of complex number), 15
+   !(factorial--works for integers only)          16
+                                                  17
+   The functions above work for both real and     18
+   imaginary numbers except when noted otherwise. 19
+                                                  20
+ * CONSTANTS: pi, e, i                            21
+                                                  22
+ * VARIABLES: r=SQRT(x^2 + y^2 + z^2), c=x+i*y    23
+                                                  24
+                                                  25
+                        
+Colour Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+   You may find that simulations of atoms         07
+   which are outlined only (as opposed            08
+   to colored) run slightly faster.               09
+                                                  10
+   If you choose to color your atoms, you can     11
+   color according to cell, cycle the color,      12
+   or display all atoms in the same color.        13
+                                                  14
+                                                  15
+   The color of the background can be adjusted    16
+   by selecting the [Configuration] option under  17
+   the [Files] menu item.                         18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Demo Help
+                                                  01
+                                                  02
+                                                  03
+    When Demo Mode is enabled, a demonstration    04
+ simulation will evolve for the amount of time    05
+ specified by DemoTime. Then a Reset will occur   06
+ and the demo will run again.                     07
+                                                  08
+                                                  09
+   EXIT Demo Mode by pressing ESC or a hot key.   10 
+                                                  11 
+                                                  12
+   DemoMode models whatever simulation (including 13 
+ graphs, sources, and display options) is present 14
+ when DemoMode is enabled.                        15
+                                                  16
+                                                  17
+   If  time > DemoTime when DemoMode is enabled,  18
+ CHAIN resets the time so that no "infinitely     19
+ long" demonstrations occur.                      20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Display Help
+                                                  01
+                                                  02
+ The user can specify several features about the  03
+ display style of the atoms:                      04
+                                                  05
+  * choose between colored or outlined atoms      06
+                                                  07
+  * define atoms' radii in terms of pixels or in  08
+    terms of the horizontal scale (A value of 1   09
+    on the horizontal scale equals the distance   10
+    between the centers of adjacent atoms.)       11
+                                                  12
+  * select atoms of uniformly sized radii or      13
+    with radii scaled according mass              14
+                                                  15
+  * choose whether to display velocity vectors    16
+    emanating from their respective atoms' centers17
+                                                  18
+  * choose whether to display the "envelope" of   19
+    each atom's oscillation                       20
+                                                  21
+ You may notice that changing the display mode    22
+ alters the speed of your simulation. In general, 23
+ a simpler display mode runs slightly faster.     24
+                                                  25
+
+Dynamic Help
+                                                  01
+  You may toggle between the following plots      02
+  since they require the same data:               03
+                                                  04
+          Displacement: Y(t)                      05
+          Velocity: V(t)                          06
+          Phase Space: V(y)                       07
+          Y1(t) vs. Y2(t)**                       08
+                                                  09
+                                                  10
+  A "Frozen" plot will remain unchanged during    11
+  continued simulation.                           12
+                                                  13
+  To find the exact coordinates of a point on the 14
+  graph, click the mouse on the graph, hold the   15
+  button down, and move to the desired position.  16
+  A box showing the coordinates of the mouse will 17
+  be visible at the bottom of the graph.          18
+                                                  19
+  **note that the Y1 vs. Y2 graph plots the       20
+    amplitude of the first atom on the x-axis     21
+    and that of the second atom on the y-axis.    22
+    Additional atoms will be ignored.             23
+                                                  24
+                                                  25
+
+FFT-x Help
+                                                  01
+ This graph shows the power spectrum of the       02
+ Fourier transform. The power spectrum consists   03
+ of the magnitudes of the coefficients of the     04
+ combined sin and cos terms. The left-most term   05
+ represents the DC (constant) term.               06
+                                                  07
+ The user may choose between a basis set of sine  08
+ functions or a basis set containing both sine    09
+ and cosine terms.  A basis set of sine functions 10
+ is generally used for simulations which fix the  11
+ endpoints at y=0 (e.g., fixed boundaries).       12
+                                                  13
+                                                  14
+     Fourier transforms of the following          15
+     variables are available:                     16
+                                                  17
+             Y-displacement vs. x-position        18
+             Velocity vs. x-position              19
+                                                  20
+     A "frozen" plot will remain unchanged        21
+     during continued simulation.                 22
+                                                  23
+                                                  24
+                                                  25
+
+FFT-t Help
+                                                  01
+ This graph shows the power spectrum of the       02
+ Fourier transform of the selected atom's         03
+ displacement as a function of time, y(t).        04 
+                                                  05
+ The power spectrum consists of the magnitudes    06
+ of the coefficients of the combined sine and     07
+ cosine terms. The left-most term represents      08
+ the DC (constant) term.                          09
+                                                  10
+ The user may choose between a basis set of sine  11
+ functions or a basis set containing both sine    12
+ and cosine terms.  A basis set of sine functions 13
+ is generally used for simulations which fix the  14
+ endpoints at y=0 (e.g., fixed boundaries).       15
+                                                  16
+ Since the Fast Fourier Transform (FFT) is used,  17
+ the number of data points used in the analysis   18
+ must be a power of 2.                            19
+                                                  20
+ A "frozen" plot remains unchanged during         21
+ continued simulation.                            22
+                                                  23
+                                                  24
+                                                  25
+                                                  
+Fixed-Frame Help
+                                                  01
+ Stationary boundaries apply to a fixed reference 02
+ frame.  The default mode is a fixed frame with   03
+ periodic boundaries, but [Fixed] and/or [Free]   04
+ are also available for stationary frames.        05
+                                                  06
+ The [Periodic] boundary option is equivalent     07
+ to placing a free oscillator which duplicates    08
+ the right-most atom's behavior at the left of    09
+ the chain, and an oscillator duplicating the     10
+ left-most atom's behavior to the right of the    11
+ chain.  The Periodic condition is useful for     12
+ simulating an infinite one-dimensional lattice,  13
+ because the wave propagates freely between the   14
+ right- and left-hand sides of the chain.         15
+                                                  16
+ The displacement of an atom at a fixed boundary  17
+ is always zero.                                  18
+                                                  19
+ An atom next to a free boundary is not coupled   20
+ to another atom on its boundary side.            21
+                                                  22
+ Note: a "displacement" source creates, in effect,23
+ a fixed boundary, because the forced atom moves  24
+ in a fixed pattern and cannot transmit waves.    25
+
+Global Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+Several of this program's objects are directly    06
+accessable through the mouse, which pulls up an   07
+inspector panel of parameters when selected:      08
+  * double-click on an atom to change its force   09
+    coefficients, mass, velocity, or displacement.10
+  * click once on an atom and drag it to the      11
+    desired position.                             12
+  * click the upper left (red) corner of a graph  13
+    to modify the scaling.                        14
+  * click the upper right (purple) corner of a    15
+    graph to Expand or Contract the image.        16
+  * click the lower right corner of a graph to    17
+    change its display attributes.                18
+                                                  19
+**to find the coordinates of a point on a graph,  20
+  click the mouse on the point in question        21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Moving-Frame Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+ Selecting a moving reference frame allows you    06
+ watch a window which is moving at the specified  07
+ velocity. The disturbance in the window propa-   08
+ gates in an infininte chain, without encounter-  09
+ ing any boundaries.  Only information contained  10
+ in the window of the moving reference frame can  11
+ be viewed and analyzed.  Thus, you must choose   12
+ a window velocity which is appropriate for the   13
+ phenomenon you want to observe.                  14
+                                                  15
+ The moving reference frame is especially useful  16
+ for exploring dispersion.                        17
+                                                  18
+ To revert to a stationary reference frame, de-   19
+ select the box labelled "Enable MovingFrame".    20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Mode Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+ If the oscillators are placed in a single        07
+ mode, each oscillator will exhibit simple        08
+ harmonic motion.                                 09
+                                                  10
+ Phenomena such as standing waves, traveling      11
+ waves, galloping waves, and beats can be         12
+ simulated by selecting appropriate combin-       13
+ ations of modes and boundary conditions.         14
+                                                  15
+ Remember that a finite number (N) of distin-     16
+ guishable nodes is available to a chain of       17
+ N distinct oscillators.                          18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Num Help
+                                                  01
+                                                  02
+                                                  03
+  The number of atoms must be in the range        04
+                                                  05
+      0 < number atoms < 257                      06
+                                                  07
+  The simulation runs more slowly for a larger    08
+  number of atoms.                                09
+                                                  10                     
+  The number of atoms per cell is arbitrary and   11
+  does not affect the mathematics of the          12
+  simulation.                                     13
+                                                  14
+  Grouping atoms by cells allows you to edit      15
+  data by cell group, color atoms by cell, and    16
+  create a periodic configuration by duplicating  17
+  cell data over the entire chain.                18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Run Help
+                                                  01
+                                                  02
+  The following hot keys are available while      03
+  the simulation is running:                      04
+                                                  05
+        F1--Help                                  06
+        F2--Pause simulation                      07
+        F3--Show/Hide atoms' velocity vectors     08
+        F4--toggle between positive and negative  09
+            time steps (PosTime/NegTime)          10
+        F5--make the simulation run faster        11
+        F6--slow the simulation                   12
+                                                  13
+                                                  14
+  A bar at the bottom of the screen displays      15
+  hot keys and their functions.  Note that the    16
+  hot key options change when the simulation is   17
+  paused.                                         18
+                                                  19
+  The mouse is not available while the simulation 20
+  is running.  Pause the program using the  F2    21
+  hot key if you wish to use the mouse.           22
+                                                  23
+                                                  24
+                                                  25
+                                                  
+Save Help
+                                                  01
+  The [Save As] option allows you to save the     02
+  current atom configuration to a drive.          03
+                                                  04
+  Files are saved as regular ASCII files, and     05
+  can be edited with any standard text editor.    06
+                                                  07
+  The number of atoms, velocity, and displacement 08
+  of the atoms will be saved.  Note that the time 09
+  parameter, scale, and display preferences will  10
+  not be saved, so the configuration will look    11
+  different if you load it into a different scale 12
+  or under different display preferences.         13
+                                                  14    
+  You may change the target drive and directory   15
+  of files by selecting [Files] under the         16
+  [Preferences] menu item.                        17
+                                                  18
+  Files should be given the .CHN extension so     19
+  that they can be recognized and loaded by CHAIN.20
+                                                  21
+  The "comments" will be saved and displayed when 22
+  a file is loaded. Comments allow you to provide 23
+  useful descriptions for the saved simulation.   24
+                                                  25
+                                                                                                                                                                                        
+Scaling Help
+                                                  01
+                                                  02
+ The scale of a graph can be altered in two ways: 03
+                                                  04
+                                                  05
+      Manually -- the user chooses minimum and    06
+ maximum values for the x- and y-axis by clicking 07
+ the mouse on the appropriate boxes and entering  08
+ the desired values.                              09
+                                                  10
+      Automatically -- the scale is adjusted by   11
+ the computer such that the graph is conveniently 12
+ sized with respect to the x-axis (option X), the 13
+ y-axis (option Y), or both the x- and y-axis     14
+ (option XY).                                     15
+                                                  16
+  ** the user may also choose not to display      17
+     a scale by clicking the mouse in the         18
+     scale on/off box.                            19
+                                                  20            
+  ** the "full screen" option, when selected,     21
+     enlarges the graph to fill the entire screen.22
+                                                  23
+                                                  24
+                                                  25
+
+Source Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+                                                  08
+   You may specify the time interval after which  09
+   a periodic source will repeat itself.          10
+                                                  11
+   A source, or external force, may be created    12
+   by editing an atom's parameters.  Double-click 13
+   on the atom or select [Examine Atom] from the  14
+   [Parameters] menu.                             15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+Source-Parser Help
+   A user-defined function may be used to specify 01
+the source pattern as a function of time.         02
+                                                  03
+    When defining a function, keep in mind that   04
+the parser recognizes the following pre-defined   05
+functions, constants, and variables:              06
+                                                  07
+ * FUNCTIONS: ABS(absolute value), sin, cos, tan, 08
+   cot, sec, csc, sinh, cosh, tanh, coth, sech,   09
+   csch, arcsin, arccos, arctan, arcsinh, arccosh,10
+   arctanh, exp(exponential), ln, log, sqrt, sqr, 11
+   H(Heaviside-unit step function), int(integer   12
+   part of the argument, frac(fractional part     13
+   of the argument, re(real part of a complex     14
+   number), im(imaginary part of complex number), 15
+   !(factorial--works for integers only)          16
+                                                  17
+   The functions above work for both real and     18
+   imaginary numbers except when noted otherwise. 19
+                                                  20
+ * CONSTANTS: pi, e, i                            21
+                                                  22
+ * VARIABLES: r=SQRT(x^2 + y^2 + z^2), c=x+i*y    23
+                                                  24
+                                                  25
+
+Speed Help
+                                                  01
+                                                  02
+Depending on your computer (80386, 80486, or P5)  03
+and the complexity of your simulation, you may    04
+find it necessary to adjust the simulation speed. 05
+                                                  06
+To speed up the simulation, increase the number   07
+of time steps between each screen redrawing or    08
+decrease the time lag between computations.       09
+                                                  10
+To slow the simulation, decrease the number of    11
+time steps between each screen redrawing or       12
+increase the time lag between computations.       13
+                                                  14
+The F5 and F6 hot keys will speed and slow the    15
+simulation, respectively, while it is running.    16
+                                                  17
+Another method of adjusting the speed is to change18
+the time interval, dT, between calculations. You  19
+may do this by clicking "Time" option under the   20
+parameters menu. WARNING: larger time steps result21
+in less numerical accuracy, so this option will   22
+alter the accuracy of your simulation.            23
+                                                  24
+                                                  25
+
+ThreeD Help
+                                                  01
+ The Space Time-Contour graph displays isoclines  02
+ representing y-displacement on a graph with      03
+ time on the vertical axis and horizontal posi-   04
+ tion on the x-axis.  The following options are   05
+ available for the Space Time-Contour graph:      06
+    * display the legend for the y-displacements  07
+      represented by the color-coded isoclines    08
+    * change the color palette of the isoclines   09
+                                                  10
+ Options for the Space Time-3D graph:             11
+    * specify the Euler angles describing the     12
+      orientation of the plot (This option        13
+      allows you to rotate the plot.)             14
+    * Hide/Show the "box" defined by the time,    15
+      y-displacement, and x axes of the plot      16
+                                                  17
+ You may toggle between Space Time-Contour and 3D 18
+ since these graphs display the same data.        19
+                                                  20
+ To read the exact coordinates of a point on the  21
+ graph, click the mouse on the graph and hold the 22
+ button down.  A box showing the coordinates of   23
+ the mouse will appear at the bottom of the graph.24
+                                                  25
+
+VersusTime Help
+                                                  01
+                                                  02
+                                                  03
+                                                  04
+                                                  05
+                                                  06
+                                                  07
+ You may "Freeze" the graph so that the plot      08
+ remains unchanged with continued simulation.     09
+                                                  10
+                                                  11
+ To read the exact coordinates of a point on the  12
+ graph, click the mouse on the graph and hold the 13
+ button down.  A box showing the coordinates of   14
+ the mouse will appear at the bottom of the graph.15
+ The coordinates box will remain visible as long  16
+ as the mouse button is down.                     17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25

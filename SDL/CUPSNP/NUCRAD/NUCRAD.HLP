@@ -1,0 +1,134 @@
+HelpScreen1
+        RADIATION INTERACTION WITH MATTER         01
+This simulation explores the interaction of       02
+various types of radiation with a variety of      03
+materials and the interaction of photons with     04
+a NaI Detector. In the first part of the simulation05
+the various types of radiation available to 06
+you are protons,muons, electrons, and photons.       07
+The available materials to choose from are air, 08
+plastic, lead, aluminum, and copper. You may 09
+also choose the incident energy of the radiation. 10
+In the second part of the simulation photons are 11
+allowed to interact with a NaI detector and the 12
+resulting energy      spectrum is displayed.  The     13
+upper limit on thephoton energy is 10 MeV.         14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+ Menus:                                           19
+   File - About CUPS: The software Project        20
+        - About the program: Calls up this screen 21
+        - Quit: Quits the program                 22
+Radiation: Your 2 main simulation choices23
+    - General Radiation Interaction                           24
+    - NaI Radiation Interaction                       25
+
+HelpScreen2
+          GENERAL RADIATION INTERACTION           01
+This experiment allows for the choice of four     02
+different radiation sources:  proton, muon,       03
+electron, and photon.  There are four choices for 04
+the interaction material:  Air, Plastic, Aluminum,05
+and Lead.  The path and the stopping power for    06
+charged particles or the cross section for photons07
+is displayed. In addition, the number of           08
+reflected, absorbed and transmitted particles is  09
+displayed. Once you choose a source from the menu  10
+an input screen will be displayed.  Press Return  11
+or Enter when you have finished selecting the     12
+experimental parameters.                          13
+                                                     14
+Hot Keys:  HELP - calls this screen               15
+    STOP - pauses the program                     16
+    CLEAR - clears the selected viewport          17
+    RESTART - brings you back to the set up menu  18
+    DRAW - toggles the path tracing on and off    19
+    MENU - returns control to pull down menus    20
+    ESC end the search for energy levels        21
+Menus:  File                                      22
+    - Help : calls up this screen                 23
+    - Quit : quits the program                    24
+    Model: Your 2 main simulation choices         25
+
+HelpScreen3
+      PHOTON INTERACTION WITH A NaI DETECTOR      01
+This experiment explores the interaction of       02
+photons from a monoenergetic source.  You         03
+may choose the energy of the source (<=10 MeV),   04
+the size of the crystal, and the detector-source  05
+distance.                                         06
+                                                  07
+The output consists of two energy spectra plots.  08
+The one on the left is the spectrum of a detector 09
+with an ideal response.  The spectrum on the right10
+is a broadening of the left spectrum assuming a   11
+Gaussian dependence.                              12
+                                                  13
+Hot Keys:  Help - calls up this screen            14
+    Stop - pauses the program                     15
+    Reset - goes back to the set up menu          16
+    Add - it is not working at this point         17
+    MENU - returns control to pull down menus    18
+    ESC end the search for energy levels        19
+Menus:  File                                   20
+- Help : calls up this screen  21
+- Quit : quits the program22
+Model: Your 4 main simulation choices23
+                                                  24
+                                                  25
+
+HelpScreen4
+HelpScreen9
+                                                  01
+         INTERFERENCE and DIFFRACTION             02
+                                                  03
+        A part of the Waves and Optics            04
+         section of the CUPS Project.             05
+                                                  06
+          This part was authored by               07
+            Dr. Robin A. Giles                    07
+     Department of Physics and Astronomy          08
+             Brandon University                   09
+              Brandon, Manitoba                   10
+               Canada R7A 6A9                     11
+              Tel: 204 727 7402                   12
+           E-Mail: giles@BrandonU.CA              13
+                                                  14
+                                                  15
+                                                  16
+                                                  17
+                                                  18
+                                                  19
+                                                  20
+                                                  21
+                                                  22
+                                                  23
+                                                  24
+                                                  25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
