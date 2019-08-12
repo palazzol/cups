@@ -14,8 +14,7 @@ This site contains:
 This software can be run in an emulator such as DOSBOX.
 
 I would like to eventually make all of this software runnable in a browser, on the Internet Archive.  
-If you are interested in helping make this happen, please contact me.
-
-
-
-
+If you are interested in helping make this happen, please contact me at:<br>
+frank<br>
+AT<br>
+avoidspikes.com
