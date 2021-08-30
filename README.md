@@ -1,5 +1,4 @@
-# cups
-C.U.P.S (Consortium for Upper-Level Physics Software) archive
+# C.U.P.S. (Consortium for Upper-Level Physics Software) archive
 
 The original website for C.U.P.S project is archived here:
 https://web.archive.org/web/20150304034759/http://physics.gmu.edu/~cups/
@@ -12,6 +11,6 @@ This site contains:
   - Some experimental work to build with a modern PASCAL compiler and SDL.
   - Runnable bundles for the Internet Archive
 
-All of this software is now available in runnable form at the Internet Archive!
+You can now run this software at the Internet Archive!
 https://archive.org/details/software?query=Consortium+for+Upper-level+Physics+Software
 
