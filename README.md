@@ -1,6 +1,6 @@
 # C.U.P.S. (Consortium for Upper-Level Physics Software) archive
 
-The original website for C.U.P.S project is archived here:
+The original website for C.U.P.S project is archived here:  
 https://web.archive.org/web/20150304034759/http://physics.gmu.edu/~cups/
 
 The original C.U.P.S. software ran under MS-DOS.  It can still be run in a DOS emulator, such as DOSBOX.
@@ -11,6 +11,8 @@ This site contains:
   - Some experimental work to build with a modern PASCAL compiler and SDL.
   - Runnable bundles for the Internet Archive
 
-You can now run this software at the Internet Archive!
+You can now run this software at the Internet Archive!  
 https://archive.org/details/software?query=Consortium+for+Upper-level+Physics+Software
 
+A presentation on this is available here:  
+https://www.youtube.com/watch?v=Ap4thCMZkuU
